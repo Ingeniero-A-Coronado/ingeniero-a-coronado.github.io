@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eng. Arnoldo Coronado Torres - Technical & Academic Profile</title>
+    <meta name="description" content="Technical, academic and research profile of Eng. Arnoldo Coronado Torres. Structural Engineering, GIS, Environmental Criminology, and AI in Education.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* DARK THEME (DEFAULT) */
+        :root {
+            --bg-primary: #0f172a;
+            --bg-secondary: #1e293b;
+            --bg-card: #334155;
+            --accent-blue: #38bdf8;
+            --accent-green: #34d399;
+            --accent-gold: #fbbf24;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border: #475569;
+            --code-bg: #020617;
+            --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+            --font-mono: 'Fira Code', monospace;
+        }
+
+        /* LIGHT THEME (CONTRAST) */
+        [data-theme="light"] {
+            --bg-primary: #f8fafc;
+            --bg-secondary: #ffffff;
+            --bg-card: #f1f5f9;
+            --accent-blue: #0284c7;
+            --accent-green: #059669;
+            --accent-gold: #d97706;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border: #cbd5e1;
+            --code-bg: #f1f5f9;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: var(--font-sans);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* Top Controls (Theme & Lang Switchers) */
+        .controls-bar {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            display: flex;
+            gap: 0.5rem;
+            z-index: 1000;
+        }
+
+        .control-btn {
+            background-color: var(--bg-secondary);
+            color: var(--text-main);
+            border: 1px solid var(--border);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            transition: all 0.2s;
+        }
+
+        .control-btn:hover {
+            border-color: var(--accent-blue);
+            color: var(--accent-blue);
+        }
+
+        /* Header section */
+        header {
+            border-bottom: 2px solid var(--border);
+            padding-bottom: 2.5rem;
+            margin-bottom: 3rem;
+            margin-top: 1rem;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent-blue);
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .badge-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .badge {
+            background-color: rgba(56, 189, 248, 0.1);
+            color: var(--accent-blue);
+            border: 1px solid var(--accent-blue);
+            padding: 0.35rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .badge.highlight {
+            background-color: rgba(251, 191, 36, 0.1);
+            color: var(--accent-gold);
+            border-color: var(--accent-gold);
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .meta-item {
+            font-size: 0.95rem;
+        }
+
+        .meta-item strong {
+            color: var(--accent-green);
+            display: block;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Navigation Index */
+        .nav-index {
+            background-color: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 3rem;
+            border-left: 4px solid var(--accent-blue);
+            border: 1px solid var(--border);
+            border-left-width: 4px;
+        }
+
+        .nav-index h3 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: var(--text-main);
+        }
+
+        .nav-index ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 0.5rem 1.5rem;
+            list-style: none;
+        }
+
+        .nav-index a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .nav-index a:hover {
+            color: var(--accent-green);
+            text-decoration: underline;
+        }
+
+        /* Content Sections */
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--accent-blue);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            color: var(--accent-green);
+            margin: 1.5rem 0 0.75rem 0;
+        }
+
+        p, li {
+            color: var(--text-main);
+            opacity: 0.9;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        blockquote {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--accent-gold);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            border-top: 1px solid var(--border);
+            border-right: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Feature Cards Grid */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card {
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1.5rem;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent-blue);
+        }
+
+        .card h4 {
+            color: var(--accent-gold);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Tech/Language Box */
+        .lang-box {
+            font-family: var(--font-mono);
+            background-color: var(--code-bg);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            color: var(--accent-green);
+            margin: 1rem 0;
+            display: inline-block;
+            font-weight: 600;
+        }
+
+        /* Timeline for Presentations */
+        .timeline {
+            border-left: 2px solid var(--accent-blue);
+            padding-left: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.1rem;
+            top: 0.25rem;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--accent-blue);
+            border: 3px solid var(--bg-primary);
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+        }
+
+        .timeline-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        /* Contact Box */
+        .contact-card {
+            background: var(--bg-secondary);
+            border: 2px solid var(--accent-blue);
+            border-radius: 12px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .contact-card h2 {
+            justify-content: center;
+            border: none;
+            margin-bottom: 1rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .contact-btn {
+            background-color: var(--accent-blue);
+            color: #0f172a;
+            font-weight: 700;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--accent-green);
+        }
+
+        .lang-en { display: block; }
+        .lang-es { display: none; }
+
+        @media (max-width: 768px) {
+            .header-title { font-size: 2rem; }
+            body { padding: 1rem 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="controls-bar">
+    <button class="control-btn" id="themeToggle" onclick="toggleTheme()">☀️ Light Mode</button>
+    <button class="control-btn" id="langToggle" onclick="toggleLang()"> ES / EN</button>
+</div>
+
+<div class="container">
+
+    <header>
+        <h1 class="header-title">P.E. Arnoldo Coronado Torres</h1>
+        <div class="header-subtitle">Civil Engineering · Structures · GIS · Environmental Criminology · AI in Education</div>
+        
+        <div class="badge-container">
+            <span class="badge highlight"> QGIS Europe 2026 Speaker (Switzerland)</span>
+            <span class="badge highlight"> Guest Speaker BME (Hungary)</span>
+            <span class="badge"> UNAM Keynote Speaker 2026</span>
+            <span class="badge">+30 Years Experience</span>
+        </div>
+
+        <div class="meta-grid">
+            <div class="meta-item">
+                <strong class="lang-en">Institutional Affiliation</strong>
+                <strong class="lang-es">Afiliación Institucional</strong>
+                Instituto Tecnológico Nacional de México, Campus Tijuana
+            </div>
+            <div class="meta-item">
+                <strong class="lang-en">Department</strong>
+                <strong class="lang-es">Departamento</strong>
+                <span class="lang-en">Earth Sciences / Civil Engineering</span>
+                <span class="lang-es">Ciencias de la Tierra / Ingeniería Civil</span>
+            </div>
+            <div class="meta-item">
+                <strong class="lang-en">Location</strong>
+                <strong class="lang-es">Ubicación</strong>
+                Tijuana, Baja California, Mexico
+            </div>
+        </div>
+    </header>
+
+    <nav class="nav-index">
+        <h3 class="lang-en">Profile Index</h3>
+        <h3 class="lang-es">Índice del Perfil</h3>
+        <ul>
+            <li><a href="#sec-1"><span class="lang-en">1. Professional Profile</span><span class="lang-es">1. Perfil Profesional</span></a></li>
+            <li><a href="#sec-2"><span class="lang-en">2. Urban Environment & Violence</span><span class="lang-es">2. Entorno Urbano y Violencia</span></a></li>
+            <li><a href="#sec-3"><span class="lang-en">3. Community Infrastructure</span><span class="lang-es">3. Infraestructura Comunitaria</span></a></li>
+            <li><a href="#sec-4"><span class="lang-en">4. Commercial Infrastructure</span><span class="lang-es">4. Infraestructura Comercial</span></a></li>
+            <li><a href="#sec-5"><span class="lang-en">5. Environment & Youth</span><span class="lang-es">5. Entorno y Juventud</span></a></li>
+            <li><a href="#sec-6"><span class="lang-en">6. Europe 2026 Agenda</span><span class="lang-es">6. Agenda Europa 2026</span></a></li>
+            <li><a href="#sec-7"><span class="lang-en">7. UNAM Lecture 2026</span><span class="lang-es">7. Cátedra UNAM 2026</span></a></li>
+            <li><a href="#sec-8"><span class="lang-en">8. Structural Engineering</span><span class="lang-es">8. Ingeniería Estructural</span></a></li>
+            <li><a href="#sec-9"><span class="lang-en">9. Experimental Models</span><span class="lang-es">9. Modelos Experimentales</span></a></li>
+            <li><a href="#sec-10"><span class="lang-en">10. AI in Engineering Education</span><span class="lang-es">10. IA en Educación</span></a></li>
+            <li><a href="#sec-11"><span class="lang-en">11. Multilingual Instruction</span><span class="lang-es">11. Enseñanza Multilingüe</span></a></li>
+            <li><a href="#sec-12"><span class="lang-en">12. Open-Source Technology</span><span class="lang-es">12. Software Libre</span></a></li>
+            <li><a href="#sec-13"><span class="lang-en">13. Teaching Methodology</span><span class="lang-es">13. Metodología Docente</span></a></li>
+            <li><a href="#sec-14"><span class="lang-en">14. UC San Diego Collaboration</span><span class="lang-es">14. Colaboración UCSD</span></a></li>
+            <li><a href="#sec-15"><span class="lang-en">15. Research Vision</span><span class="lang-es">15. Visión de Investigación</span></a></li>
+            <li><a href="#sec-16"><span class="lang-en">16. Academic Highlights</span><span class="lang-es">16. Hitos Académicos</span></a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="sec-1">
+            <h2>
+                <span class="lang-en">1. Professional & Research Profile</span>
+                <span class="lang-es">1. Perfil Profesional y de Investigación</span>
+            </h2>
+            <div class="lang-en">
+                <p>I am a Civil Engineer specializing in Structural Engineering, educator, and independent researcher based in Tijuana, Baja California, with over three decades of professional experience in infrastructure, project management, and technical education.</p>
+                <p>My current work integrates several disciplines that are frequently treated in isolation:</p>
+            </div>
+            <div class="lang-es">
+                <p>Soy Ingeniero Civil especializado en Ingeniería Estructural, docente e investigador independiente radicado en Tijuana, Baja California, con más de tres décadas de práctica profesional en infraestructura, gestión de proyectos y educación técnica.</p>
+                <p>Mi trabajo convergente integra disciplinas que tradicionalmente se abordan de forma aislada:</p>
+            </div>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h4 class="lang-en">Engineering & Territory</h4>
+                    <h4 class="lang-es">Ingeniería y Territorio</h4>
+                    <p class="lang-en">Civil and Structural Engineering, Geographic Information Systems (QGIS), Spatial Analysis, and Sustainable Materials.</p>
+                    <p class="lang-es">Ingeniería Civil y Estructural, Sistemas de Información Geográfica (QGIS), Análisis Espacial y Materiales Sostenibles.</p>
+                </div>
+                <div class="card">
+                    <h4 class="lang-en">Social Systems</h4>
+                    <h4 class="lang-es">Sistemas Sociales</h4>
+                    <p class="lang-en">Environmental Criminology, Urban Dynamics, Violence Prevention, and Community Resilience.</p>
+                    <p class="lang-es">Criminología Ambiental, Dinámicas Urbanas, Prevención de la Violencia y Resiliencia Comunitaria.</p>
+                </div>
+                <div class="card">
+                    <h4 class="lang-en">Education & Innovation</h4>
+                    <h4 class="lang-es">Educación e Innovación</h4>
+                    <p class="lang-en">Open-Source Technologies, Applied Artificial Intelligence in Pedagogy, and International Academic Collaboration.</p>
+                    <p class="lang-es">Tecnologías Open-Source, Inteligencia Artificial aplicada a la Pedagogía y Colaboración Académica Internacional.</p>
+                </div>
+            </div>
+
+            <blockquote class="lang-en">
+                "Engineering should not be isolated from the social and environmental systems in which infrastructure operates. My work connects the physical behavior of structures with the broader territorial and social systems where cities develop."
+            </blockquote>
+            <blockquote class="lang-es">
+                "La ingeniería no debe aislarse de los sistemas sociales y ambientales en los que opera la infraestructura. Mi investigación conecta el comportamiento físico de las estructuras con los sistemas territoriales más amplios donde se desarrolla la sociedad."
+            </blockquote>
+        </section>
+
+        <section id="sec-2">
+            <h2>
+                <span class="lang-en">2. Urban Environment, Infrastructure & Violence</span>
+                <span class="lang-es">2. Entorno Urbano, Infraestructura y Violencia</span>
+            </h2>
+            <div class="lang-en">
+                <p>One of my primary research lines explores the relationship between the built environment, infrastructure, environmental conditions, and the spatial distribution of violence in the complex border metropolis of Tijuana using QGIS and spatial statistics.</p>
+                <p>The research examines spatial relationships between key variables:</p>
+                <ul>
+                    <li>Urban infrastructure, transport, and mobility networks.</li>
+                    <li>Community maintenance, physical appearance, and spatial identity.</li>
+                    <li>Geographical distribution of crime vs. areas showing high social resilience.</li>
+                </ul>
+                <h3>Cross-Border Dimension (Tijuana–San Diego)</h3>
+                <p>Our core hypothesis explores border cities functioning as <strong>mutual socio-economic pressure-release systems</strong>. Cross-border flows of trade, employment, and mobility create an urban interdependence where the border simultaneously generates and mitigates social pressures on both sides of the boundary.</p>
+            </div>
+            <div class="lang-es">
+                <p>Una de mis líneas de investigación principales explora la relación entre el entorno construido, la infraestructura, las condiciones ambientales y la distribución espacial de la violencia en Tijuana mediante QGIS y estadística espacial.</p>
+                <p>El estudio analiza variables como:</p>
+                <ul>
+                    <li>Infraestructura urbana, transporte y movilidad.</li>
+                    <li>Mantenimiento, apariencia física e identidad de la comunidad.</li>
+                    <li>Distribución geográfica del delito frente a áreas de alta resiliencia social.</li>
+                </ul>
+                <h3>Dimensión Transfronteriza (Tijuana–San Diego)</h3>
+                <p>Nuestra hipótesis central sostiene que las ciudades fronterizas funcionan como <strong>sistemas de liberación de presión socioeconómica mutua</strong>. La interdependencia económica sugiere que la frontera genera y mitiga presiones en ambos lados de la línea internacional.</p>
+            </div>
+        </section>
+
+        <section id="sec-3">
+            <h2>
+                <span class="lang-en">3. Community Infrastructure & Crime Prevention</span>
+                <span class="lang-es">3. Infraestructura Comunitaria y Prevención del Delito</span>
+            </h2>
+            <p class="lang-en">Through case studies such as <em>Infonavit Lagos</em> in Tijuana, our findings indicate that maintaining physical conditions and visual identity in residential areas correlates with reductions in local criminal activity. Built infrastructure is not merely passive; it acts as an active component of community perception and territorial appropriation.</p>
+            <p class="lang-es">A través de casos de estudio como <em>Infonavit Lagos</em> en Tijuana, la investigación demuestra que el mantenimiento físico y la apropiación visual del entorno residencial reducen los patrones delictivos. La infraestructura no es un elemento pasivo, sino un agente activo de la resiliencia.</p>
+        </section>
+
+        <section id="sec-4">
+            <h2>
+                <span class="lang-en">4. Commercial Infrastructure & Neighborhood Services</span>
+                <span class="lang-es">4. Infraestructura Comercial y Servicios Vecinales</span>
+            </h2>
+            <p class="lang-en">Spatial analysis of local convenience commercial networks (such as OXXO stores) in Tijuana challenges conventional assumptions. Rather than driving crime, these commercial nodes provide critical financial services, connectivity, and essential retail to underserved neighborhoods, serving a dual role as vital community resources and targets for ordinary crime.</p>
+            <p class="lang-es">Al analizar espacialmente redes comerciales de proximidad (como tiendas OXXO) en Tijuana, la evidencia desmitifica supuestos previos: estas infraestructuras aportan acceso a servicios financieros y bienes esenciales a comunidades aisladas, actuando como recursos sociales clave.</p>
+        </section>
+
+        <section id="sec-5">
+            <h2>
+                <span class="lang-en">5. Environment, Childhood & Youth</span>
+                <span class="lang-es">5. Entorno Construido, Niñez y Juventud</span>
+            </h2>
+            <p class="lang-en">We connect urban design with childhood development. Our underlying hypothesis posits that crime prevention must begin in the physical environments where children and youth interact, learn, and form perceptions of territory long before entering the justice system.</p>
+            <p class="lang-es">Conectamos el diseño urbano con el desarrollo infantil. La hipótesis de trabajo establece que la prevención de la violencia inicia en los espacios donde los niños y adolescentes crecen e interactúan. Intervenir la infraestructura es prevenir el delito desde la infancia.</p>
+        </section>
+
+        <section id="sec-6">
+            <h2>
+                <span class="lang-en">6. International Academic Agenda — Europe 2026</span>
+                <span class="lang-es">6. Agenda Académica Internacional — Europa 2026</span>
+            </h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h4>QGIS User Conference 2026</h4>
+                    <p><strong>Location / Ubicación:</strong> Laax, Switzerland</p>
+                    <p class="lang-en"><strong>Presentation:</strong> <em>Urban, Social and Environmental Multivalent Factors That Influence Crime Distribution in Tijuana: A Case Study in the Democratization of GIS.</em></p>
+                    <p class="lang-es"><strong>Ponencia:</strong> <em>Factores multivalentes urbanos y sociales que influyen en el crimen en Tijuana: Un estudio de caso en la democratización de los SIG.</em></p>
+                </div>
+                <div class="card">
+                    <h4>Budapest University of Technology & Economics (BME)</h4>
+                    <p><strong>Location / Ubicación:</strong> Budapest, Hungary (Oct 15–17, 2026)</p>
+                    <p class="lang-en"><strong>Role:</strong> Invited Guest Speaker delivering a 90-minute intensive seminar for graduate researchers on interdisciplinary urban systems.</p>
+                    <p class="lang-es"><strong>Rol:</strong> Profesor Invitado impartiendo Cátedra Magistral intensiva de 90 minutos para posgrados e investigadores.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec-7">
+            <h2>
+                <span class="lang-en">7. Academic Lecture at UNAM</span>
+                <span class="lang-es">7. Cátedra Magistral en la UNAM</span>
+            </h2>
+            <p class="lang-en">On August 31, 2026, I delivered an invited academic lecture at the <strong>National Autonomous University of Mexico (UNAM)</strong>, Faculty of Architecture (Taller Arq. Carlos Lazo Barreiro):</p>
+            <p class="lang-es">El 31 de agosto de 2026 impartí la conferencia magistral invitada en la <strong>Universidad Nacional Autónoma de México (UNAM)</strong>, Facultad de Arquitectura:</p>
+            <blockquote class="lang-en">
+                "Psychological and Sociopsychological Effects of the Built Environment on People and Social Dynamics."
+            </blockquote>
+            <blockquote class="lang-es">
+                "Efectos Psicológicos y Sociopsicológicos del Entorno Construido en las Personas y en las Dinámicas Sociales."
+            </blockquote>
+        </section>
+
+        <section id="sec-8">
+            <h2>
+                <span class="lang-en">8. Structural Engineering & Materials Research</span>
+                <span class="lang-es">8. Ingeniería Estructural e Investigación de Materiales</span>
+            </h2>
+            <div class="lang-en">
+                <p>My core engineering track focuses on physical testing and practical material experimentation to validate analytical models:</p>
+                <ul>
+                    <li>Destructive material testing and structural failure mode analysis.</li>
+                    <li>Seismic-resistant design concepts for lightweight systems.</li>
+                    <li>Characterization of conventional and alternative low-cost materials.</li>
+                </ul>
+            </div>
+            <div class="lang-es">
+                <p>Mi segunda vertiente consolidada aborda la experimentación física y el análisis destructivo de materiales para fundamentar los modelos teóricos:</p>
+                <ul>
+                    <li>Pruebas de carga y análisis de modos de falla estructural.</li>
+                    <li>Conceptos de diseño sismorresistente en estructuras ligeras.</li>
+                    <li>Caracterización de materiales convencionales y alternativos de bajo costo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="sec-9">
+            <h2>
+                <span class="lang-en">9. Experimental Models: Cardboard & Bamboo</span>
+                <span class="lang-es">9. Estructuras Experimentales: Cartón y Bambú</span>
+            </h2>
+            <p class="lang-en">A pedagogical initiative focused on constructing and testing earthquake-resistant scaled models using accessible materials. Students analyze stiffness, ductility, load paths, and collapse mechanisms without needing multimillion-dollar lab equipment.</p>
+            <p class="lang-es">Proyecto pedagógico enfocado en el diseño y ensaye sismorresistente con modelos a escala en cartón y bambú. Los alumnos analizan rigidez, ductilidad, trayectorias de cargas y mecanismos de colapso con insumos accesibles.</p>
+        </section>
+
+        <section id="sec-10">
+            <h2>
+                <span class="lang-en">10. Artificial Intelligence for Engineering Education</span>
+                <span class="lang-es">10. Inteligencia Artificial para la Educación en Ingeniería</span>
+            </h2>
+            <p class="lang-en">Development of AI-assisted learning environments tailored for engineering students. AI serves as an interactive teaching assistant for mathematical reasoning, structural calculation reviews, technical writing, and guided experimental analysis.</p>
+            <p class="lang-es">Desarrollo de entornos de aprendizaje asistidos por Inteligencia Artificial Generativa. El objetivo es convertir a la IA en un tutor técnico personalizado capaz de guiar el razonamiento matemático, la revisión de cálculos estructurales y la redacción técnica.</p>
+        </section>
+
+        <section id="sec-11">
+            <h2>
+                <span class="lang-en">11. Multilingual Technical Instruction</span>
+                <span class="lang-es">11. Educación Técnica Multilingüe</span>
+            </h2>
+            <p class="lang-en">To prepare students for international cross-border industrial networks, engineering terminology is taught across three languages:</p>
+            <p class="lang-es">Preparamos a los estudiantes del estado fronterizo de Baja California para la industria global integrando terminología técnica especializada en tres idiomas:</p>
+            
+            <div class="lang-box">
+                Spanish &rarr; English &rarr; 中文 (Mandarin Chinese)
+            </div>
+        </section>
+
+        <section id="sec-12">
+            <h2>
+                <span class="lang-en">12. Open-Source Technology & Democratization</span>
+                <span class="lang-es">12. Software Libre y Democratización del Conocimiento</span>
+            </h2>
+            <p class="lang-en">Relying on open-source tools like QGIS removes financial barriers in spatial analysis. High-level technical knowledge and analytical power should be accessible to all students regardless of institutional budget constraints.</p>
+            <p class="lang-es">Uso prioritario de herramientas Open-Source (QGIS) para eliminar las barreras económicas en el análisis territorial y la educación. El conocimiento técnico avanzado de nivel internacional debe ser accesible sin importar las limitaciones presupuestales.</p>
+        </section>
+
+        <section id="sec-13">
+            <h2>
+                <span class="lang-en">13. Teaching Methodology</span>
+                <span class="lang-es">13. Metodología Docente Activa</span>
+            </h2>
+            <p class="lang-en">Pragmatic learning flow for Civil Engineering students:</p>
+            <p class="lang-es">Cátedra orientada a estudiantes de Ingeniería Civil con un flujo de aprendizaje pragmático:</p>
+            <p><strong>Theory &rarr; Computation &rarr; Physical Experiment &rarr; Observation &rarr; Spatial Analysis &rarr; Technical Communication</strong></p>
+        </section>
+
+        <section id="sec-14">
+            <h2>
+                <span class="lang-en">14. Binational Collaboration (UC San Diego)</span>
+                <span class="lang-es">14. Potencial de Colaboración Binacional (UC San Diego)</span>
+            </h2>
+            <p class="lang-en">Active interest in establishing cross-border research collaborations with <strong>UC San Diego</strong> in urban resilience, environmental criminology, border infrastructure, sustainable structures, and AI-assisted education.</p>
+            <p class="lang-es">Interés abierto en consolidar alianzas transfronterizas con investigadores de **UC San Diego** en temas de resiliencia urbana, criminología ambiental, dinámica de transporte fronterizo, estructuras sostenibles y sistemas educativos impulsados por IA.</p>
+        </section>
+
+        <section id="sec-15">
+            <h2>
+                <span class="lang-en">15. Overall Research Vision</span>
+                <span class="lang-es">15. Visión Integral</span>
+            </h2>
+            <p><strong>Engineering + Infrastructure + Environment + Territory + Society + Education + AI</strong></p>
+            <p class="lang-en">Tijuana provides a unique living laboratory. Our objective is to build rigorous science at the border, validate hypotheses empirically, and bridge findings with the global research community.</p>
+            <p class="lang-es">Tijuana representa un laboratorio urbano idóneo. Nuestro objetivo es generar ciencia desde la frontera, validarla empíricamente y conectar sus hallazgos con las redes de investigación global.</p>
+        </section>
+
+        <section id="sec-16">
+            <h2>
+                <span class="lang-en">16. Selected 2026 Academic Highlights</span>
+                <span class="lang-es">16. Hitos Académicos Destacados (2026)</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">August 2026</div>
+                    <div class="timeline-title">UNAM — Faculty of Architecture</div>
+                    <p class="lang-en">Keynote Lecture on the sociopsychological impacts of the built environment.</p>
+                    <p class="lang-es">Conferencia Magistral sobre el impacto sociopsicológico del entorno construido.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2026</div>
+                    <div class="timeline-title">QGIS User Conference — Laax, Switzerland</div>
+                    <p class="lang-en">Accepted Speaker on multivalent urban factors in Tijuana using QGIS.</p>
+                    <p class="lang-es">Ponente internacional sobre factores multivalentes del crimen en Tijuana usando QGIS.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">October 2026</div>
+                    <div class="timeline-title">Budapest University of Technology & Economics — Hungary</div>
+                    <p class="lang-en">Guest Speaker in an intensive graduate research seminar.</p>
+                    <p class="lang-es">Guest Speaker en Seminario Intensivo de Posgrado para investigadores y maestría.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contact">
+        <div class="contact-card">
+            <h2>
+                <span class="lang-en">Academic & Professional Contact</span>
+                <span class="lang-es">Contacto Académico y Profesional</span>
+            </h2>
+            <p><strong>Eng. Arnoldo Coronado Torres</strong><br>
+            <span class="lang-en">Educator & Researcher | Tecnológico Nacional de México - Campus Tijuana</span>
+            <span class="lang-es">Docente e Investigador | Tecnológico Nacional de México - Campus Tijuana</span></p>
+            
+            <div class="contact-links">
+                <a href="mailto:academico.3053@tectijuana.edu.mx" class="contact-btn">
+                    <span class="lang-en">Academic Email</span>
+                    <span class="lang-es">Email Académico</span>
+                </a>
+                <a href="mailto:cazconsultores2@gmail.com" class="contact-btn">
+                    <span class="lang-en">Professional Email</span>
+                    <span class="lang-es">Email Profesional</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+<script>
+    // Theme Switcher Logic
+    function toggleTheme() {
+        const body = document.documentElement;
+        const themeBtn = document.getElementById('themeToggle');
+        
+        if (body.getAttribute('data-theme') === 'light') {
+            body.removeAttribute('data-theme');
+            themeBtn.innerHTML = '☀️ Light Mode';
+        } else {
+            body.setAttribute('data-theme', 'light');
+            themeBtn.innerHTML = '🌙 Dark Mode';
+        }
+    }
+
+    // Language Switcher Logic
+    let currentLang = 'en';
+    function toggleLang() {
+        const enElements = document.querySelectorAll('.lang-en');
+        const esElements = document.querySelectorAll('.lang-es');
+        
+        if (currentLang === 'en') {
+            enElements.forEach(el => el.style.display = 'none');
+            esElements.forEach(el => el.style.display = 'block');
+            currentLang = 'es';
+        } else {
+            enElements.forEach(el => el.style.display = 'block');
+            esElements.forEach(el => el.style.display = 'none');
+            currentLang = 'en';
+        }
+    }
+</script>
+
+</body>
+</html>
