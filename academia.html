@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia — Lux in Tenebris</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark-theme">
+
+    <!-- HEADER / NAVEGACIÓN PRINCIPAL -->
+    <header class="site-header">
+        <div class="header-container">
+            <h1 class="site-title">Schola Superior — Lux in Tenebris</h1>
+            <nav class="main-nav">
+                <a href="lux-in-tenebris.html">
+                    <span class="lang-es">Blog</span><span class="lang-en">Blog</span><span class="lang-zh">博客</span>
+                </a>
+                <a href="academia.html" class="active">
+                    <span class="lang-es">Academia</span><span class="lang-en">Academia</span><span class="lang-zh">学术院</span>
+                </a>
+                
+                <!-- Selector de Idioma Trilingüe -->
+                <button id="lang-toggle" class="lang-btn">Idioma: ES</button>
+                
+                <!-- Botón Modo Oscuro / Claro -->
+                <button id="theme-toggle" class="theme-btn">🌙 / ☀️</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="academic-layout">
+
+        <!-- ÍNDICE LATERAL (ANCLAS DE NAVEGACIÓN) -->
+        <aside class="academic-sidebar">
+            <h3>
+                <span class="lang-es">Índice Académico</span>
+                <span class="lang-en">Academic Index</span>
+                <span class="lang-zh">学术目录</span>
+            </h3>
+            <ul class="academic-index">
+                <li><a href="#manifiesto">00. <span class="lang-es">Manifiesto</span><span class="lang-en">Manifesto</span><span class="lang-zh">学术宣言</span></a></li>
+                <li><a href="#sustentable">01. <span class="lang-es">Desarrollo Sustentable</span><span class="lang-en">Sustainable Dev.</span><span class="lang-zh">可持续发展</span></a></li>
+                <li><a href="#carreteras">02. <span class="lang-es">Carreteras</span><span class="lang-en">Highways</span><span class="lang-zh">道路工程</span></a></li>
+                <li><a href="#topografia">03. <span class="lang-es">Topografía</span><span class="lang-en">Surveying</span><span class="lang-zh">地形测量</span></a></li>
+                <li><a href="#estructuras">04. <span class="lang-es">Estructuras I y II</span><span class="lang-en">Structures I & II</span><span class="lang-zh">结构力学</span></a></li>
+                <li><a href="#dinamica">05. <span class="lang-es">Dinámica</span><span class="lang-en">Dynamics</span><span class="lang-zh">动力学</span></a></li>
+                <li><a href="#matematicas">06. <span class="lang-es">Matemáticas Aplicadas</span><span class="lang-en">Applied Math</span><span class="lang-zh">应用数学</span></a></li>
+                <li><a href="#optimizacion">07. <span class="lang-es">Optimización</span><span class="lang-en">Optimization</span><span class="lang-zh">资源优化</span></a></li>
+                <li><a href="#transformacion">08. <span class="lang-es">Transformación</span><span class="lang-en">Transformation</span><span class="lang-zh">教育变革</span></a></li>
+                <li><a href="#mandarin">09. <span class="lang-es">Chino Mandarín</span><span class="lang-en">Technical Chinese</span><span class="lang-zh">工程中文</span></a></li>
+                <li><a href="#ecosistema-gis">10. <span class="lang-es">GIS + QField</span><span class="lang-en">GIS + QField</span><span class="lang-zh">地理信息系统</span></a></li>
+                <li><a href="#ia-hub">11. <span class="lang-es">IA Colaborativa</span><span class="lang-en">AI Hub</span><span class="lang-zh">人工智能</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="academic-main-content">
+
+            <!-- 00. MANIFIESTO ACADÉMICO -->
+            <section id="manifiesto" class="academic-card manifesto-card">
+                <h2>
+                    <span class="lang-es">ACADEMIA: MANIFIESTO PEDAGÓGICO</span>
+                    <span class="lang-en">ACADEMIA: PEDAGOGICAL MANIFESTO</span>
+                    <span class="lang-zh">学术院：教学宣言</span>
+                </h2>
+                
+                <div class="video-container" style="margin-bottom:20px;">
+                    <!-- REEMPLAZAR ID_VIDEO_ACADEMIA POR TU ID DE YOUTUBE -->
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_ACADEMIA" title="Video Presentación Academia" allowfullscreen></iframe>
+                </div>
+
+                <p class="lead-quote">
+                    <em class="lang-es">"Ingeniería no se aprende memorizando fórmulas. Se aprende aprendiendo a pensar."</em>
+                    <em class="lang-en">"Engineering is not learned by memorizing formulas. It is learned by learning to think."</em>
+                    <em class="lang-zh">“工程学不是靠背诵公式学会的。它是通过学会思考而掌握的。”</em>
+                </p>
+
+                <div class="lang-es">
+                    <p>Mi trabajo docente parte de una idea sencilla: un ingeniero no debe limitarse a conocer procedimientos; debe comprender sistemas, reconocer relaciones, formular problemas, cuestionar resultados y ser capaz de construir soluciones cuando las condiciones cambian.</p>
+                    <p>Por eso, mis cursos buscan conectar la teoría con problemas reales de ingeniería, territorio, infraestructura, materiales, estructuras, recursos naturales y desarrollo urbano. El aula se convierte en un laboratorio donde las matemáticas, la física, la información geográfica, la programación, la inteligencia artificial y la experiencia profesional dejan de ser disciplinas aisladas y empiezan a funcionar como herramientas de un mismo proceso de razonamiento.</p>
+                </div>
+                <div class="lang-en">
+                    <p>My teaching work stems from a simple idea: an engineer should not be limited to knowing procedures; they must understand systems, recognize relationships, formulate problems, question results, and construct solutions when conditions change.</p>
+                    <p>My courses connect theory with real problems in engineering, territory, infrastructure, structures, and urban development. The classroom becomes a laboratory where math, physics, GIS, AI, and professional experience function as unified tools of reasoning.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>我的教学工作基于一个简单的理念：工程师不应局限于了解程序；他们必须理解系统，识别关系，表达问题，质疑结果，并在条件变化 me 时构建解决方案。</p>
+                    <p>因此，我的课程旨在将理论与工程、领土、基础设施、结构和城市发展的实际问题联系起来。课堂成为一个实验室，数学、物理、地理信息、人工智能和专业经验在其中发挥统一的推理作用。</p>
+                </div>
+            </section>
+
+            <!-- 01. DESARROLLO SUSTENTABLE -->
+            <section id="sustentable" class="academic-card">
+                <h2>
+                    <span class="lang-es">01. DESARROLLO SUSTENTABLE</span>
+                    <span class="lang-en">01. SUSTAINABLE DEVELOPMENT</span>
+                    <span class="lang-zh">01. 可持续发展</span>
+                </h2>
+                <div class="lang-es">
+                    <p>El desarrollo sustentable se aborda más allá de la definición clásica de "satisfacer las necesidades del presente sin comprometer las del futuro". Analizamos la ciudad y la infraestructura como sistemas complejos en los que interactúan variables ambientales, económicas, sociales, territoriales y tecnológicas. Sustentabilidad significa aprender a diseñar pensando simultáneamente en el territorio, los recursos, las personas, la economía y el futuro.</p>
+                </div>
+                <div class="lang-en">
+                    <p>Sustainable development is addressed beyond the classic definition. We analyze cities and infrastructure as complex systems interacting with environmental, economic, social, and technological variables.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>可持续发展超越了传统定义。我们将城市和基础设施分析为与环境、经济、社会和技术变量相互作用的复杂系统。</p>
+                </div>
+                
+                <!-- Galería temporal: Puedes sustituir los src por tu ruta local (ej. assets/sustentable-1.jpg) -->
+                <div class="post-gallery">
+                    <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=600&q=80" alt="Desarrollo Sustentable">
+                    <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=600&q=80" alt="Territorio Sustentable">
+                </div>
+            </section>
+
+            <!-- 02. CARRETERAS -->
+            <section id="carreteras" class="academic-card">
+                <h2>
+                    <span class="lang-es">02. CARRETERAS</span>
+                    <span class="lang-en">02. HIGHWAYS & PAVEMENTS</span>
+                    <span class="lang-zh">02. 道路与工程</span>
+                </h2>
+                <div class="lang-es">
+                    <p>Las carreteras son mucho más que líneas trazadas sobre un plano. En este espacio académico estudiamos cómo una infraestructura modifica el territorio y cómo el territorio, a su vez, condiciona el diseño de la infraestructura. Topografía, geometría, pendientes, curvas, drenaje, materiales, movimiento de tierras, costos y seguridad se integran para comprender el proyecto carretero como un sistema.</p>
+                </div>
+                <div class="lang-en">
+                    <p>Highways are much more than lines drawn on a map. We study how infrastructure modifies territory and how territory conditions design. Geometry, drainage, earthwork, and safety integrate into a unified system.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>公路不仅是图纸上的线条。我们研究基础设施如何改变领土以及领土如何制约设计。几何、排水、土方工程和安全集成在一个统一的系统中。</p>
+                </div>
+                
+                <div class="post-gallery">
+                    <img src="https://images.unsplash.com/photo-1519817650390-64a93db51149?auto=format&fit=crop&w=600&q=80" alt="Diseño Carretero">
+                    <img src="https://images.unsplash.com/photo-1545558014-8692077e9b5c?auto=format&fit=crop&w=600&q=80" alt="Infraestructura Vial">
+                </div>
+            </section>
+
+            <!-- 03. TOPOGRAFÍA -->
+            <section id="topografia" class="academic-card">
+                <h2>
+                    <span class="lang-es">03. TOPOGRAFÍA</span>
+                    <span class="lang-en">03. GEODETIC SURVEYING</span>
+                    <span class="lang-zh">03. 地形测量学</span>
+                </h2>
+                <div class="lang-es">
+                    <p>La topografía constituye uno de los primeros vínculos entre el ingeniero y el territorio. Trabajamos con la representación matemática y espacial de la superficie terrestre. La topografía se conecta aquí con Sistemas de Información Geográfica, modelos digitales de elevación, cartografía, georreferenciación y análisis espacial. El terreno deja de ser simplemente una superficie y se convierte en información.</p>
+                </div>
+                <div class="lang-en">
+                    <p>Surveying connects the engineer to the territory. Terrain transforms from a mere physical surface into spatial information via GIS, Digital Elevation Models, and georeferencing.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>测量学将工程师与领土连接起来。通过地理信息系统、数字高程模型和地理引用，地形从单纯的物理表面转化为空间信息。</p>
+                </div>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_TOPOGRAFIA" title="Topografía" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 04. ESTRUCTURAS I Y II -->
+            <section id="estructuras" class="academic-card">
+                <h2>
+                    <span class="lang-es">04. ESTRUCTURAS I Y II</span>
+                    <span class="lang-en">04. STRUCTURES I & II</span>
+                    <span class="lang-zh">04. 结构力学 I 与 II</span>
+                </h2>
+                <div class="lang-es">
+                    <p>En Estructuras I y II buscamos que el estudiante deje de considerar las estructuras como una serie de ecuaciones que deben memorizarse. Una estructura es un sistema que recibe acciones, distribuye fuerzas y transforma cargas en respuestas. La pregunta fundamental no es solamente: <strong>"¿Cuál es el resultado?"</strong> sino: <strong>"¿Por qué la estructura se comporta así?"</strong></p>
+                </div>
+                <div class="lang-en">
+                    <p>A structure is a system that receives actions, distributes forces, and transforms loads into responses. The key question is not just "What is the result?" but "Why does the structure behave this way?"</p>
+                </div>
+                <div class="lang-zh">
+                    <p>结构是一个接收作用、分配力并将荷载转化为响应的系统。关键问题不仅是“结果是什么？”，而是“为什么结构会这样表现？”</p>
+                </div>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_ESTRUCTURAS" title="Estructuras" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 05. DINÁMICA -->
+            <section id="dinamica" class="academic-card">
+                <h2>
+                    <span class="lang-es">05. DINÁMICA</span>
+                    <span class="lang-en">05. DYNAMICS</span>
+                    <span class="lang-zh">05. 动力学</span>
+                </h2>
+                <div class="lang-es">
+                    <p>La dinámica introduce al estudiante en una idea fundamental de la ingeniería: <strong>los sistemas no solamente existen; cambian.</strong> Movimiento, aceleración, fuerzas, energía, impulso y respuesta dinámica se convierten en herramientas para comprender fenómenos en estructuras y sistemas físicos. Desarrollamos la capacidad de construir modelos antes de intentar resolverlos.</p>
+                </div>
+                <div class="lang-en">
+                    <p>Systems do not merely exist; they change. Dynamics covers motion, acceleration, energy, and dynamic structural response to build descriptive mental models.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>系统不仅存在，而且在变化。动力学涵盖运动、加速度、能量和动态结构响应，以构建描述性思维模型。</p>
+                </div>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_DINAMICA" title="Dinámica" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 06. MATEMÁTICAS APLICADAS -->
+            <section id="matematicas" class="academic-card">
+                <h2>
+                    <span class="lang-es">06. MATEMÁTICAS APLICADAS</span>
+                    <span class="lang-en">06. APPLIED MATHEMATICS</span>
+                    <span class="lang-zh">06. 应用数学</span>
+                </h2>
+                <div class="lang-es">
+                    <p>Las matemáticas son el lenguaje mediante el cual podemos representar relaciones entre variables. En Matemáticas Aplicadas trabajamos con problemas de ingeniería para comprender qué representa una ecuación y qué información se extrae de un modelo. La meta es aprender a formular correctamente el problema que las ecuaciones deben resolver.</p>
+                </div>
+                <div class="lang-en">
+                    <p>Math is the language used to express relationships between variables. The goal is not merely solving equations, but properly formulating the engineering problem.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>数学是用于表达变量之间关系的语言。目标不仅是解方程，而是正确地表达工程问题。</p>
+                </div>
+
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/ID_VIDEO_MATEMATICAS" title="Matemáticas Aplicadas" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- 07. MODELOS DE OPTIMIZACIÓN DE RECURSOS -->
+            <section id="optimizacion" class="academic-card">
+                <h2>
+                    <span class="lang-es">07. MODELOS DE OPTIMIZACIÓN DE RECURSOS</span>
+                    <span class="lang-en">07. RESOURCE OPTIMIZATION MODELS</span>
+                    <span class="lang-zh">07. 资源优化模型</span>
+                </h2>
+                <div class="lang-es">
+                    <p>En ingeniería no tenemos recursos infinitos: hay tiempo, presupuesto y materiales limitados. Los modelos de optimización permiten transformar restricciones en problemas matemáticos y buscar soluciones eficientes. La pregunta pasa de ser <em>"¿Qué solución funciona?"</em> a <strong>"¿Cuál es la mejor solución posible dadas las condiciones?"</strong></p>
+                </div>
+                <div class="lang-en">
+                    <p>Optimization transforms time, budget, and material constraints into mathematical models. We shift from "What works?" to "What is the best solution under real conditions?"</p>
+                </div>
+                <div class="lang-zh">
+                    <p>优化将时间、预算和材料限制转化为数学模型。我们从“什么有效？”转变为“在实际条件下什么是最佳解决方案？”</p>
+                </div>
+
+                <div class="post-gallery">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Optimización">
+                </div>
+            </section>
+
+            <!-- 08. UNA ACADEMIA EN TRANSFORMACIÓN -->
+            <section id="transformacion" class="academic-card">
+                <h2>
+                    <span class="lang-es">08. UNA ACADEMIA EN TRANSFORMACIÓN</span>
+                    <span class="lang-en">08. ACADEMIA IN TRANSFORMATION</span>
+                    <span class="lang-zh">08. 变革中的学术界</span>
+                </h2>
+                <div class="lang-es">
+                    <p>Incorporamos Sistemas de Información Geográfica (GIS/SIG) de manera transversal. QGIS y QField permiten llevar el análisis espacial desde el escritorio hasta el territorio: observación de campo, georreferenciación, infraestructura, medio ambiente y documentación. Un SIG es una herramienta para pensar espacialmente.</p>
+                </div>
+                <div class="lang-en">
+                    <p>Integrating GIS transversally across all engineering subjects. QGIS and QField bring desktop analysis to field operational reality.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>在所有工程学科中横向集成地理信息系统。QGIS和QField将桌面分析带入现场实际操作。</p>
+                </div>
+            </section>
+
+            <!-- 09. CHINO MANDARÍN TÉCNICO -->
+            <section id="mandarin" class="academic-card highlight-card">
+                <h2>
+                    <span class="lang-es">09. INGLÉS, CHINO Y EL LENGUAJE DE LA INGENIERÍA</span>
+                    <span class="lang-en">09. TECHNICAL ENGLISH & MANDARIN CHINESE</span>
+                    <span class="lang-zh">09. 工程英语与中文专业术语</span>
+                </h2>
+                <div class="lang-es">
+                    <p>Introducimos vocabulario técnico de ingeniería en español, inglés y chino mandarín (普通话) como una herramienta cognitiva. El inglés abre el lenguaje internacional de la ingeniería; el chino conecta con el centro industrial y constructivo global. Rompemos paradigmas mostrando cómo un concepto se conceptualiza en distintas culturas.</p>
+                </div>
+                <div class="lang-en">
+                    <p>Integrating technical vocabulary in Spanish, English, and Mandarin Chinese as cognitive tools to foster multi-perspective logical reasoning.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>融合西班牙语、英语和中文普通话的工程专业术语，作为促进多视角逻辑推理的认知工具。</p>
+                </div>
+
+                <div class="download-container" style="margin-top:20px;">
+                    <a href="assets/Vocabulario_Tecnico_Mandarin_Ingenieria.pdf" class="doc-link lang-es" target="_blank" download>
+                        📄 Descargar PDF: Vocabulario Técnico (CN / EN / ES)
+                    </a>
+                    <a href="assets/Vocabulario_Tecnico_Mandarin_Ingenieria.pdf" class="doc-link lang-en" target="_blank" download>
+                        📄 Download PDF: Technical Vocabulary (CN / EN / ES)
+                    </a>
+                    <a href="assets/Vocabulario_Tecnico_Mandarin_Ingenieria.pdf" class="doc-link lang-zh" target="_blank" download>
+                        📄 下载 PDF：工程技术词汇表 (中 / 英 / 西)
+                    </a>
+                </div>
+            </section>
+
+            <!-- 10. ECOSISTEMA GIS & QFIELD -->
+            <section id="ecosistema-gis" class="academic-card">
+                <h2>
+                    <span class="lang-es">10. QGIS + QFIELD + INGENIERÍA</span>
+                    <span class="lang-en">10. QGIS + QFIELD ECOSYSTEM</span>
+                    <span class="lang-zh">10. QGIS + QFIELD 生态系统</span>
+                </h2>
+                <div class="lang-es">
+                    <p>Flujo completo de trabajo territorial: <strong>Territorio → Datos → SIG → Modelo → IA → Razonamiento → Decisión.</strong></p>
+                </div>
+                <div class="lang-en">
+                    <p>End-to-end spatial pipeline: <strong>Territory → Data → GIS → Model → AI → Reasoning → Decision.</strong></p>
+                </div>
+                <div class="lang-zh">
+                    <p>端到端空间工作流程：<strong>领土 → 数据 → 地理信息系统 → 模型 → 人工智能 → 推理 → 决策。</strong></p>
+                </div>
+
+                <div class="button-group" style="margin-top: 15px;">
+                    <a href="https://qgis.org/en/site/forusers/download.html" class="doc-link" target="_blank">🌐 QGIS Desktop</a>
+                    <a href="https://qfield.org/get" class="doc-link" target="_blank">📱 QField Mobile</a>
+                </div>
+            </section>
+
+            <!-- 11. IA + HUGGING FACE -->
+            <section id="ia-hub" class="academic-card highlight-card">
+                <h2>
+                    <span class="lang-es">11. DEL MAPA A LA INTELIGENCIA ARTIFICIAL</span>
+                    <span class="lang-en">11. INTERACTIVE AI RESEARCH HUB</span>
+                    <span class="lang-zh">11. 从地图到人工智能</span>
+                </h2>
+                <div class="lang-es">
+                    <p>La IA es un tutor, crítico y simulador. En lugar de preguntar únicamente <em>"¿Cuál es la respuesta?"</em> enseñamos a cuestionar: <strong>"¿Cómo sabes que esa respuesta es correcta?"</strong></p>
+                </div>
+                <div class="lang-en">
+                    <p>AI acts as a tutor, critic, and simulator. We train students to question AI reasoning and develop critical thinking.</p>
+                </div>
+                <div class="lang-zh">
+                    <p>人工智能充当导师、批判者和模拟器。我们训练学生质疑人工智能的推理并培养批判性思维。</p>
+                </div>
+
+                <div style="margin-top:20px;">
+                    <a href="https://huggingface.co/spaces" class="doc-link" target="_blank">
+                        🤗 <span class="lang-es">Hugging Face Spaces (IA)</span>
+                           <span class="lang-en">Hugging Face Spaces (AI)</span>
+                           <span class="lang-zh">Hugging Face 人工智能空间</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- SCRIPT DE INTERACCIÓN (IDIOMAS Y MODO OSCURO) -->
+    <script>
+        // 1. LÓGICA DE CAMBIO DE IDIOMA (ES -> EN -> ZH)
+        const langBtn = document.getElementById('lang-toggle');
+        const languages = ['es', 'en', 'zh'];
+        let currentIndex = 0;
+
+        langBtn.addEventListener('click', () => {
+            document.body.classList.remove('lang-en-active', 'lang-zh-active');
+            currentIndex = (currentIndex + 1) % languages.length;
+            const selectedLang = languages[currentIndex];
+
+            if (selectedLang === 'en') {
+                document.body.classList.add('lang-en-active');
+                langBtn.textContent = 'Language: EN';
+            } else if (selectedLang === 'zh') {
+                document.body.classList.add('lang-zh-active');
+                langBtn.textContent = 'Language: 中文';
+            } else {
+                langBtn.textContent = 'Idioma: ES';
+            }
+        });
+
+        // 2. LÓGICA DE CAMBIO DE TEMA (DARK / LIGHT)
+        const themeBtn = document.getElementById('theme-toggle');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-theme');
+            document.body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+</html>
