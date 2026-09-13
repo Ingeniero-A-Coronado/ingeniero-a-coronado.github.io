@@ -65,12 +65,27 @@
 </head>
 <body>
 
-<!-- Floating Controls -->
+<!-- Barra de controles flotantes -->
 <div class="controls-bar">
-    <a href="index.html" class="control-btn" style="text-decoration: none;">🏠 <span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span></a>
-    <a href="comunidad.html" class="control-btn" style="text-decoration: none;">🗣️ <span class="lang-en">Chats & Social</span><span class="lang-es">Chats & Redes</span><span class="lang-zh">聊天与社交</span></a>
-    <button class="control-btn" id="themeToggle" onclick="toggleTheme()">☀️ Light Mode</button>
-    <button class="control-btn" id="langToggle" onclick="toggleLang()">🌐 EN</button>
+    <!-- 1. Botón Inicio con Flecha -->
+    <a href="index.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+        &larr;&nbsp;<span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
+    </a>
+
+    <!-- 2. Botón Comunidad (Centrado) -->
+    <a href="comunidad.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+        <span class="lang-en">Community</span><span class="lang-es">Comunidad</span><span class="lang-zh">社区</span>
+    </a>
+
+    <!-- 3. Botón Cambio de Tema (Sol/Luna + Mode) -->
+    <button class="control-btn" id="themeToggle" onclick="toggleTheme()" style="display: inline-flex; align-items: center; justify-content: center;">
+        ☀️
+    </button>
+
+    <!-- 4. Botón Idioma -->
+    <button class="control-btn" id="langToggle" onclick="toggleLang()" style="display: inline-flex; align-items: center; justify-content: center;">
+        🌐 EN
+    </button>
 </div>
 
 <div class="container">
