@@ -1,20 +1,15 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const path = window.location.pathname.split("/").pop();
-  
-  // Ruteo de salas por sección
-  let sectionId = "comunidad-general";
-  if (path === "academia.html") {
-    sectionId = "academia-forum";
-  } else if (path === "resources.html") {
-    sectionId = "recursos-forum";
-  }
+  const container = document.getElementById("utterances-container");
 
-  // Inicialización oficial
-  initComments({
-    node: document.getElementById("cactus-chat-thread"),
-    defaultHomeserverUrl: "https://matrix.cactus.chat:8448",
-    serverName: "cactus.chat",
-    siteName: "ingeniero-a-coronado",
-    commentSectionId: sectionId
-  });
+  if (container) {
+    const script = document.createElement("script");
+    script.src = "https://utteranc.es/client.js";
+    script.setAttribute("repo", "ingeniero-a-coronado/ingeniero-a-coronado.github.io");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-dark");
+    script.setAttribute("crossorigin", "anonymous");
+    script.async = true;
+
+    container.appendChild(script);
+  }
 });
