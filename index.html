@@ -12,10 +12,11 @@
 
     <!-- Enlace al CSS unificado del repositorio -->
     <link rel="stylesheet" href="style.css">
-    <!-- CSS de Cactus Chat -->
-    <link rel="stylesheet" href="https://unpkg.com/cactus-chat@latest/style.css" type="text/css">
-</head>
 
+    <!-- Cactus Chat (Estilos + CDN) -->
+    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+</head>
 <body>
 
 <div class="controls-bar">
@@ -113,16 +114,12 @@
 
         </div>
 
-        <!-- Contenedor del foro dentro del main -->
-        <section id="foro-container" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333);">
-            <h2>
-                <span class="lang-en">Community Forum</span>
-                <span class="lang-es">Foro de Discusión</span>
-                <span class="lang-zh">讨论论坛</span>
-            </h2>
+        <!-- SECCIÓN DEL FORO (Cactus Chat) -->
+        <section class="forum-section">
+            <h2 class="forum-header">💬 Community Forum</h2>
+            <p class="forum-sub">Encrypted open-source discussion thread for students and researchers.</p>
             <div id="cactus-chat-thread"></div>
         </section>
-
     </main>
 
     <footer>
@@ -136,9 +133,8 @@
 
 </div>
 
-<!-- JS Global y Modular del Foro al final del body -->
+<!-- Scripts de control general y foro -->
 <script src="script.js"></script>
-<script src="https://unpkg.com/cactus-chat@latest"></script>
 <script src="forum.js"></script>
 </body>
 </html>
