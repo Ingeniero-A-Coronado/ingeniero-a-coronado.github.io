@@ -10,15 +10,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Enlace al CSS unificado del repositorio (style.css) -->
+    <!-- Enlace al CSS unificado del repositorio -->
     <link rel="stylesheet" href="style.css">
+    <!-- CSS de Cactus Chat -->
+    <link rel="stylesheet" href="https://unpkg.com/cactus-chat@latest/style.css" type="text/css">
 </head>
+
 <body>
 
 <div class="controls-bar">
     <a href="index.html" class="control-btn" style="text-decoration: none;">
-    🏠 <span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
-</a>
+        🏠 <span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
+    </a>
     <button class="control-btn" id="themeToggle" onclick="toggleTheme()">☀️ Light Mode</button>
     <button class="control-btn" id="langToggle" onclick="toggleLang()">🌐 EN</button>
 </div>
@@ -109,6 +112,17 @@
             </a>
 
         </div>
+
+        <!-- Contenedor del foro dentro del main -->
+        <section id="foro-container" style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border-color, #333);">
+            <h2>
+                <span class="lang-en">Community Forum</span>
+                <span class="lang-es">Foro de Discusión</span>
+                <span class="lang-zh">讨论论坛</span>
+            </h2>
+            <div id="cactus-chat-thread"></div>
+        </section>
+
     </main>
 
     <footer>
@@ -122,7 +136,9 @@
 
 </div>
 
-<!-- Enlace al JavaScript unificado -->
+<!-- JS Global y Modular del Foro al final del body -->
 <script src="script.js"></script>
+<script src="https://unpkg.com/cactus-chat@latest"></script>
+<script src="forum.js"></script>
 </body>
 </html>
