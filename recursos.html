@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos & Wishlist | Lux in Tenebris</title>
+    <meta name="description" content="Dynamic repository of files, research materials, and request wishlist.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Estilos locales -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bar de controles flotantes -->
+    <div class="controls-bar">
+        <a href="index.html" class="control-btn">&larr; <span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span></a>
+        <button class="control-btn" id="themeToggle" onclick="toggleTheme()">☀️ Light Mode</button>
+        <button class="control-btn" id="langToggle" onclick="toggleLang()">🌐 EN</button>
+    </div>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="blog-header">
+            <h1 class="blog-title">
+                <span class="lang-en">Resources & Downloads</span>
+                <span class="lang-es">Recursos y Descargas</span>
+                <span class="lang-zh">资源与下载</span>
+            </h1>
+            <p class="blog-subtitle lang-en">Central repository for GIS datasets, academic documents, media files, and feature requests.</p>
+            <p class="blog-subtitle lang-es">Repositorio central de datos SIG, documentos académicos, multimedia y solicitudes.</p>
+            <p class="blog-subtitle lang-zh">GIS数据集、学术文档、多媒体文件及需求列表的中央存储库。</p>
+        </header>
+
+        <!-- Buscador de Recursos -->
+        <section class="search-section">
+            <input type="text" id="searchInput" onkeyup="filterResources()" placeholder="🔍 Search resources / Buscar recursos / 搜索资源...">
+        </section>
+
+        <!-- Lista de Recursos Dynamic Hub -->
+        <main class="post-card">
+            <h2 class="post-title">
+                📦 <span class="lang-en">Available Files</span>
+                <span class="lang-es">Archivos Disponibles</span>
+                <span class="lang-zh">可用文件</span>
+            </h2>
+            
+            <div id="resourcesContainer" class="resources-grid">
+                <!-- Se poblará dinámicamente mediante recursos.js -->
+            </div>
+        </main>
+
+        <!-- Wishlist / Lista de Deseos Interactiva -->
+        <section class="forum-section" style="margin-top: 3rem;">
+            <h3 class="forum-header">
+                ⭐ <span class="lang-en">Resource Wishlist & Requests</span>
+                <span class="lang-es">Lista de Deseos y Solicitudes</span>
+                <span class="lang-zh">愿望清单与需求</span>
+            </h3>
+            <p class="forum-sub lang-en">Add items, datasets, or documents you would like to see added to the repository.</p>
+            <p class="forum-sub lang-es">Agrega elementos, datos o documentos que te gustaría ver en este repositorio.</p>
+            <p class="forum-sub lang-zh">添加您希望加入存储库的资源、数据集或文档。</p>
+
+            <div class="wishlist-form">
+                <input type="text" id="wishlistInput" placeholder="Add new request / Agregar solicitud / 添加新需求...">
+                <button onclick="addWishlistItem()" class="doc-link" style="cursor: pointer;">
+                    ➕ <span class="lang-en">Add</span><span class="lang-es">Agregar</span><span class="lang-zh">添加</span>
+                </button>
+            </div>
+
+            <ul id="wishlistContainer" class="wishlist-list">
+                <!-- Elementos agregados dinámicamente -->
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Lux in Tenebris — Official Research Log of Ing. Arnoldo Coronado Torres</p>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="recursos.js"></script>
+</body>
+</html>
