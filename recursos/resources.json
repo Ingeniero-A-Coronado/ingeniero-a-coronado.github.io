@@ -1,23 +1,65 @@
 [
   {
-    "title": "Matriz de Datos SIG - Tijuana 2026",
-    "filename": "matriz_sig_tijuana.xlsx",
+    "title": "Estructuras Para Arquitectos",
+    "filename": "Estructuras_Para_Arquitectos_Mario_Salva.pdf",
+    "type": "pdf",
+    "category": "Structural Engineering",
+    "description": "Texto y manual de estructuras aplicadas a la arquitectura (Mario Salva)."
+  },
+  {
+    "title": "FRAMECAD Book: Steel Framing Construction",
+    "filename": "FRAMECADEBook-SteelFramingTheFutureofResidentialConstructionUSpdf.pdf",
+    "type": "pdf",
+    "category": "Steel Framing",
+    "description": "Ebook sobre el futuro de la construcción residencial en acero ligero (LGS)."
+  },
+  {
+    "title": "Glosario Técnico Multilingüe - Ingeniería Civil V3",
+    "filename": "Glosario Tecnico Multilingue - Ingenieria Civil V3.docx",
+    "type": "docx",
+    "category": "Terminology & Dictionaries",
+    "description": "Documento Word con glosario técnico multilingüe especializado en Ingeniería Civil."
+  },
+  {
+    "title": "Glosario Técnico Multilingüe - Personal de Obra Civil",
+    "filename": "Glosario Tecnico Multilingue - Personal de Obra Civil.pdf",
+    "type": "pdf",
+    "category": "Terminology & Dictionaries",
+    "description": "Guía en PDF de vocabulario y términos técnicos para personal en campo y obra."
+  },
+  {
+    "title": "Método de Hardy Cross y Kani",
+    "filename": "METODO_DE_HARDY_CROSS_Y_KANI.pdf",
+    "type": "pdf",
+    "category": "Structural Engineering",
+    "description": "Documento explicativo sobre análisis de estructuras indeterminadas y marcos."
+  },
+  {
+    "title": "analisis por kani - Marquito",
+    "filename": "marquito.xlsx",
     "type": "excel",
+    "category": "Kani method annalysis",
+    "description": "Hoja de cálculo en Excel para análisis de marcos / estructuras."
+  },
+  {
+    "title": "Tema 1: Measurements (Mediciones)",
+    "filename": "tema 1 measurements.pdf",
+    "type": "pdf",
+    "category": "Course Materials",
+    "description": "Unidad de estudio y conceptos sobre mediciones técnicas en ingeniería."
+  },
+  {
+    "title": "Vocabulario de Mediciones en Ingeniería Civil",
+    "filename": "vocabulario_mediciones_ingenieria_civil.pdf",
+    "type": "pdf",
+    "category": "Terminology & Dictionaries",
+    "description": "Glosario técnico sobre medición de obra, volúmenes y presupuestos."
+  },
+  {
+    "title": "World Boundaries (Shapefile)",
+    "filename": "world-boundaries-SHP.zip",
+    "type": "zip",
     "category": "GIS Data",
-    "description": "Base de datos en Excel con coordenadas y densidad de iluminación pública."
-  },
-  {
-    "title": "Mapa de Relieve Alta Resolución",
-    "filename": "relievetij.png",
-    "type": "image",
-    "category": "Cartography",
-    "description": "Modelo digital de elevación (DEM) procesado en QGIS."
-  },
-  {
-    "title": "Audio de Campo - Entrevistas Ambientales",
-    "filename": "entrevista_campo_01.mp3",
-    "type": "audio",
-    "category": "Media",
-    "description": "Registro de audio durante la inspección de infraestructura urbana."
+    "description": "Archivo ZIP comprimido con capas vectoriales (Shapefile) de límites mundiales para QGIS."
   }
 ]
