@@ -1,21 +1,21 @@
 /**
  * Inicializador global de Cactus Chat para el foro
  */
-function initForum(sectionId = "cactus-chat-thread") {
-  const container = document.getElementById(sectionId);
-  if (!container) return; // Si la página no tiene la sección del foro, no ejecuta nada
+function initForum() {
+  const container = document.getElementById("cactus-chat-thread");
+  if (!container) return; // Si la página no tiene el contenedor, no ejecuta nada
 
-  // Configuración de Cactus Chat apuntando a tu sala pública de Matrix
+  // Inicialización oficial de Cactus Chat
   initCactusChat({
     defaultServerName: "matrix.org",
     cactusName: "cactusbot",
     serverName: "matrix.org",
     siteName: "ingeniero-a-coronado",
-    commentSectionId: `#lux-in-tenebris-forum:matrix.org`
+    commentSectionId: "lux-in-tenebris-forum"
   });
 }
 
-// Carga la función automáticamente cuando el DOM está listo
+// Carga la función automáticamente al montar el DOM
 document.addEventListener("DOMContentLoaded", () => {
   initForum();
 });
