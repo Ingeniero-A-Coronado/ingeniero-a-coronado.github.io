@@ -11,10 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Cactus.chat CSS & JS (Sistema de Foro y Comentarios) -->
-    <link rel="stylesheet" href="https://unpkg.com/@cactus-chat/element@latest/dist/style.css" type="text/css">
-    <script type="text/javascript" src="https://unpkg.com/@cactus-chat/element@latest/dist/cactus-chat.umd.js"></script>
-
     <!-- Estilos locales -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,7 +18,12 @@
 
     <!-- Floating Controls -->
     <div class="controls-bar">
-        <a href="index.html" class="control-btn">&larr; <span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span></a>
+        <a href="index.html" class="control-btn" style="text-decoration: none;">
+            &larr; <span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
+        </a>
+        <a href="comunidad.html" class="control-btn" style="text-decoration: none;">
+            🗣️ <span class="lang-en">Chats & Social</span><span class="lang-es">Chats & Redes</span><span class="lang-zh">聊天与社交</span>
+        </a>
         <button class="control-btn" id="themeToggle" onclick="toggleTheme()">☀️ Light Mode</button>
         <button class="control-btn" id="langToggle" onclick="toggleLang()">🌐 EN</button>
     </div>
@@ -57,7 +58,7 @@
                 <div class="post-content">
                     <p class="lang-en">Finalizing slide decks, cartographic datasets, and spatial analysis models to present our research on Environmental Criminology and Urban Spatial Dynamics in Tijuana. Next stop: Switzerland and Budapest University of Technology and Economics (BME).</p>
                     <p class="lang-es">Finalizando diapositivas, conjuntos de datos cartográficos y modelos de análisis espacial para presentar nuestra investigación sobre Criminología Ambiental y Dinámica Espacial Urbana en Tijuana. Próximas paradas: Suiza y la Universidad de Tecnología y Economía de Budapest (BME).</p>
-                    <p class="lang-zh">正在完善演讲幻灯片、地图数据集及空间分析模型，以展示我们在蒂华纳（Tijuana）关于环境犯罪学与城市空间动态的研究。下一站：瑞士与布达佩斯技术 supplied 与经济大学（BME）。</p>
+                    <p class="lang-zh">正在完善演讲幻灯片、地图数据集及空间分析模型，以展示我们在蒂华纳（Tijuana）关于环境犯罪学与城市空间动态的研究。下一站：瑞士与布达佩斯技术与经济大学（BME）。</p>
                 </div>
 
                 <!-- PDF Attachment Links -->
@@ -103,14 +104,22 @@
 
         </main>
 
-      <!-- SECCIÓN DEL FORO -->
-<section class="forum-section">
-    <h2 class="forum-header">💬 Foro de Discusión</h2>
-    <p class="forum-sub">Deja tus dudas, aportaciones o comentarios sobre esta sección.</p>
-    
-    <!-- Contenedor dinámico cargado por forum.js -->
-    <div id="utterances-container"></div>
-</section>
+        <!-- SECCIÓN DEL FORO -->
+        <section class="forum-section">
+            <h2 class="forum-header">
+                <span class="lang-en">💬 Community Forum</span>
+                <span class="lang-es">💬 Foro de Discusión</span>
+                <span class="lang-zh">💬 社区论坛</span>
+            </h2>
+            <p class="forum-sub">
+                <span class="lang-en">Open discussion thread for students and researchers.</span>
+                <span class="lang-es">Espacio de comentarios y debate para alumnos e investigadores.</span>
+                <span class="lang-zh">面向学生和研究人员的开放讨论区。</span>
+            </p>
+            
+            <!-- Contenedor dinámico cargado por forum.js -->
+            <div id="utterances-container"></div>
+        </section>
 
         <!-- Footer -->
         <footer>
@@ -122,5 +131,6 @@
 
     <!-- Lógica JS local -->
     <script src="script.js"></script>
+    <script src="forum.js"></script>
 </body>
 </html>
