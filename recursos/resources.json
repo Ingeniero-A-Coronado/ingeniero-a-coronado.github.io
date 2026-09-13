@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Matriz de Datos SIG - Tijuana 2026",
+    "filename": "matriz_sig_tijuana.xlsx",
+    "type": "excel",
+    "category": "GIS Data",
+    "description": "Base de datos en Excel con coordenadas y densidad de iluminación pública."
+  },
+  {
+    "title": "Mapa de Relieve Alta Resolución",
+    "filename": "relievetij.png",
+    "type": "image",
+    "category": "Cartography",
+    "description": "Modelo digital de elevación (DEM) procesado en QGIS."
+  },
+  {
+    "title": "Audio de Campo - Entrevistas Ambientales",
+    "filename": "entrevista_campo_01.mp3",
+    "type": "audio",
+    "category": "Media",
+    "description": "Registro de audio durante la inspección de infraestructura urbana."
+  }
+]
