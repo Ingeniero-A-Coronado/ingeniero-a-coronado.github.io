@@ -1,65 +1,1016 @@
 [
+  // --- ARCHIVOS PREVIOS ---
   {
-    "title": "Estructuras Para Arquitectos",
+    "title": {
+      "en": "Structures for Architects",
+      "es": "Estructuras Para Arquitectos",
+      "zh": "建筑师结构学"
+    },
     "filename": "Estructuras_Para_Arquitectos_Mario_Salva.pdf",
     "type": "pdf",
-    "category": "Structural Engineering",
-    "description": "Texto y manual de estructuras aplicadas a la arquitectura (Mario Salva)."
+    "category": {
+      "en": "Structural Engineering",
+      "es": "Ingeniería Estructural",
+      "zh": "结构工程"
+    },
+    "description": {
+      "en": "Textbook and manual of structures applied to architecture (Mario Salva).",
+      "es": "Texto y manual de estructuras aplicadas a la arquitectura (Mario Salva).",
+      "zh": "应用于建筑的结构教材与手册 (Mario Salva)。"
+    }
   },
   {
-    "title": "FRAMECAD Book: Steel Framing Construction",
+    "title": {
+      "en": "FRAMECAD Book: Steel Framing Construction",
+      "es": "Libro FRAMECAD: Construcción en Acero Ligero",
+      "zh": "FRAMECAD 图书：轻钢结构建筑"
+    },
     "filename": "FRAMECADEBook-SteelFramingTheFutureofResidentialConstructionUSpdf.pdf",
     "type": "pdf",
-    "category": "Steel Framing",
-    "description": "Ebook sobre el futuro de la construcción residencial en acero ligero (LGS)."
+    "category": {
+      "en": "Steel Framing",
+      "es": "Estructuras de Acero",
+      "zh": "轻钢结构"
+    },
+    "description": {
+      "en": "Ebook on the future of residential construction in light gauge steel (LGS).",
+      "es": "Ebook sobre el futuro de la construcción residencial en acero ligero (LGS).",
+      "zh": "关于轻型钢结构 (LGS) 住宅建筑未来的电子书。"
+    }
   },
   {
-    "title": "Glosario Técnico Multilingüe - Ingeniería Civil V3",
+    "title": {
+      "en": "Multilingual Technical Glossary - Civil Engineering V3",
+      "es": "Glosario Técnico Multilingüe - Ingeniería Civil V3",
+      "zh": "多语言技术词汇表 - 土木工程 V3"
+    },
     "filename": "Glosario Tecnico Multilingue - Ingenieria Civil V3.docx",
     "type": "docx",
-    "category": "Terminology & Dictionaries",
-    "description": "Documento Word con glosario técnico multilingüe especializado en Ingeniería Civil."
+    "category": {
+      "en": "Terminology & Dictionaries",
+      "es": "Terminología y Diccionarios",
+      "zh": "术语与词典"
+    },
+    "description": {
+      "en": "Word document with multilingual technical glossary specialized in Civil Engineering.",
+      "es": "Documento Word con glosario técnico multilingüe especializado en Ingeniería Civil.",
+      "zh": "专注于土木工程的专业多语言技术术语 Word 文档。"
+    }
   },
   {
-    "title": "Glosario Técnico Multilingüe - Personal de Obra Civil",
+    "title": {
+      "en": "Multilingual Technical Glossary - Civil Works Personnel",
+      "es": "Glosario Técnico Multilingüe - Personal de Obra Civil",
+      "zh": "多语言技术词汇表 - 土木工程人员"
+    },
     "filename": "Glosario Tecnico Multilingue - Personal de Obra Civil.pdf",
     "type": "pdf",
-    "category": "Terminology & Dictionaries",
-    "description": "Guía en PDF de vocabulario y términos técnicos para personal en campo y obra."
+    "category": {
+      "en": "Terminology & Dictionaries",
+      "es": "Terminología y Diccionarios",
+      "zh": "术语与词典"
+    },
+    "description": {
+      "en": "PDF guide for technical vocabulary and terms for field and construction site personnel.",
+      "es": "Guía en PDF de vocabulario y términos técnicos para personal en campo y obra.",
+      "zh": "面向施工现场人员的技术词汇和术语 PDF 指南。"
+    }
   },
   {
-    "title": "Método de Hardy Cross y Kani",
+    "title": {
+      "en": "Hardy Cross and Kani Method",
+      "es": "Método de Hardy Cross y Kani",
+      "zh": "哈代-克罗斯与卡尼法"
+    },
     "filename": "METODO_DE_HARDY_CROSS_Y_KANI.pdf",
     "type": "pdf",
-    "category": "Structural Engineering",
-    "description": "Documento explicativo sobre análisis de estructuras indeterminadas y marcos."
+    "category": {
+      "en": "Structural Engineering",
+      "es": "Ingeniería Estructural",
+      "zh": "结构工程"
+    },
+    "description": {
+      "en": "Explanatory document on analysis of indeterminate structures and frames.",
+      "es": "Documento explicativo sobre análisis de estructuras indeterminadas y marcos.",
+      "zh": "关于超静定结构和框架分析的说明性文档。"
+    }
   },
   {
-    "title": "analisis por kani - Marquito",
+    "title": {
+      "en": "Analysis by Kani - Frame",
+      "es": "Análisis por Kani - Marquito",
+      "zh": "卡尼法框架分析"
+    },
     "filename": "marquito.xlsx",
     "type": "excel",
-    "category": "Kani method annalysis",
-    "description": "Hoja de cálculo en Excel para análisis de marcos / estructuras."
+    "category": {
+      "en": "Kani Method Analysis",
+      "es": "Análisis Método de Kani",
+      "zh": "卡尼法分析"
+    },
+    "description": {
+      "en": "Excel spreadsheet for structural frame analysis using Kani method.",
+      "es": "Hoja de cálculo en Excel para análisis de marcos / estructuras por Kani.",
+      "zh": "用于框架结构卡尼法分析的 Excel 计算表。"
+    }
   },
   {
-    "title": "Tema 1: Measurements (Mediciones)",
+    "title": {
+      "en": "Topic 1: Measurements",
+      "es": "Tema 1: Measurements (Mediciones)",
+      "zh": "主题 1：测量"
+    },
     "filename": "tema 1 measurements.pdf",
     "type": "pdf",
-    "category": "Course Materials",
-    "description": "Unidad de estudio y conceptos sobre mediciones técnicas en ingeniería."
+    "category": {
+      "en": "Course Materials",
+      "es": "Material de Clase",
+      "zh": "课程材料"
+    },
+    "description": {
+      "en": "Study unit and concepts on technical measurements in engineering.",
+      "es": "Unidad de estudio y conceptos sobre mediciones técnicas en ingeniería.",
+      "zh": "工程技术测量学习单元与概念。"
+    }
   },
   {
-    "title": "Vocabulario de Mediciones en Ingeniería Civil",
+    "title": {
+      "en": "Civil Engineering Measurement Vocabulary",
+      "es": "Vocabulario de Mediciones en Ingeniería Civil",
+      "zh": "土木工程测量词汇"
+    },
     "filename": "vocabulario_mediciones_ingenieria_civil.pdf",
     "type": "pdf",
-    "category": "Terminology & Dictionaries",
-    "description": "Glosario técnico sobre medición de obra, volúmenes y presupuestos."
+    "category": {
+      "en": "Terminology & Dictionaries",
+      "es": "Terminología y Diccionarios",
+      "zh": "术语与词典"
+    },
+    "description": {
+      "en": "Technical glossary on construction site measurement, quantities, and budgeting.",
+      "es": "Glosario técnico sobre medición de obra, volúmenes y presupuestos.",
+      "zh": "关于工程量测量、体积和预算的技术术语表。"
+    }
+  },
+
+  // --- CAPAS GIS BAJA CALIFORNIA & TIJUANA ---
+  {
+    "title": {
+      "en": "Public Lighting (SIRCAP) - Tijuana",
+      "es": "Luminarias Públicas (SIRCAP) - Tijuana",
+      "zh": "公共照明 (SIRCAP) - 蒂华纳"
+    },
+    "filename": "140509 Luminarias SIRCAP TIJ.rar",
+    "type": "rar",
+    "category": {
+      "en": "GIS Data - Urban Infrastructure",
+      "es": "Datos GIS - Infraestructura Urbana",
+      "zh": "GIS 数据 - 城市基础设施"
+    },
+    "description": {
+      "en": "Spatial database of the public street lighting system in Tijuana.",
+      "es": "Base de datos espacial del sistema de alumbrado público en Tijuana.",
+      "zh": "蒂华纳公共照明系统的空间数据库。"
+    }
   },
   {
-    "title": "World Boundaries (Shapefile)",
+    "title": {
+      "en": "Territorial Aptitude - Tijuana",
+      "es": "Aptitud Territorial - Tijuana",
+      "zh": "土地适合性 - 蒂华纳"
+    },
+    "filename": "APTITUD TERRITORIAL TIJ.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Urban Planning",
+      "es": "Datos GIS - Planeación Urbana",
+      "zh": "GIS 数据 - 城市规划"
+    },
+    "description": {
+      "en": "Vector layers of territorial capability and land development potential in Tijuana.",
+      "es": "Capas vectoriales de aptitud territorial y capacidad de desarrollo en Tijuana.",
+      "zh": "蒂华纳土地适合性与开发潜力的矢量图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "Streams and Hydrology - Tijuana",
+      "es": "Arroyos e Hidrología - Tijuana",
+      "zh": "溪流与水文 - 蒂华纳"
+    },
+    "filename": "arroyos.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Hydrology",
+      "es": "Datos GIS - Hidrología",
+      "zh": "GIS 数据 - 水文"
+    },
+    "description": {
+      "en": "Hydrological vector network and drainage basins in Tijuana.",
+      "es": "Red vectorial hidrológica y cuencas de drenaje urbano en Tijuana.",
+      "zh": "蒂华纳水文矢量网络与排水流域。"
+    }
+  },
+  {
+    "title": {
+      "en": "Highway Network - Baja California",
+      "es": "Red Carretera - Baja California",
+      "zh": "公路网 - 下加利福尼亚"
+    },
+    "filename": "carreteras.rar",
+    "type": "rar",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS 数据 - 交通"
+    },
+    "description": {
+      "en": "State highway infrastructure and connectivity in Baja California.",
+      "es": "Red de infraestructura carretera estatal y conectividad en Baja California.",
+      "zh": "下加利福尼亚州公路基础设施与连接网络。"
+    }
+  },
+  {
+    "title": {
+      "en": "Neighborhood Boundaries - Tijuana",
+      "es": "Límites de Colonias - Tijuana",
+      "zh": "社区边界 - 蒂华纳"
+    },
+    "filename": "colonias_TIJ.rar",
+    "type": "rar",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Urbanos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Official boundary shapefiles for neighborhoods in Tijuana.",
+      "es": "Shapefile con la delimitación oficial de colonias en Tijuana.",
+      "zh": "蒂华纳官方社区划分 Shapefile 图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "Borough Delegations - Tijuana",
+      "es": "Delegaciones Municipales - Tijuana",
+      "zh": "行政区划 - 蒂华纳"
+    },
+    "filename": "Delegaciones_TIJ.rar",
+    "type": "rar",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Urbanos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Municipal delegation boundaries for local governance in Tijuana.",
+      "es": "Delimitación de delegaciones municipales de Tijuana.",
+      "zh": "蒂华纳市政行政区划界线。"
+    }
+  },
+  {
+    "title": {
+      "en": "DENUE Economic Units (INEGI) - BC",
+      "es": "DENUE Unidades Económicas (INEGI) - BC",
+      "zh": "DENUE 经济单位 (INEGI) - 下加利福尼亚"
+    },
+    "filename": "denue_inegi_02_.rar",
+    "type": "rar",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "Spatial directory of active economic establishments in Baja California.",
+      "es": "Directorio espacial de establecimientos económicos activos en Baja California.",
+      "zh": "下加利福尼亚州活跃经济单位的空间目录。"
+    }
+  },
+  {
+    "title": {
+      "en": "Main Road Network - Baja California",
+      "es": "Eje Vial - Baja California",
+      "zh": "干道网 - 下加利福尼亚"
+    },
+    "filename": "EJE VIAL BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS 数据 - 交通"
+    },
+    "description": {
+      "en": "Primary road axes and regional mobility vectors across Baja California.",
+      "es": "Ejes viales principales y conectividad regional en Baja California.",
+      "zh": "下加利福尼亚州主要干道与区域交通矢量。"
+    }
+  },
+  {
+    "title": {
+      "en": "Classified Urban Facilities - Tijuana",
+      "es": "Equipamiento Urbano Clasificado - Tijuana",
+      "zh": "分类城市设施 - 蒂华纳"
+    },
+    "filename": "EQUIPAMIENTO CLASIFICADO TIJ.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Urban Infrastructure",
+      "es": "Datos GIS - Infraestructura Urbana",
+      "zh": "GIS 数据 - 城市基础设施"
+    },
+    "description": {
+      "en": "Categorized public equipment layer (education, health, parks) in Tijuana.",
+      "es": "Capa de equipamiento público (educación, salud, áreas verdes) en Tijuana.",
+      "zh": "蒂华纳公共设施分类图层（教育、医疗、绿地）。"
+    }
+  },
+  {
+    "title": {
+      "en": "State Boundary - Baja California",
+      "es": "Límite Estatal - Baja California",
+      "zh": "州界 - 下加利福尼亚"
+    },
+    "filename": "ESTATAL BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Official state polygon boundaries for Baja California.",
+      "es": "Polígono con el límite territorial oficial del estado de Baja California.",
+      "zh": "下加利福尼亚州官方行政边界多边形。"
+    }
+  },
+  {
+    "title": {
+      "en": "Geological Faults - Tijuana",
+      "es": "Fallas Geológicas - Tijuana",
+      "zh": "地质断层 - 蒂华纳"
+    },
+    "filename": "FALLAS TIJ.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Active fault lines and structural geology features in Tijuana.",
+      "es": "Trazado de fallas geológicas activas y estructuras tectónicas en Tijuana.",
+      "zh": "蒂华纳活动地质断层与构造地质特征。"
+    }
+  },
+  {
+    "title": {
+      "en": "Mining Geology - Tijuana",
+      "es": "Geología Minera - Tijuana",
+      "zh": "采矿地质 - 蒂华纳"
+    },
+    "filename": "GEO MIN TIJUANA.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Mining geology zones, materials, and extraction points in Tijuana.",
+      "es": "Zonas de interés geológico-minero y extracción de materiales en Tijuana.",
+      "zh": "蒂华纳采矿地质区域与矿产开采点。"
+    }
+  },
+  {
+    "title": {
+      "en": "Geological Layer (UCSD) - Tijuana",
+      "es": "Capa Geológica (UCSD) - Tijuana",
+      "zh": "地质图层 (UCSD) - 蒂华纳"
+    },
+    "filename": "GEO UCSD TIJ.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Cross-border geological map of Tijuana generated by UCSD researchers.",
+      "es": "Mapeo geológico transfronterizo de Tijuana elaborado por la UCSD.",
+      "zh": "由加州大学圣迭戈分校 (UCSD) 编制的蒂华纳跨境地质图。"
+    }
+  },
+  {
+    "title": {
+      "en": "Statistical Tables (INEGI) - BC",
+      "es": "Tablas Estadísticas (INEGI) - BC",
+      "zh": "统计表 (INEGI) - 下加利福尼亚"
+    },
+    "filename": "INEGI tablas BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "Socioeconomic Data",
+      "es": "Datos Socioeconómicos",
+      "zh": "社会经济数据"
+    },
+    "description": {
+      "en": "Tabular Census datasets ready to join with spatial layers in Baja California.",
+      "es": "Tablas censales enlazables a capas de información geográfica en BC.",
+      "zh": "下加利福尼亚州可与空间图层关联的人口普查数据表。"
+    }
+  },
+  {
+    "title": {
+      "en": "Urban AGEB Census Tracts - BC",
+      "es": "AGEB Urbanos - Baja California",
+      "zh": "城市 AGEB 统计区 - 下加利福尼亚"
+    },
+    "filename": "AGEB URB BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "Basic Statistical Geostatistical Areas (AGEB) for urban centers in BC.",
+      "es": "Áreas Geoestadísticas Básicas (AGEB) urbanas del estado de BC.",
+      "zh": "下加利福尼亚州城市基础地理统计区 (AGEB)。"
+    }
+  },
+  {
+    "title": {
+      "en": "Rural Localities - Baja California",
+      "es": "Localidades Rurales - Baja California",
+      "zh": "乡村聚落 - 下加利福尼亚"
+    },
+    "filename": "LOC RUR BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Point layer of rural settlement locations across Baja California.",
+      "es": "Capa puntual de localización de asentamientos rurales en BC.",
+      "zh": "下加利福尼亚州乡村聚落位置的点状图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "Urban Localities - Baja California",
+      "es": "Localidades Urbanas - Baja California",
+      "zh": "城市聚落 - 下加利福尼亚"
+    },
+    "filename": "LOC URB BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Polygons of consolidated urban areas in Baja California.",
+      "es": "Polígonos de zonas urbanas consolidadas en el estado de BC.",
+      "zh": "下加利福尼亚州已建成城市区域的多边形图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "City Blocks Census Data - BC",
+      "es": "Manzanas Urbanas - Baja California",
+      "zh": "城市街区 - 下加利福尼亚"
+    },
+    "filename": "MANZANA BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "High-resolution city block polygons for spatial analysis in BC.",
+      "es": "Polígonos de manzanas a alta resolución para análisis espacial en BC.",
+      "zh": "用于下加利福尼亚州空间分析的高分辨率城市街区多边形。"
+    }
+  },
+  {
+    "title": {
+      "en": "Municipal Boundaries - BC",
+      "es": "Límites Municipales - Baja California",
+      "zh": "市界 - 下加利福尼亚"
+    },
+    "filename": "MUNICIPAL BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Official boundary polygon of municipalities in Baja California.",
+      "es": "Delimitación oficial de municipios en el estado de Baja California.",
+      "zh": "下加利福尼亚州各市官方行政边界。"
+    }
+  },
+  {
+    "title": {
+      "en": "Land Use Plan (PDUCPT 2010-2030) - Tijuana",
+      "es": "Usos de Suelo (PDUCPT 2010-2030) - Tijuana",
+      "zh": "土地利用规划 (PDUCPT 2010-2030) - 蒂华纳"
+    },
+    "filename": "PDUCPT 2010-2030 Usos de Suelo.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Urban Planning",
+      "es": "Datos GIS - Planeación Urbana",
+      "zh": "GIS 数据 - 城市规划"
+    },
+    "description": {
+      "en": "Official land use zoning map from the Urban Development Master Plan.",
+      "es": "Zonificación oficial de usos de suelo del Plan de Desarrollo Urbano de Tijuana.",
+      "zh": "蒂华纳城市发展总体规划官方土地利用分区图。"
+    }
+  },
+  {
+    "title": {
+      "en": "Geological Processes & Hazards - Tijuana",
+      "es": "Procesos Geológicos y Riesgos - Tijuana",
+      "zh": "地质过程与灾害 - 蒂华纳"
+    },
+    "filename": "PROCESOS GEOLOGICOS TIJ.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Landslide, slope instability, and active geohazard mapping in Tijuana.",
+      "es": "Mapeo de deslizamientos, inestabilidad de laderas y riesgos geológicos.",
+      "zh": "蒂华纳滑坡、山体滑坡不稳定性及地质灾害映射。"
+    }
+  },
+  {
+    "title": {
+      "en": "Municipal Boundaries - Playas de Rosarito",
+      "es": "Límites Municipales - Playas de Rosarito",
+      "zh": "市界 - 罗萨里托"
+    },
+    "filename": "ROSARITO.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Vector coverage of the Playas de Rosarito municipality.",
+      "es": "Cobertura vectorial del municipio de Playas de Rosarito.",
+      "zh": "罗萨里托市的矢量图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "Street Markets (Sobreruedas) - Tijuana",
+      "es": "Mercados Sobreruedas - Tijuana",
+      "zh": "露天集市 - 蒂华纳"
+    },
+    "filename": "Shape_Mercados Sobreruedas TIJ.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "Spatial location and route mapping of informal street markets in Tijuana.",
+      "es": "Ubicación espacial y rutas de los mercados sobreruedas en Tijuana.",
+      "zh": "蒂华纳露天集市 (Sobreruedas) 的空间位置与路线图。"
+    }
+  },
+
+  // --- CAPAS GIS SAN DIEGO & CALIFORNIA ---
+  {
+    "title": {
+      "en": "City Boundaries (2015) - California",
+      "es": "Límites Ciudades (2015) - California",
+      "zh": "城市边界 (2015) - 加利福尼亚"
+    },
+    "filename": "CA_Cities2015.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Incorporated city boundary layer for the state of California (2015).",
+      "es": "Capa de ciudades incorporadas en el estado de California (2015).",
+      "zh": "加利福尼亚州建制市边界图层 (2015)。"
+    }
+  },
+  {
+    "title": {
+      "en": "County Boundaries (2012) - California",
+      "es": "Límites de Condados (2012) - California",
+      "zh": "县界 (2012) - 加利福尼亚"
+    },
+    "filename": "CA_counties-2012.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Statewide county boundary polygon set for California (2012 edition).",
+      "es": "Límites territoriales de condados en California (Edición 2012).",
+      "zh": "加利福尼亚州县级行政区划 (2012版)。"
+    }
+  },
+  {
+    "title": {
+      "en": "County Boundaries - California",
+      "es": "Límites de Condados - California",
+      "zh": "县界 - 加利福尼亚"
+    },
+    "filename": "CA_counties.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "General county boundaries layer for the state of California.",
+      "es": "Capa general de condados del estado de California.",
+      "zh": "加利福尼亚州通用县界图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "County Subdivisions (2012) - Southern California",
+      "es": "Subdivisiones del Condado (2012) - Sur de California",
+      "zh": "县级细分 (2012) - 南加利福尼亚"
+    },
+    "filename": "CA_SCA_county-subdivisions-2012.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Census subdivisions and administrative zones in Southern California.",
+      "es": "Subdivisiones censales y zonas administrativas del sur de California.",
+      "zh": "南加利福尼亚州人口普查细分与行政区域。"
+    }
+  },
+  {
+    "title": {
+      "en": "Freeways Network - San Diego & South",
+      "es": "Red de Autopistas - San Diego y Sur",
+      "zh": "高速公路网 - 圣迭戈及南部"
+    },
+    "filename": "SD_AND_S_Freeways.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS 数据 - 交通"
+    },
+    "description": {
+      "en": "Major freeways and highway interlinks in San Diego and cross-border region.",
+      "es": "Red de autopistas principales en San Diego y la franja fronteriza.",
+      "zh": "圣迭戈及边境地区的主要高速公路与互通立交网络。"
+    }
+  },
+  {
+    "title": {
+      "en": "Major Roads - San Diego & South",
+      "es": "Vías Principales - San Diego y Sur",
+      "zh": "主要道路 - 圣迭戈及南部"
+    },
+    "filename": "SD_AND_S_Major_Roads.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS 数据 - 交通"
+    },
+    "description": {
+      "en": "Arterial road network vector layer for San Diego County.",
+      "es": "Red vial de arterias principales del Condado de San Diego.",
+      "zh": "圣迭戈县主干道路网络矢量图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "Railroad Network - San Diego & South",
+      "es": "Red Ferroviaria - San Diego y Sur",
+      "zh": "铁路网 - 圣迭戈及南部"
+    },
+    "filename": "SD_AND_S_RAILROAD.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS Datos - 交通"
+    },
+    "description": {
+      "en": "Active railway corridors and regional freight lines in Southern California.",
+      "es": "Corredores ferroviarios activos y líneas de carga en San Diego.",
+      "zh": "南加利福尼亚州活跃的铁路走廊与区域货运线路。"
+    }
+  },
+  {
+    "title": {
+      "en": "Streams and Waterways - San Diego & South",
+      "es": "Arroyos y Cuerpos de Agua - San Diego y Sur",
+      "zh": "溪流与水道 - 圣迭戈及南部"
+    },
+    "filename": "SD_AND_S_Streams.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Hydrology",
+      "es": "Datos GIS - Hidrología",
+      "zh": "GIS 数据 - 水文"
+    },
+    "description": {
+      "en": "Stream channels and drainage networks in San Diego County.",
+      "es": "Cauces de arroyos y red de drenaje en el Condado de San Diego.",
+      "zh": "圣迭戈县的溪流河道与排水网络。"
+    }
+  },
+  {
+    "title": {
+      "en": "Geology Layer - San Diego",
+      "es": "Capa Geológica - San Diego",
+      "zh": "地质图层 - 圣迭戈"
+    },
+    "filename": "SD_Geology.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Lithological units and structural geology of San Diego County.",
+      "es": "Unidades litológicas y geología estructural del Condado de San Diego.",
+      "zh": "圣迭戈县岩石单元与构造地质。"
+    }
+  },
+  {
+    "title": {
+      "en": "Soil Liquefaction Zones - San Diego",
+      "es": "Zonas de Licuefacción de Suelo - San Diego",
+      "zh": "土壤液化区 - 圣迭戈"
+    },
+    "filename": "SD_LIQUEFACTION_CN.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Seismic liquefaction hazard zones mapping in San Diego.",
+      "es": "Zonas de riesgo por licuefacción sísmica de suelos en San Diego.",
+      "zh": "圣迭戈地震土壤液化灾害危险区映射。"
+    }
+  },
+  {
+    "title": {
+      "en": "Complete Road Network - San Diego",
+      "es": "Red Vial Completa - San Diego",
+      "zh": "完整道路网 - 圣迭戈"
+    },
+    "filename": "SD_Roads_All.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS 数据 - 交通"
+    },
+    "description": {
+      "en": "High-detail road centerline dataset covering all streets in San Diego.",
+      "es": "Capa detallada de ejes de calle que cubre todo San Diego.",
+      "zh": "覆盖圣迭戈所有街道的高细节道路中心线数据集。"
+    }
+  },
+  {
+    "title": {
+      "en": "Soil Types Layer - San Diego",
+      "es": "Tipos de Suelo - San Diego",
+      "zh": "土壤类型 - 圣迭戈"
+    },
+    "filename": "SD_Soils.ZIP",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "USDA soil survey units and engineering properties for San Diego.",
+      "es": "Unidades de suelo e ingeniería de materiales para San Diego.",
+      "zh": "圣迭戈 USDA 土壤调查单元与工程特性。"
+    }
+  },
+  {
+    "title": {
+      "en": "General Vector Data - San Diego",
+      "es": "Datos Vectoriales Generales - San Diego",
+      "zh": "通用矢量数据 - 圣迭戈"
+    },
+    "filename": "SD_.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Base Layers",
+      "es": "Datos GIS - Capas Base",
+      "zh": "GIS 数据 - 基础图层"
+    },
+    "description": {
+      "en": "Base map layers and regional boundary features for San Diego County.",
+      "es": "Capas base y elementos de referencia territorial para San Diego.",
+      "zh": "圣迭戈县基础地图图层与区域参考要素。"
+    }
+  },
+
+  // --- CAPAS GLOBAL / MUNDIAL ---
+  {
+    "title": {
+      "en": "Equal Earth Projection Layer - NOAA",
+      "es": "Proyección Equal Earth - NOAA",
+      "zh": "等面积地球投影 - NOAA"
+    },
+    "filename": "noa EEARTH.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Global Boundaries",
+      "es": "Datos GIS - Límites Mundiales",
+      "zh": "GIS 数据 - 全球边界"
+    },
+    "description": {
+      "en": "Equal Earth projection world dataset sourced from NOAA.",
+      "es": "Capa de mapa mundial con proyección Equal Earth provista por la NOAA.",
+      "zh": "来源于 NOAA 的等面积地球投影全球数据集。"
+    }
+  },
+  {
+    "title": {
+      "en": "World Boundaries (Equal Earth)",
+      "es": "Límites Mundiales (Equal Earth)",
+      "zh": "世界边界 (等面积投影)"
+    },
+    "filename": "WORLD BOUND EQUAL EARTH.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Global Boundaries",
+      "es": "Datos GIS - Límites Mundiales",
+      "zh": "GIS 数据 - 全球边界"
+    },
+    "description": {
+      "en": "Global country political boundaries using the Equal Earth projection.",
+      "es": "Límites políticos mundiales optimizados en proyección Equal Earth.",
+      "zh": "采用等面积地球投影的全球国家政治边界。"
+    }
+  },
+  {
+    "title": {
+      "en": "World Boundaries (Shapefile)",
+      "es": "Límites Mundiales (Shapefile)",
+      "zh": "世界边界 (Shapefile)"
+    },
     "filename": "world-boundaries-SHP.zip",
     "type": "zip",
-    "category": "GIS Data",
-    "description": "Archivo ZIP comprimido con capas vectoriales (Shapefile) de límites mundiales para QGIS."
+    "category": {
+      "en": "GIS Data - Global Boundaries",
+      "es": "Datos GIS - Límites Mundiales",
+      "zh": "GIS 数据 - 全球边界"
+    },
+    "description": {
+      "en": "Compressed ZIP archive with vector world boundary shapefiles for QGIS/ArcGIS.",
+      "es": "Archivo ZIP comprimido con capas vectoriales de límites mundiales para QGIS.",
+      "zh": "适用于 QGIS/ArcGIS 的全球矢量边界 Shapefile 压缩包。"
+    },
+    // --- ARCHIVOS FALTANTES PENDIENTES ---
+  {
+    "title": {
+      "en": "All Roads Network - San Diego",
+      "es": "Red Vial Completa - San Diego",
+      "zh": "完整道路网 - 圣迭戈"
+    },
+    "filename": "SD_Roads_All.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS 数据 - 交通"
+    },
+    "description": {
+      "en": "High-detail road centerline dataset covering all streets in San Diego.",
+      "es": "Capa detallada de ejes de calle que cubre todo San Diego.",
+      "zh": "覆盖圣迭戈所有街道的高细节道路中心线数据集。"
+    }
+  },
+  {
+    "title": {
+      "en": "State Highway Network - Baja California",
+      "es": "Red Carretera Estatal - Baja California",
+      "zh": "下加利福尼亚州公路网"
+    },
+    "filename": "carreteras.rar",
+    "type": "rar",
+    "category": {
+      "en": "GIS Data - Transportation",
+      "es": "Datos GIS - Transporte",
+      "zh": "GIS 数据 - 交通"
+    },
+    "description": {
+      "en": "State highway infrastructure and connectivity network in Baja California.",
+      "es": "Red de infraestructura carretera estatal y conectividad en Baja California.",
+      "zh": "下加利福尼亚州公路基础设施与连接网络。"
+    }
+  },
+  {
+    "title": {
+      "en": "Classified Urban Equipment - Tijuana",
+      "es": "Equipamiento Urbano Clasificado - Tijuana",
+      "zh": "分类城市设施 - 蒂华纳"
+    },
+    "filename": "EQUIPAMIENTO CLASIFICADO TIJ.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Urban Infrastructure",
+      "es": "Datos GIS - Infraestructura Urbana",
+      "zh": "GIS 数据 - 城市基础设施"
+    },
+    "description": {
+      "en": "Categorized public equipment layer (education, health, parks) in Tijuana.",
+      "es": "Capa de equipamiento público (educación, salud, áreas verdes) en Tijuana.",
+      "zh": "蒂华纳公共设施分类图层（教育、医疗、绿地）。"
+    }
+  },
+  {
+    "title": {
+      "en": "Statistical Census Tables (INEGI) - BC",
+      "es": "Tablas Estadísticas Censales (INEGI) - BC",
+      "zh": "统计普查表 (INEGI) - 下加利福尼亚"
+    },
+    "filename": "INEGI tablas BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "Socioeconomic Data",
+      "es": "Datos Socioeconómicos",
+      "zh": "社会经济数据"
+    },
+    "description": {
+      "en": "Tabular Census datasets ready to join with spatial layers in Baja California.",
+      "es": "Tablas censales enlazables a capas de información geográfica en BC.",
+      "zh": "下加利福尼亚州可与空间图层关联的人口普查数据表。"
+    }
+  },
+  {
+    "title": {
+      "en": "Urban AGEB Census Tracts - Baja California",
+      "es": "AGEB Urbanos - Baja California",
+      "zh": "城市 AGEB 统计区 - 下加利福尼亚"
+    },
+    "filename": "AGEB URB BC.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "Basic Statistical Geostatistical Areas (AGEB) for urban centers in BC.",
+      "es": "Áreas Geoestadísticas Básicas (AGEB) urbanas del estado de BC.",
+      "zh": "下加利福尼亚州城市基础地理统计区 (AGEB)。"
+    }
+  },
+  {
+    "title": {
+      "en": "Mining Geology - Tijuana",
+      "es": "Geología Minera - Tijuana",
+      "zh": "采矿地质 - 蒂华纳"
+    },
+    "filename": "GEO MIN TIJUANA.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Mining geology zones, materials, and extraction points in Tijuana.",
+      "es": "Zonas de interés geológico-minero y extracción de materiales en Tijuana.",
+      "zh": "蒂华纳采矿地质区域与矿产开采点。"
+    }
   }
 ]
