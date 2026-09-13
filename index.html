@@ -12,20 +12,15 @@
 
     <!-- Enlace al CSS unificado del repositorio -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- ⬇️ AGREGA ESTAS DOS LÍNEAS AQUÍ ⬇️ -->
-    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
-
-    <!-- Cactus Chat (Estilos + CDN) -->
-    <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
-    <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
 </head>
 <body>
 
 <div class="controls-bar">
     <a href="index.html" class="control-btn" style="text-decoration: none;">
         🏠 <span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
+    </a>
+    <a href="comunidad.html" class="control-btn" style="text-decoration: none;">
+        🗣️ <span class="lang-en">Chats & Social</span><span class="lang-es">Chats & Redes</span><span class="lang-zh">聊天与社交</span>
     </a>
     <button class="control-btn" id="themeToggle" onclick="toggleTheme()">☀️ Light Mode</button>
     <button class="control-btn" id="langToggle" onclick="toggleLang()">🌐 EN</button>
@@ -118,11 +113,19 @@
 
         </div>
 
-        <!-- SECCIÓN DEL FORO (Cactus Chat) -->
+        <!-- SECCIÓN DEL FORO (Inyectado modularmente por forum.js) -->
         <section class="forum-section">
-            <h2 class="forum-header">💬 Community Forum</h2>
-            <p class="forum-sub">Encrypted open-source discussion thread for students and researchers.</p>
-            <div id="cactus-chat-thread"></div>
+            <h2 class="forum-header">
+                <span class="lang-en">💬 Community Forum</span>
+                <span class="lang-es">💬 Foro de Discusión</span>
+                <span class="lang-zh">💬 社区论坛</span>
+            </h2>
+            <p class="forum-sub">
+                <span class="lang-en">Open discussion thread for students and researchers.</span>
+                <span class="lang-es">Espacio de comentarios y debate para alumnos e investigadores.</span>
+                <span class="lang-zh">面向学生和研究人员的开放讨论区。</span>
+            </p>
+            <div id="utterances-container"></div>
         </section>
     </main>
 
@@ -137,7 +140,7 @@
 
 </div>
 
-<!-- Scripts de control general y foro -->
+<!-- Scripts de control general y foro modular -->
 <script src="script.js"></script>
 <script src="forum.js"></script>
 </body>
