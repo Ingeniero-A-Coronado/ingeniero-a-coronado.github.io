@@ -5,10 +5,10 @@ function toggleTheme() {
     
     if (body.getAttribute('data-theme') === 'light') {
         body.removeAttribute('data-theme');
-        themeBtn.innerHTML = '☀️ Mode';
+        themeBtn.innerHTML = '☀️';
     } else {
         body.setAttribute('data-theme', 'light');
-        themeBtn.innerHTML = '🌙 Mode';
+        themeBtn.innerHTML = '🌙';
     }
 }
 
