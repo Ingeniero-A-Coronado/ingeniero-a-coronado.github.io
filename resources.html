@@ -17,28 +17,27 @@
 <body>
 
     <!-- Barra de controles flotantes -->
-<div class="controls-bar">
-    <!-- 1. Botón Inicio con Flecha -->
-    <a href="index.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
-        &larr;&nbsp;<span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
-    </a>
+    <div class="controls-bar">
+        <!-- 1. Botón Inicio con Flecha -->
+        <a href="index.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+            &larr;&nbsp;<span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
+        </a>
 
-    <!-- 2. Botón Comunidad (Centrado) -->
-    <a href="comunidad.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
-        <span class="lang-en">Community</span><span class="lang-es">Comunidad</span><span class="lang-zh">社区</span>
-    </a>
+        <!-- 2. Botón Comunidad (Centrado) -->
+        <a href="comunidad.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+            <span class="lang-en">Community</span><span class="lang-es">Comunidad</span><span class="lang-zh">社区</span>
+        </a>
 
-    <!-- 3. Botón Cambio de Tema (Sol/Luna + Mode) -->
-    <button class="control-btn" id="themeToggle" onclick="toggleTheme()" style="display: inline-flex; align-items: center; justify-content: center;">
-        ☀️
-    </button>
+        <!-- 3. Botón Cambio de Tema (Sol/Luna + Mode) -->
+        <button class="control-btn" id="themeToggle" onclick="toggleTheme()" style="display: inline-flex; align-items: center; justify-content: center;">
+            ☀️
+        </button>
 
-    <!-- 4. Botón Idioma -->
-    <button class="control-btn" id="langToggle" onclick="toggleLang()" style="display: inline-flex; align-items: center; justify-content: center;">
-        🌐 EN
-    </button>
-</div>
-
+        <!-- 4. Botón Idioma -->
+        <button class="control-btn" id="langToggle" onclick="toggleLang()" style="display: inline-flex; align-items: center; justify-content: center;">
+            🌐 EN
+        </button>
+    </div>
 
     <div class="container">
 
@@ -55,77 +54,102 @@
             <p class="blog-subtitle lang-zh">GIS数据集、学术文档、多媒体文件及需求列表的中央存储库。</p>
         </header>
 
-        <!-- Buscador de Recursos -->
-        <section class="search-section">
-            <input type="text" id="searchInput" onkeyup="filterResources()" placeholder="🔍 Search resources / Buscar recursos / 搜索资源...">
-        </section>
-
-        <!-- Lista de Recursos Dynamic Hub -->
-        <main class="post-card">
-            <h2 class="post-title">
-                📦 <span class="lang-en">Available Files</span>
-                <span class="lang-es">Archivos Disponibles</span>
-                <span class="lang-zh">可用文件</span>
-            </h2>
+        <!-- LAYOUT DE 2 COLUMNAS -->
+        <div class="two-column-layout" style="display: grid; grid-template-columns: 320px 1fr; gap: 2rem; align-items: start; margin-top: 2rem;">
             
-            <div id="resourcesContainer" class="resources-grid">
-                <!-- Se poblará dinámicamente mediante recursos.js -->
-            </div>
-        </main>
+            <!-- COLUMNA IZQUIERDA: Wishlist & Foro -->
+            <aside class="sidebar-left" style="position: sticky; top: 20px;">
+                
+                <!-- Wishlist / Lista de Deseos Interactiva -->
+                <section class="forum-section" style="margin-top: 0;">
+                    <h3 class="forum-header">
+                        ⭐ <span class="lang-en">Resource Wishlist</span>
+                        <span class="lang-es">Lista de Deseos</span>
+                        <span class="lang-zh">愿望清单</span>
+                    </h3>
+                    <p class="forum-sub lang-en">Add items or datasets you need.</p>
+                    <p class="forum-sub lang-es">Agrega elementos o datos que necesites.</p>
+                    <p class="forum-sub lang-zh">添加您需要的资源或数据集。</p>
 
-        <!-- Wishlist / Lista de Deseos Interactiva -->
-        <section class="forum-section" style="margin-top: 3rem;">
-            <h3 class="forum-header">
-                ⭐ <span class="lang-en">Resource Wishlist & Requests</span>
-                <span class="lang-es">Lista de Deseos y Solicitudes</span>
-                <span class="lang-zh">愿望清单与需求</span>
-            </h3>
-            <p class="forum-sub lang-en">Add items, datasets, or documents you would like to see added to the repository.</p>
-            <p class="forum-sub lang-es">Agrega elementos, datos o documentos que te gustaría ver en este repositorio.</p>
-            <p class="forum-sub lang-zh">添加您希望加入存储库的资源、数据集或文档。</p>
+                    <div class="wishlist-form">
+                        <input type="text" id="wishlistInput" placeholder="Add request / Solicitud / 添加需求...">
+                        <button onclick="addWishlistItem()" class="doc-link" style="cursor: pointer; margin-top: 0.5rem; width: 100%;">
+                            ➕ <span class="lang-en">Add</span><span class="lang-es">Agregar</span><span class="lang-zh">添加</span>
+                        </button>
+                    </div>
 
-            <div class="wishlist-form">
-                <input type="text" id="wishlistInput" placeholder="Add new request / Agregar solicitud / 添加新需求...">
-                <button onclick="addWishlistItem()" class="doc-link" style="cursor: pointer;">
-                    ➕ <span class="lang-en">Add</span><span class="lang-es">Agregar</span><span class="lang-zh">添加</span>
-                </button>
-            </div>
+                    <ul id="wishlistContainer" class="wishlist-list" style="margin-top: 1rem;">
+                        <!-- Elementos agregados dinámicamente -->
+                    </ul>
+                </section>
 
-            <ul id="wishlistContainer" class="wishlist-list">
-                <!-- Elementos agregados dinámicamente -->
-            </ul>
-        </section>
+                <!-- Sección del Foro -->
+                <section class="forum-section" style="margin-top: 1.5rem;">
+                    <h2 class="forum-header" style="font-size: 1.1rem;">
+                        <span class="lang-en">💬 Community Forum</span>
+                        <span class="lang-es">💬 Foro de Discusión</span>
+                        <span class="lang-zh">💬 社区论坛</span>
+                    </h2>
+                    <p class="forum-sub" style="font-size: 0.85rem;">
+                        <span class="lang-en">Open discussion thread.</span>
+                        <span class="lang-es">Espacio de comentarios y debate.</span>
+                        <span class="lang-zh">开放讨论区。</span>
+                    </p>
+                    
+                    <!-- Contenedor dinámico cargado por forum.js -->
+                    <div id="utterances-container"></div>
+                </section>
 
-        <!-- Sección del Foro -->
-        <section class="forum-section" style="margin-top: 3rem;">
-            <h2 class="forum-header">
-                <span class="lang-en">💬 Community Forum</span>
-                <span class="lang-es">💬 Foro de Discusión</span>
-                <span class="lang-zh">💬 社区论坛</span>
-            </h2>
-            <p class="forum-sub">
-                <span class="lang-en">Open discussion thread for students and researchers.</span>
-                <span class="lang-es">Espacio de comentarios y debate para alumnos e investigadores.</span>
-                <span class="lang-zh">面向学生和研究人员的开放讨论区。</span>
-            </p>
-            
-            <!-- Contenedor dinámico cargado por forum.js -->
-            <div id="utterances-container"></div>
-        </section>
+            </aside>
+
+            <!-- COLUMNA DERECHA: Buscador + Archivos Masivos -->
+            <main class="main-content">
+                <!-- Buscador de Recursos -->
+                <section class="search-section" style="margin-bottom: 1.5rem;">
+                    <input type="text" id="searchInput" onkeyup="filterResources()" placeholder="🔍 Search resources / Buscar recursos / 搜索资源...">
+                </section>
+
+                <!-- Lista de Recursos Dynamic Hub -->
+                <section class="post-card">
+                    <h2 class="post-title">
+                        📦 <span class="lang-en">Available Files</span>
+                        <span class="lang-es">Archivos Disponibles</span>
+                        <span class="lang-zh">可用文件</span>
+                    </h2>
+                    
+                    <div id="resourcesContainer" class="resources-grid">
+                        <!-- Se poblará dinámicamente mediante recursos.js -->
+                    </div>
+                </section>
+            </main>
+
+        </div>
 
         <!-- Footer -->
-        <footer>
-           <div class="footer-links">
-            <a href="mailto:academico.3053@tectijuana.edu.mx">academico.3053@tectijuana.edu.mx</a>
-            <span>|</span>
-            <a href="mailto:cazconsultores2@gmail.com">cazconsultores2@gmail.com</a>
-        </div>
-        <p>Instituto Tecnológico Nacional de México — Campus Tijuana | Tijuana, Baja California, México</p>
+        <footer style="margin-top: 4rem;">
+            <div class="footer-links">
+                <a href="mailto:academico.3053@tectijuana.edu.mx">academico.3053@tectijuana.edu.mx</a>
+                <span>|</span>
+                <a href="mailto:cazconsultores2@gmail.com">cazconsultores2@gmail.com</a>
+            </div>
+            <p>Instituto Tecnológico Nacional de México — Campus Tijuana | Tijuana, Baja California, México</p>
         </footer>
 
     </div>
 
-    <!-- Scripts (Se agregó forum.js) -->
+    <!-- Regla Responsive en CSS dinámico si la pantalla es de celular -->
+    <style>
+        @media (max-width: 850px) {
+            .two-column-layout {
+                grid-template-columns: 1fr !important;
+            }
+            .sidebar-left {
+                position: static !important;
+            }
+        }
+    </style>
+
+    <!-- Scripts -->
     <script src="script.js"></script>
     <script src="recursos.js"></script>
     <script src="forum.js"></script>
