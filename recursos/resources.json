@@ -1012,5 +1012,138 @@
       "es": "Zonas de interés geológico-minero y extracción de materiales en Tijuana.",
       "zh": "蒂华纳采矿地质区域与矿产开采点。"
     }
+  },
+  {
+    "title": {
+      "en": "Neighborhood Boundaries (Colonias) - Tijuana",
+      "es": "Límites de Colonias - Tijuana",
+      "zh": "社区边界 (Colonias) - 蒂华纳"
+    },
+    "filename": "Colonias.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Urbanos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Urban neighborhood boundary polygons for the municipality of Tijuana.",
+      "es": "Polígonos de delimitación de colonias urbanas del municipio de Tijuana.",
+      "zh": "蒂华纳市城市社区边界多边形。"
+    }
+  },
+  {
+    "title": {
+      "en": "Municipal Boundaries - Baja California",
+      "es": "Límites Municipales - Baja California",
+      "zh": "市级行政边界 - 下加利福尼亚"
+    },
+    "filename": "Municipios.rar",
+    "type": "rar",
+    "category": {
+      "en": "GIS Data - Boundaries",
+      "es": "Datos GIS - Límites Administrativos",
+      "zh": "GIS 数据 - 边界"
+    },
+    "description": {
+      "en": "Municipal divisions and boundary shapefiles for the state of Baja California.",
+      "es": "Divisiones municipales y delimitación territorial del estado de Baja California.",
+      "zh": "下加利福尼亚州市级行政区划与边界 Shapefile 图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "DENUE Economic Units (Sector 00-23) - BC",
+      "es": "DENUE Unidades Económicas (Sector 00-23) - BC",
+      "zh": "DENUE 经济单位 (部门 00-23) - 下加利福尼亚"
+    },
+    "filename": "denue_00_23_shp.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "INEGI DENUE spatial data for economic sectors 00 to 23 in Baja California.",
+      "es": "Directorio espacial de unidades económicas INEGI DENUE sectores 00 al 23 en BC.",
+      "zh": "下加利福尼亚州 INEGI DENUE 经济部门 00 至 23 空间目录。"
+    }
+  },
+  {
+    "title": {
+      "en": "DENUE Economic Units (Sector 00-72 Vol 2) - BC",
+      "es": "DENUE Unidades Económicas (Sector 00-72 Vol 2) - BC",
+      "zh": "DENUE 经济单位 (部门 00-72 卷 2) - 下加利福尼亚"
+    },
+    "filename": "denue_00_72_2_shp.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "INEGI DENUE spatial dataset volume 2 covering sectors 00 to 72 in BC.",
+      "es": "Volumen 2 del directorio espacial de unidades económicas DENUE en Baja California.",
+      "zh": "下加利福尼亚州 DENUE 经济部门 00 至 72 空间数据集第 2 卷。"
+    }
+  },
+  {
+    "title": {
+      "en": "DENUE Economic Units (State Code 02) - BC",
+      "es": "DENUE Unidades Económicas (Estado 02) - BC",
+      "zh": "DENUE 经济单位 (州代码 02) - 下加利福尼亚"
+    },
+    "filename": "denue_02_shp.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "Statewide economic establishment layer for Baja California (State 02).",
+      "es": "Capa estatal de establecimientos económicos para Baja California (Entidad 02).",
+      "zh": "下加利福尼亚州 (02 州) 全州经济单位图层。"
+    }
+  },
+  {
+    "title": {
+      "en": "DENUE Economic Units (Sector 03) - BC",
+      "es": "DENUE Unidades Económicas (Sector 03) - BC",
+      "zh": "DENUE 经济单位 (部门 03) - 下加利福尼亚"
+    },
+    "filename": "denue_03_shp.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Socioeconomics",
+      "es": "Datos GIS - Socioeconomía",
+      "zh": "GIS 数据 - 社会经济"
+    },
+    "description": {
+      "en": "INEGI DENUE spatial dataset for sector 03 economic units in Baja California.",
+      "es": "Directorio espacial de unidades económicas INEGI DENUE correspondientes al sector 03 en BC.",
+      "zh": "下加利福尼亚州 INEGI DENUE 部门 03 经济单位空间数据集。"
+    }
+  },
+  {
+    "title": {
+      "en": "Rock Formations & Lithology - Tijuana",
+      "es": "Formaciones Rocosas y Litología - Tijuana",
+      "zh": "岩石地层与岩性 - 蒂华纳"
+    },
+    "filename": "rocas.zip",
+    "type": "zip",
+    "category": {
+      "en": "GIS Data - Geology & Hazards",
+      "es": "Datos GIS - Geología y Riesgos",
+      "zh": "GIS 数据 - 地质与灾害"
+    },
+    "description": {
+      "en": "Lithological layer and rock substrate classification for the Tijuana region.",
+      "es": "Capa litológica y clasificación del substrato rocoso en la región de Tijuana.",
+      "zh": "蒂华纳地区的岩性图层与岩石基质分类。"
+    }
   }
 ]
