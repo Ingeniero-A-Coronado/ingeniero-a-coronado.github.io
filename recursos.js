@@ -20,20 +20,28 @@ async function loadResources() {
         resources.forEach(item => {
             const fileCard = document.createElement('div');
             fileCard.className = 'resource-item';
-            fileCard.setAttribute('data-title', item.title.toLowerCase() + " " + item.category.toLowerCase() + " " + item.filename.toLowerCase());
 
-            const icon = getFileIcon(item.type);
+            // Extrae el texto seguro según si es objeto multilenguaje o texto simple (priorizando 'es')
+            const titleText = typeof item.title === 'object' ? (item.title.es || item.title.en || '') : (item.title || '');
+            const descText = typeof item.description === 'object' ? (item.description.es || item.description.en || '') : (item.description || '');
+            const categoryText = typeof item.category === 'object' ? (item.category.es || item.category.en || '') : (item.category || '');
+            const filenameText = item.filename || '';
+
+            // Guarda el atributo para el buscador convirtiendo texto puro a minúsculas
+            fileCard.setAttribute('data-title', `${titleText.toLowerCase()} ${categoryText.toLowerCase()} ${filenameText.toLowerCase()}`);
+
+            const icon = getFileIcon(item.type || '');
 
             fileCard.innerHTML = `
                 <div class="resource-info">
                     <span class="resource-icon">${icon}</span>
                     <div>
-                        <h4 class="resource-name">${item.title}</h4>
-                        <p class="resource-desc">${item.description}</p>
-                        <span class="post-tag">${item.category}</span>
+                        <h4 class="resource-name">${titleText}</h4>
+                        <p class="resource-desc">${descText}</p>
+                        <span class="post-tag">${categoryText}</span>
                     </div>
                 </div>
-                <a href="recursos/${item.filename}" download class="doc-link" style="white-space: nowrap;">
+                <a href="recursos/${filenameText}" download class="doc-link" style="white-space: nowrap;">
                     ⬇️ <span class="lang-en">Download</span><span class="lang-es">Descargar</span><span class="lang-zh">下载</span>
                 </a>
             `;
