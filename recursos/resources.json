@@ -1,5 +1,4 @@
 [
-  // --- ARCHIVOS PREVIOS ---
   {
     "title": {
       "en": "Structures for Architects",
@@ -152,8 +151,6 @@
       "zh": "关于工程量测量、体积和预算的技术术语表。"
     }
   },
-
-  // --- CAPAS GIS BAJA CALIFORNIA & TIJUANA ---
   {
     "title": {
       "en": "Public Lighting (SIRCAP) - Tijuana",
@@ -591,8 +588,6 @@
       "zh": "蒂华纳露天集市 (Sobreruedas) 的空间位置与路线图。"
     }
   },
-
-  // --- CAPAS GIS SAN DIEGO & CALIFORNIA ---
   {
     "title": {
       "en": "City Boundaries (2015) - California",
@@ -840,8 +835,6 @@
       "zh": "圣迭戈县基础地图图层与区域参考要素。"
     }
   },
-
-  // --- CAPAS GLOBAL / MUNDIAL ---
   {
     "title": {
       "en": "Equal Earth Projection Layer - NOAA",
@@ -898,8 +891,7 @@
       "es": "Archivo ZIP comprimido con capas vectoriales de límites mundiales para QGIS.",
       "zh": "适用于 QGIS/ArcGIS 的全球矢量边界 Shapefile 压缩包。"
     },
-    // --- ARCHIVOS FALTANTES PENDIENTES ---
-  {
+    {
     "title": {
       "en": "All Roads Network - San Diego",
       "es": "Red Vial Completa - San Diego",
