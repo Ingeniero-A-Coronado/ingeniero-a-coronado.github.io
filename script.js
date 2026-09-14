@@ -39,4 +39,47 @@ function toggleLang() {
         currentLang = 'en';
         if (langBtn) langBtn.innerText = '🌐 EN';
     }
+
+    // Actualizar el texto del botón de donación según el idioma activo
+    updateDonateButtonText();
 }
+
+// Actualizar texto del botón de donación
+function updateDonateButtonText() {
+    const donateText = document.getElementById('donateBtnText');
+    if (!donateText) return;
+
+    if (currentLang === 'es') {
+        donateText.innerText = '☕ Donar';
+    } else if (currentLang === 'zh') {
+        donateText.innerText = '☕ 打赏';
+    } else {
+        donateText.innerText = '☕ Donate';
+    }
+}
+
+// Inserción dinámica del botón de donación al cargar el DOM
+document.addEventListener('DOMContentLoaded', () => {
+    if (document.getElementById('donateBtn')) return;
+
+    const donateBtn = document.createElement('a');
+    donateBtn.id = 'donateBtn';
+    donateBtn.href = 'https://buymeacoffee.com/ing_arnoldo_coronado';
+    donateBtn.target = '_blank';
+    donateBtn.rel = 'noopener noreferrer';
+    donateBtn.className = 'donate-btn';
+    
+    const donateText = document.createElement('span');
+    donateText.id = 'donateBtnText';
+    donateText.innerText = '☕ Donate';
+    donateBtn.appendChild(donateText);
+
+    const targetContainer = document.querySelector('nav') || document.querySelector('header');
+    if (targetContainer) {
+        targetContainer.appendChild(donateBtn);
+    } else {
+        document.body.prepend(donateBtn);
+    }
+
+    updateDonateButtonText();
+});
