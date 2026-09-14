@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recursos & Wishlist | Lux in Tenebris</title>
-    <meta name="description" content="Dynamic repository of files, research materials, and request wishlist.">
+    <meta name="description" content="Dynamic repository of files, research materials, contributions, and request wishlist.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,144 +15,592 @@
     <!-- Estilos locales -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Barra de controles flotantes -->
     <div class="controls-bar">
-        <!-- 1. Botón Inicio con Flecha -->
-        <a href="index.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
-            &larr;&nbsp;<span class="lang-en">Home</span><span class="lang-es">Inicio</span><span class="lang-zh">首页</span>
+
+        <!-- 1. Botón Inicio -->
+        <a href="index.html" class="control-btn"
+           style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+            &larr;&nbsp;
+            <span class="lang-en">Home</span>
+            <span class="lang-es">Inicio</span>
+            <span class="lang-zh">首页</span>
         </a>
 
-        <!-- 2. Botón Comunidad (Centrado) -->
-        <a href="comunidad.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
-            <span class="lang-en">Community</span><span class="lang-es">Comunidad</span><span class="lang-zh">社区</span>
+        <!-- 2. Botón Comunidad -->
+        <a href="comunidad.html" class="control-btn"
+           style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
+            <span class="lang-en">Community</span>
+            <span class="lang-es">Comunidad</span>
+            <span class="lang-zh">社区</span>
         </a>
 
-        <!-- 3. Botón Cambio de Tema (Sol/Luna + Mode) -->
-        <button class="control-btn" id="themeToggle" onclick="toggleTheme()" style="display: inline-flex; align-items: center; justify-content: center;">
+        <!-- 3. Botón Cambio de Tema -->
+        <button class="control-btn" id="themeToggle" onclick="toggleTheme()"
+                style="display: inline-flex; align-items: center; justify-content: center;">
             ☀️
         </button>
 
         <!-- 4. Botón Idioma -->
-        <button class="control-btn" id="langToggle" onclick="toggleLang()" style="display: inline-flex; align-items: center; justify-content: center;">
+        <button class="control-btn" id="langToggle" onclick="toggleLang()"
+                style="display: inline-flex; align-items: center; justify-content: center;">
             🌐 EN
         </button>
+
     </div>
+
 
     <div class="container">
 
-        <!-- Header -->
+        <!-- =====================================================
+             HEADER
+        ====================================================== -->
+
         <header class="blog-header">
-            <img src="assets/coronadotorres.jpeg" alt="Emblem Tijuana Switzerland" class="header-emblem" onerror="this.style.display='none'">
+
+            <img src="assets/coronadotorres.jpeg"
+                 alt="Emblem Tijuana Switzerland"
+                 class="header-emblem"
+                 onerror="this.style.display='none'">
+
             <h1 class="blog-title">
+
                 <span class="lang-en">Resources & Downloads</span>
                 <span class="lang-es">Recursos y Descargas</span>
                 <span class="lang-zh">资源与下载</span>
+
             </h1>
-            <p class="blog-subtitle lang-en">Central repository for GIS datasets, academic documents, media files, and feature requests.</p>
-            <p class="blog-subtitle lang-es">Repositorio central de datos SIG, documentos académicos, multimedia y solicitudes.</p>
-            <p class="blog-subtitle lang-zh">GIS数据集、学术文档、多媒体文件及需求列表的中央存储库。</p>
+
+            <p class="blog-subtitle lang-en">
+                Central repository for GIS datasets, academic documents, media files, and feature requests.
+            </p>
+
+            <p class="blog-subtitle lang-es">
+                Repositorio central de datos SIG, documentos académicos, multimedia y solicitudes.
+            </p>
+
+            <p class="blog-subtitle lang-zh">
+                GIS数据集、学术文档、多媒体文件及需求列表的中央存储库。
+            </p>
+
         </header>
 
-        <!-- LAYOUT DE 2 COLUMNAS -->
-        <div class="two-column-layout" style="display: grid; grid-template-columns: 320px 1fr; gap: 2rem; align-items: start; margin-top: 2rem;">
-            
-            <!-- COLUMNA IZQUIERDA: Wishlist & Foro -->
-            <aside class="sidebar-left" style="position: sticky; top: 20px;">
-                
-                <!-- Wishlist / Lista de Deseos Interactiva -->
-                <section class="forum-section" style="margin-top: 0;">
+
+        <!-- =====================================================
+             LAYOUT DE 2 COLUMNAS
+        ====================================================== -->
+
+        <div class="two-column-layout"
+             style="display: grid; grid-template-columns: 320px 1fr; gap: 2rem; align-items: start; margin-top: 2rem;">
+
+
+            <!-- =================================================
+                 COLUMNA IZQUIERDA
+            ================================================== -->
+
+            <aside class="sidebar-left"
+                   style="position: sticky; top: 20px;">
+
+               <!-- =================================================
+                     WISHLIST
+                ================================================== -->
+
+                <section class="forum-section"
+                         style="margin-top: 1.5rem;">
+
                     <h3 class="forum-header">
-                        ⭐ <span class="lang-en">Resource Wishlist</span>
+
+                        ⭐
+                        <span class="lang-en">Resource Wishlist</span>
                         <span class="lang-es">Lista de Deseos</span>
                         <span class="lang-zh">愿望清单</span>
+
                     </h3>
-                    <p class="forum-sub lang-en">Add items or datasets you need.</p>
-                    <p class="forum-sub lang-es">Agrega elementos o datos que necesites.</p>
-                    <p class="forum-sub lang-zh">添加您需要的资源或数据集。</p>
+
+
+                    <p class="forum-sub lang-en">
+                        Add items or datasets you need.
+                    </p>
+
+                    <p class="forum-sub lang-es">
+                        Agrega elementos o datos que necesites.
+                    </p>
+
+                    <p class="forum-sub lang-zh">
+                        添加您需要的资源或数据集。
+                    </p>
+
 
                     <div class="wishlist-form">
-                        <input type="text" id="wishlistInput" placeholder="Add request / Solicitud / 添加需求...">
-                        <button onclick="addWishlistItem()" class="doc-link" style="cursor: pointer; margin-top: 0.5rem; width: 100%;">
-                            ➕ <span class="lang-en">Add</span><span class="lang-es">Agregar</span><span class="lang-zh">添加</span>
+
+                        <input
+                            type="text"
+                            id="wishlistInput"
+                            placeholder="Add request / Solicitud / 添加需求...">
+
+                        <button
+                            onclick="addWishlistItem()"
+                            class="doc-link"
+                            style="cursor: pointer; margin-top: 0.5rem; width: 100%;">
+
+                            ➕
+                            <span class="lang-en">Add</span>
+                            <span class="lang-es">Agregar</span>
+                            <span class="lang-zh">添加</span>
+
                         </button>
+
                     </div>
 
-                    <ul id="wishlistContainer" class="wishlist-list" style="margin-top: 1rem;">
+
+                    <ul
+                        id="wishlistContainer"
+                        class="wishlist-list"
+                        style="margin-top: 1rem;">
+
                         <!-- Elementos agregados dinámicamente -->
+
                     </ul>
+
                 </section>
 
-                <!-- Sección del Foro -->
-                <section class="forum-section" style="margin-top: 1.5rem;">
-                    <h2 class="forum-header" style="font-size: 1.1rem;">
+```html
+<!-- =================================================
+     CONTRIBUCIONES / RECEPCIÓN DE DATASETS
+================================================== -->
+
+<section class="forum-section" style="margin-top: 0;">
+
+    <h3 class="forum-header">
+
+        📥
+        <span class="lang-en">Contribute a Resource</span>
+        <span class="lang-es">Aportar un Recurso</span>
+        <span class="lang-zh">贡献资源</span>
+
+    </h3>
+
+
+    <p class="forum-sub lang-en">
+        Share a dataset, document, map, image, or academic resource
+        that may be useful to the community.
+    </p>
+
+    <p class="forum-sub lang-es">
+        Comparte un conjunto de datos, documento, mapa, imagen u otro
+        recurso académico que pueda ser útil para la comunidad.
+    </p>
+
+    <p class="forum-sub lang-zh">
+        分享可能对社区有用的数据集、文档、地图、图像或其他学术资源。
+    </p>
+
+
+    <!-- ==============================================
+         THREE REQUIRED QUESTIONS
+    =============================================== -->
+
+    <div style="margin-top: 1rem;">
+
+        <!-- 1. TITLE -->
+
+        <label for="contributionTitle"
+               class="lang-en"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            1. Resource title
+        </label>
+
+        <label for="contributionTitle"
+               class="lang-es"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            1. Título del recurso
+        </label>
+
+        <label for="contributionTitle"
+               class="lang-zh"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            1. 资源标题
+        </label>
+
+        <input
+            type="text"
+            id="contributionTitle"
+            placeholder="Ej. Colonias y vialidades de Tijuana"
+            style="width:100%; box-sizing:border-box; margin-bottom:0.9rem;">
+
+
+        <!-- 2. CATEGORY / KEYWORDS -->
+
+        <label for="contributionCategory"
+               class="lang-en"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            2. Category / keywords
+        </label>
+
+        <label for="contributionCategory"
+               class="lang-es"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            2. Categoría / palabras clave
+        </label>
+
+        <label for="contributionCategory"
+               class="lang-zh"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            2. 类别 / 关键词
+        </label>
+
+        <input
+            type="text"
+            id="contributionCategory"
+            placeholder="SIG, Tijuana, vialidades, INEGI, movilidad..."
+            style="width:100%; box-sizing:border-box; margin-bottom:0.9rem;">
+
+
+        <!-- 3. DESCRIPTION -->
+
+        <label for="contributionDescription"
+               class="lang-en"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            3. Brief description
+        </label>
+
+        <label for="contributionDescription"
+               class="lang-es"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            3. Descripción breve
+        </label>
+
+        <label for="contributionDescription"
+               class="lang-zh"
+               style="display:block; font-weight:600; margin-bottom:0.35rem;">
+            3. 简要说明
+        </label>
+
+        <textarea
+            id="contributionDescription"
+            rows="4"
+            placeholder="Describe brevemente qué contiene el recurso y para qué puede utilizarse..."
+            style="width:100%; box-sizing:border-box; resize:vertical; margin-bottom:1rem;"></textarea>
+
+    </div>
+
+
+    <!-- ==============================================
+         DECLARATION / WAIVER
+    =============================================== -->
+
+    <div style="
+        padding: 0.9rem;
+        margin-top: 0.5rem;
+        border: 1px solid rgba(128,128,128,0.35);
+        border-radius: 8px;
+        font-size: 0.78rem;
+        line-height: 1.5;
+    ">
+
+        <strong>
+            ⚠️
+            <span class="lang-en">Contributor Declaration</span>
+            <span class="lang-es">Declaración del aportante</span>
+            <span class="lang-zh">贡献者声明</span>
+        </strong>
+
+        <p class="lang-en">
+            By submitting a resource, I declare that I am responsible for
+            the origin and lawful acquisition of the material I provide.
+            I understand that the repository administrators do not assume
+            responsibility for the legality, ownership, licensing,
+            accuracy, or provenance of material submitted by third parties.
+        </p>
+
+        <p class="lang-es">
+            Al enviar un recurso, declaro que soy responsable de la
+            procedencia y obtención legal del material que proporciono.
+            Entiendo que los administradores del repositorio no asumen
+            responsabilidad por la legalidad, propiedad, licenciamiento,
+            exactitud o procedencia de materiales enviados por terceros.
+        </p>
+
+        <p class="lang-zh">
+            提交资源即表示本人声明对所提供材料的来源及合法取得负责。
+            本人理解，仓库管理员不对第三方提交材料的合法性、所有权、
+            许可、准确性或来源承担责任。
+        </p>
+
+
+        <p class="lang-en">
+            I also declare that the submitted material is reasonably
+            accurate to the best of my knowledge and does not intentionally
+            contain illegal, malicious, harmful, sexually explicit,
+            abusive, discriminatory, defamatory, or otherwise inappropriate
+            content.
+        </p>
+
+        <p class="lang-es">
+            Asimismo, declaro que, hasta donde sé, el material presentado
+            es razonablemente verídico y no contiene intencionalmente
+            contenido ilegal, malicioso, dañino, sexualmente explícito,
+            abusivo, discriminatorio, difamatorio o de cualquier otra forma
+            inapropiado.
+        </p>
+
+        <p class="lang-zh">
+            本人同时声明，据本人所知，所提交材料基本真实，不故意包含
+            非法、恶意、有害、露骨色情、侮辱性、歧视性、诽谤性或其他
+            不适当内容。
+        </p>
+
+
+        <p style="margin-bottom:0;">
+
+            <label style="display:flex; gap:0.5rem; align-items:flex-start; cursor:pointer;">
+
+                <input
+                    type="checkbox"
+                    id="contributionAgreement"
+                    style="margin-top:0.25rem;">
+
+                <span>
+
+                    <span class="lang-en">
+                        I have read and accept this declaration.
+                    </span>
+
+                    <span class="lang-es">
+                        He leído y acepto esta declaración.
+                    </span>
+
+                    <span class="lang-zh">
+                        我已阅读并接受此声明。
+                    </span>
+
+                </span>
+
+            </label>
+
+        </p>
+
+    </div>
+
+
+    <!-- ==============================================
+         SUBMIT BUTTON
+    =============================================== -->
+
+    <button
+        type="button"
+        onclick="submitContribution()"
+        class="doc-link"
+        style="
+            display:block;
+            width:100%;
+            margin-top:1rem;
+            cursor:pointer;
+            border:none;
+        ">
+
+        📤
+        <span class="lang-en">Submit Resource for Review</span>
+        <span class="lang-es">Enviar Recurso para Revisión</span>
+        <span class="lang-zh">提交资源供审核</span>
+
+    </button>
+
+
+    <!-- ==============================================
+         IMPORTANT NOTE
+    =============================================== -->
+
+    <p style="
+        font-size:0.72rem;
+        line-height:1.45;
+        margin-top:0.8rem;
+        opacity:0.75;
+    ">
+
+        <span class="lang-en">
+            All contributions are subject to review before inclusion.
+            Do not submit personal, confidential, restricted, illegal,
+            or copyrighted material without appropriate permission.
+        </span>
+
+        <span class="lang-es">
+            Todas las contribuciones serán revisadas antes de su inclusión.
+            No envíes información personal, confidencial, restringida,
+            ilegal o material protegido por derechos de autor sin la
+            autorización correspondiente.
+        </span>
+
+        <span class="lang-zh">
+            所有贡献将在加入资源库前进行审核。请勿提交个人、机密、
+            受限制或非法信息，也不要在没有适当许可的情况下提交
+            受版权保护的材料。
+        </span>
+
+    </p>
+
+</section>
+
+                <!-- =================================================
+                     FORO
+                ================================================== -->
+
+                <section class="forum-section"
+                         style="margin-top: 1.5rem;">
+
+                    <h2 class="forum-header"
+                        style="font-size: 1.1rem;">
+
                         <span class="lang-en">💬 Community Forum</span>
                         <span class="lang-es">💬 Foro de Discusión</span>
                         <span class="lang-zh">💬 社区论坛</span>
+
                     </h2>
-                    <p class="forum-sub" style="font-size: 0.85rem;">
-                        <span class="lang-en">Open discussion thread.</span>
-                        <span class="lang-es">Espacio de comentarios y debate.</span>
-                        <span class="lang-zh">开放讨论区。</span>
+
+
+                    <p class="forum-sub"
+                       style="font-size: 0.85rem;">
+
+                        <span class="lang-en">
+                            Open discussion thread.
+                        </span>
+
+                        <span class="lang-es">
+                            Espacio de comentarios y debate.
+                        </span>
+
+                        <span class="lang-zh">
+                            开放讨论区。
+                        </span>
+
                     </p>
-                    
+
+
                     <!-- Contenedor dinámico cargado por forum.js -->
+
                     <div id="utterances-container"></div>
+
                 </section>
+
 
             </aside>
 
-            <!-- COLUMNA DERECHA: Buscador + Archivos Masivos -->
+
+            <!-- =================================================
+                 COLUMNA DERECHA
+            ================================================== -->
+
             <main class="main-content">
-                <!-- Buscador de Recursos -->
-                <section class="search-section" style="margin-bottom: 1.5rem;">
-                    <input type="text" id="searchInput" onkeyup="filterResources()" placeholder="🔍 Search resources / Buscar recursos / 搜索资源...">
+
+
+                <!-- BUSCADOR -->
+
+                <section class="search-section"
+                         style="margin-bottom: 1.5rem;">
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        onkeyup="filterResources()"
+                        placeholder="🔍 Search resources / Buscar recursos / 搜索资源...">
+
                 </section>
 
-                <!-- Lista de Recursos Dynamic Hub -->
+
+                <!-- ARCHIVOS -->
+
                 <section class="post-card">
+
                     <h2 class="post-title">
-                        📦 <span class="lang-en">Available Files</span>
+
+                        📦
+                        <span class="lang-en">Available Files</span>
                         <span class="lang-es">Archivos Disponibles</span>
                         <span class="lang-zh">可用文件</span>
+
                     </h2>
-                    
-                    <div id="resourcesContainer" class="resources-grid">
+
+
+                    <div
+                        id="resourcesContainer"
+                        class="resources-grid">
+
                         <!-- Se poblará dinámicamente mediante recursos.js -->
+
                     </div>
+
                 </section>
+
+
             </main>
 
         </div>
 
-        <!-- Footer -->
+
+        <!-- =====================================================
+             FOOTER
+        ====================================================== -->
+
         <footer style="margin-top: 4rem;">
+
             <div class="footer-links">
-                <a href="mailto:academico.3053@tectijuana.edu.mx">academico.3053@tectijuana.edu.mx</a>
+
+                <a href="mailto:academico.3053@tectijuana.edu.mx">
+                    academico.3053@tectijuana.edu.mx
+                </a>
+
                 <span>|</span>
-                <a href="mailto:cazconsultores2@gmail.com">cazconsultores2@gmail.com</a>
+
+                <a href="mailto:cazconsultores2@gmail.com">
+                    cazconsultores2@gmail.com
+                </a>
+
             </div>
-            <p>Instituto Tecnológico Nacional de México — Campus Tijuana | Tijuana, Baja California, México</p>
+
+
+            <p>
+                Instituto Tecnológico Nacional de México — Campus Tijuana |
+                Tijuana, Baja California, México
+            </p>
+
         </footer>
 
     </div>
 
-    <!-- Regla Responsive en CSS dinámico si la pantalla es de celular -->
+
+    <!-- =====================================================
+         RESPONSIVE
+    ====================================================== -->
+
     <style>
+
         @media (max-width: 850px) {
+
             .two-column-layout {
                 grid-template-columns: 1fr !important;
             }
+
             .sidebar-left {
                 position: static !important;
             }
+
         }
+
     </style>
 
-    <!-- Scripts -->
+
+    <!-- =====================================================
+         SCRIPTS
+    ====================================================== -->
+
     <script src="script.js"></script>
     <script src="recursos.js"></script>
     <script src="forum.js"></script>
+
 </body>
 </html>
+```
+
