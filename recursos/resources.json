@@ -155,14 +155,20 @@
     "title": {
       "en": "Public Lighting (SIRCAP) - Tijuana",
       "es": "Luminarias Públicas (SIRCAP) - Tijuana",
-      "zh": "公共照明 (SIRCAP) - 蒂华纳"
+      "zh": "公共照明 (SIRCAP) - 蒂华纳",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "filename": "140509 Luminarias SIRCAP TIJ.rar",
     "type": "rar",
     "category": {
       "en": "GIS Data - Urban Infrastructure",
       "es": "Datos GIS - Infraestructura Urbana",
-      "zh": "GIS 数据 - 城市基础设施"
+      "zh": "GIS 数据 - 城市基础设施",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Spatial database of the public street lighting system in Tijuana.",
@@ -181,7 +187,10 @@
     "category": {
       "en": "GIS Data - Urban Planning",
       "es": "Datos GIS - Planeación Urbana",
-      "zh": "GIS 数据 - 城市规划"
+      "zh": "GIS 数据 - 城市规划",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Vector layers of territorial capability and land development potential in Tijuana.",
@@ -200,7 +209,10 @@
     "category": {
       "en": "GIS Data - Hydrology",
       "es": "Datos GIS - Hidrología",
-      "zh": "GIS 数据 - 水文"
+      "zh": "GIS 数据 - 水文",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Hydrological vector network and drainage basins in Tijuana.",
@@ -212,14 +224,20 @@
     "title": {
       "en": "Highway Network - Baja California",
       "es": "Red Carretera - Baja California",
-      "zh": "公路网 - 下加利福尼亚"
+      "zh": "公路网 - 下加利福尼亚",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "filename": "carreteras.rar",
     "type": "rar",
     "category": {
       "en": "GIS Data - Transportation",
       "es": "Datos GIS - Transporte",
-      "zh": "GIS 数据 - 交通"
+      "zh": "GIS 数据 - 交通",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "State highway infrastructure and connectivity in Baja California.",
@@ -238,7 +256,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Urbanos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Official boundary shapefiles for neighborhoods in Tijuana.",
@@ -257,7 +278,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Urbanos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Municipal delegation boundaries for local governance in Tijuana.",
@@ -276,7 +300,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Spatial directory of active economic establishments in Baja California.",
@@ -295,7 +322,10 @@
     "category": {
       "en": "GIS Data - Transportation",
       "es": "Datos GIS - Transporte",
-      "zh": "GIS 数据 - 交通"
+      "zh": "GIS 数据 - 交通",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Primary road axes and regional mobility vectors across Baja California.",
@@ -314,7 +344,10 @@
     "category": {
       "en": "GIS Data - Urban Infrastructure",
       "es": "Datos GIS - Infraestructura Urbana",
-      "zh": "GIS 数据 - 城市基础设施"
+      "zh": "GIS 数据 - 城市基础设施",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Categorized public equipment layer (education, health, parks) in Tijuana.",
@@ -333,7 +366,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Official state polygon boundaries for Baja California.",
@@ -352,7 +388,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Active fault lines and structural geology features in Tijuana.",
@@ -371,7 +410,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Mining geology zones, materials, and extraction points in Tijuana.",
@@ -390,7 +432,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Cross-border geological map of Tijuana generated by UCSD researchers.",
@@ -409,7 +454,10 @@
     "category": {
       "en": "Socioeconomic Data",
       "es": "Datos Socioeconómicos",
-      "zh": "社会经济数据"
+      "zh": "社会经济数据",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Tabular Census datasets ready to join with spatial layers in Baja California.",
@@ -428,7 +476,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Basic Statistical Geostatistical Areas (AGEB) for urban centers in BC.",
@@ -447,7 +498,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Point layer of rural settlement locations across Baja California.",
@@ -466,7 +520,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Polygons of consolidated urban areas in Baja California.",
@@ -485,7 +542,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "High-resolution city block polygons for spatial analysis in BC.",
@@ -504,7 +564,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Official boundary polygon of municipalities in Baja California.",
@@ -523,7 +586,10 @@
     "category": {
       "en": "GIS Data - Urban Planning",
       "es": "Datos GIS - Planeación Urbana",
-      "zh": "GIS 数据 - 城市规划"
+      "zh": "GIS 数据 - 城市规划",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Official land use zoning map from the Urban Development Master Plan.",
@@ -542,7 +608,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Landslide, slope instability, and active geohazard mapping in Tijuana.",
@@ -561,7 +630,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Vector coverage of the Playas de Rosarito municipality.",
@@ -580,7 +652,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Spatial location and route mapping of informal street markets in Tijuana.",
@@ -599,7 +674,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Incorporated city boundary layer for the state of California (2015).",
@@ -618,7 +696,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Statewide county boundary polygon set for California (2012 edition).",
@@ -637,7 +718,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "General county boundaries layer for the state of California.",
@@ -656,7 +740,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Census subdivisions and administrative zones in Southern California.",
@@ -675,7 +762,10 @@
     "category": {
       "en": "GIS Data - Transportation",
       "es": "Datos GIS - Transporte",
-      "zh": "GIS 数据 - 交通"
+      "zh": "GIS 数据 - 交通",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Major freeways and highway interlinks in San Diego and cross-border region.",
@@ -694,7 +784,10 @@
     "category": {
       "en": "GIS Data - Transportation",
       "es": "Datos GIS - Transporte",
-      "zh": "GIS 数据 - 交通"
+      "zh": "GIS 数据 - 交通",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Arterial road network vector layer for San Diego County.",
@@ -713,7 +806,10 @@
     "category": {
       "en": "GIS Data - Transportation",
       "es": "Datos GIS - Transporte",
-      "zh": "GIS Datos - 交通"
+      "zh": "GIS Datos - 交通",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Active railway corridors and regional freight lines in Southern California.",
@@ -732,7 +828,10 @@
     "category": {
       "en": "GIS Data - Hydrology",
       "es": "Datos GIS - Hidrología",
-      "zh": "GIS 数据 - 水文"
+      "zh": "GIS 数据 - 水文",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Stream channels and drainage networks in San Diego County.",
@@ -751,7 +850,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Lithological units and structural geology of San Diego County.",
@@ -770,7 +872,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Seismic liquefaction hazard zones mapping in San Diego.",
@@ -789,7 +894,10 @@
     "category": {
       "en": "GIS Data - Transportation",
       "es": "Datos GIS - Transporte",
-      "zh": "GIS 数据 - 交通"
+      "zh": "GIS 数据 - 交通",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "High-detail road centerline dataset covering all streets in San Diego.",
@@ -808,7 +916,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "USDA soil survey units and engineering properties for San Diego.",
@@ -827,7 +938,10 @@
     "category": {
       "en": "GIS Data - Base Layers",
       "es": "Datos GIS - Capas Base",
-      "zh": "GIS 数据 - 基础图层"
+      "zh": "GIS 数据 - 基础图层",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Base map layers and regional boundary features for San Diego County.",
@@ -846,7 +960,10 @@
     "category": {
       "en": "GIS Data - Global Boundaries",
       "es": "Datos GIS - Límites Mundiales",
-      "zh": "GIS 数据 - 全球边界"
+      "zh": "GIS 数据 - 全球边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Equal Earth projection world dataset sourced from NOAA.",
@@ -865,7 +982,10 @@
     "category": {
       "en": "GIS Data - Global Boundaries",
       "es": "Datos GIS - Límites Mundiales",
-      "zh": "GIS 数据 - 全球边界"
+      "zh": "GIS 数据 - 全球边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Global country political boundaries using the Equal Earth projection.",
@@ -884,7 +1004,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Urbanos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Urban neighborhood boundary polygons for the municipality of Tijuana.",
@@ -903,7 +1026,10 @@
     "category": {
       "en": "GIS Data - Boundaries",
       "es": "Datos GIS - Límites Administrativos",
-      "zh": "GIS 数据 - 边界"
+      "zh": "GIS 数据 - 边界",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Municipal divisions and boundary shapefiles for the state of Baja California.",
@@ -922,7 +1048,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "INEGI DENUE spatial data for economic sectors 00 to 23 in Baja California.",
@@ -941,7 +1070,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "INEGI DENUE spatial dataset volume 2 covering sectors 00 to 72 in BC.",
@@ -960,7 +1092,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Statewide economic establishment layer for Baja California (State 02).",
@@ -979,7 +1114,10 @@
     "category": {
       "en": "GIS Data - Socioeconomics",
       "es": "Datos GIS - Socioeconomía",
-      "zh": "GIS 数据 - 社会经济"
+      "zh": "GIS 数据 - 社会经济",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "INEGI DENUE spatial dataset for sector 03 economic units in Baja California.",
@@ -998,7 +1136,10 @@
     "category": {
       "en": "GIS Data - Geology & Hazards",
       "es": "Datos GIS - Geología y Riesgos",
-      "zh": "GIS 数据 - 地质与灾害"
+      "zh": "GIS 数据 - 地质与灾害",
+      "en": "ESRI Shapefile GIS Vector Map",
+      "es": "ESRI Shapefile Mapa Vectorial GIS Capa",
+      "zh": "ESRI Shapefile 矢量图层 地图"
     },
     "description": {
       "en": "Lithological layer and rock substrate classification for the Tijuana region.",
