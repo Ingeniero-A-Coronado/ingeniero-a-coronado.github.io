@@ -10,24 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Enlace al CSS unificado del repositorio -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="controls-bar">
-    <!-- 1. Botón Inicio con Flecha -->
-    <!-- 2. Botón Comunidad (Centrado) -->
     <a href="comunidad.html" class="control-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">
         <span class="lang-en">Community</span><span class="lang-es">Comunidad</span><span class="lang-zh">社区</span>
     </a>
 
-    <!-- 3. Botón Cambio de Tema (Sol/Luna + Mode) -->
     <button class="control-btn" id="themeToggle" onclick="toggleTheme()" style="display: inline-flex; align-items: center; justify-content: center;">
         ☀️
     </button>
 
-    <!-- 4. Botón Idioma -->
     <button class="control-btn" id="langToggle" onclick="toggleLang()" style="display: inline-flex; align-items: center; justify-content: center;">
         🌐 EN
     </button>
@@ -118,23 +113,54 @@
                 <span class="nav-card-btn lang-zh">获取资源 &rarr;</span>
             </a>
 
+            <!-- 5. CAZ Consultores -->
+            <a href="CAZ/index.html" class="nav-card">
+                <div>
+                    <div class="nav-card-icon">🏢</div>
+                    <h3>CAZ Consultores</h3>
+                    <p class="lang-en">Professional consulting, technical expertise, and engineering-oriented projects.</p>
+                    <p class="lang-es">Consultoría profesional, experiencia técnica y proyectos orientados a la ingeniería.</p>
+                    <p class="lang-zh">专业咨询、技术服务及工程相关项目。</p>
+                </div>
+                <span class="nav-card-btn lang-en">Explore CAZ &rarr;</span>
+                <span class="nav-card-btn lang-es">Conocer CAZ &rarr;</span>
+                <span class="nav-card-btn lang-zh">了解 CAZ &rarr;</span>
+            </a>
+
+            <!-- 6. Interactive Maps -->
+            <a href="mapas/qgis2web/index.html" class="nav-card">
+                <div>
+                    <div class="nav-card-icon">🗺️</div>
+                    <h3>
+                        <span class="lang-en">Interactive Maps</span>
+                        <span class="lang-es">Mapas Interactivos</span>
+                        <span class="lang-zh">交互式地图</span>
+                    </h3>
+                    <p class="lang-en">Explore interactive geographic projects, spatial analysis, and GIS applications.</p>
+                    <p class="lang-es">Explora proyectos geográficos interactivos, análisis espacial y aplicaciones SIG.</p>
+                    <p class="lang-zh">探索交互式地理项目、空间分析及地理信息系统应用。</p>
+                </div>
+                <span class="nav-card-btn lang-en">Explore Maps &rarr;</span>
+                <span class="nav-card-btn lang-es">Explorar Mapas &rarr;</span>
+                <span class="nav-card-btn lang-zh">探索地图 &rarr;</span>
+            </a>
+
         </div>
 
-     
-<section class="forum-section" style="margin-top: 3rem;">
-    <h2 class="forum-header">
-        <span class="lang-en">💬 Community Forum</span>
-        <span class="lang-es">💬 Foro de Discusión</span>
-        <span class="lang-zh">💬 社区论坛</span>
-    </h2>
-    <p class="forum-sub">
-        <span class="lang-en">Open discussion thread for students and researchers.</span>
-        <span class="lang-es">Espacio de comentarios y debate para alumnos e investigadores.</span>
-        <span class="lang-zh">面向学生和研究人员的开放讨论区。</span>
-    </p>
-    
-    <div id="utterances-container"></div>
-</section>
+        <section class="forum-section" style="margin-top: 3rem;">
+            <h2 class="forum-header">
+                <span class="lang-en">💬 Community Forum</span>
+                <span class="lang-es">💬 Foro de Discusión</span>
+                <span class="lang-zh">💬 社区论坛</span>
+            </h2>
+            <p class="forum-sub">
+                <span class="lang-en">Open discussion thread for students and researchers.</span>
+                <span class="lang-es">Espacio de comentarios y debate para alumnos e investigadores.</span>
+                <span class="lang-zh">面向学生和研究人员的开放讨论区。</span>
+            </p>
+            
+            <div id="utterances-container"></div>
+        </section>
     </main>
 
     <footer>
@@ -148,7 +174,6 @@
 
 </div>
 
-<!-- Scripts de control general y foro modular -->
 <script src="script.js"></script>
 <script src="forum.js"></script>
 </body>

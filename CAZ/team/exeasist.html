@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071522">
+  <meta name="description" content="Tarjeta virtual de Ashley Janet Flores Cervantez — CAZ Consultores de la A a la Z.">
+  <title>Ashley Janet Flores Cervantez | CAZ Consultores</title>
+  <style>
+:root {
+  --navy: #071522;
+  --silver: #d9e1e8;
+  --gold: #c6a76a;
+  --white: #f7f9fb;
+}
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 28px 16px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 15% 15%, rgba(48, 87, 116, .34), transparent 36%),
+    linear-gradient(135deg, #030a11, #10283a 58%, #050d16);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+.business-card {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  width: min(100%, 760px);
+  min-height: 430px;
+  padding: 34px 42px 30px;
+  border: 1px solid rgba(220, 230, 239, .42);
+  border-radius: 22px;
+  background:
+    linear-gradient(105deg, rgba(4, 16, 28, .88), rgba(5, 20, 34, .63)),
+    url("../assets/tarjeta.png") center / cover no-repeat;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, .48);
+}
+.business-card::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(120deg, transparent 35%, rgba(191, 211, 226, .08), transparent 72%);
+  pointer-events: none;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  min-height: 72px;
+}
+.brand img {
+  display: block;
+  width: 264px;
+  height: 216px;
+  object-fit: contain;
+  object-position: left center;
+  filter: drop-shadow(0 3px 9px rgba(0,0,0,.55));
+}
+.brand-caption {
+  margin-left: 15px;
+  color: rgba(233, 240, 246, .76);
+  font-size: 11px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+}
+.rule {
+  width: 100%;
+  height: 1px;
+  margin: 20px 0 30px;
+  background: linear-gradient(90deg, var(--gold), rgba(217,225,232,.55), transparent);
+}
+.person { margin: 0; font-size: clamp(27px, 5vw, 43px); line-height: 1.08; font-weight: 650; letter-spacing: -.035em; }
+.role {
+  margin: 11px 0 25px;
+  color: var(--gold);
+  font-size: 13px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+.contact-list { display: grid; gap: 12px; margin-top: 8px; }
+.contact-row { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.contact-label {
+  width: 105px;
+  flex: 0 0 105px;
+  color: rgba(217,225,232,.64);
+  font-size: 10px;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.contact-row a, .contact-row span.value {
+  color: var(--white);
+  font-size: 14px;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+.contact-row a:hover { color: var(--gold); text-decoration: underline; }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 16px;
+  margin-top: 32px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(217,225,232,.2);
+  color: rgba(217,225,232,.65);
+  font-size: 10px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.footer strong { color: var(--gold); font-weight: 600; }
+@media (max-width: 560px) {
+  body { padding: 14px 10px; }
+  .business-card { min-height: 0; padding: 25px 22px 22px; border-radius: 17px; }
+  .brand img { width: 70px; height: 60px; }
+  .brand-caption { font-size: 9px; letter-spacing: .15em; }
+  .rule { margin: 16px 0 25px; }
+  .contact-label { width: 82px; flex-basis: 82px; }
+  .contact-row a, .contact-row span.value { font-size: 13px; }
+  .footer { margin-top: 25px; font-size: 9px; }
+}
+
+  </style>
+</head>
+<body>
+
+<!-- CAZ UNIVERSAL NAVIGATION -->
+
+<style>
+.caz-mini-nav {
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    z-index: 9999;
+    display: flex;
+    gap: 7px;
+    padding: 6px;
+    background: rgba(255,255,255,0.88);
+    border: 1px solid rgba(40,101,138,0.35);
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    backdrop-filter: blur(8px);
+}
+
+.caz-mini-nav a {
+    text-decoration: none;
+    color: #173c59;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 9px 13px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.caz-mini-nav a:hover {
+    background: #28658a;
+    color: white;
+}
+
+@media(max-width:600px) {
+    .caz-mini-nav {
+        top: 10px;
+        left: 10px;
+    }
+}
+</style>
+
+<nav class="caz-mini-nav">
+
+    <a id="caz-home" href="../index.html">
+        ⌂ HOME
+    </a>
+
+    <a id="caz-team" href="../team/index.html">
+        TEAM
+    </a>
+
+</nav>
+
+<script>
+(function() {
+
+    const inTeam = window.location.pathname
+        .split('/')
+        .includes('team');
+
+    const prefix = inTeam ? '../' : './';
+
+    document.getElementById('caz-home').href =
+        prefix + 'index.html';
+
+    document.getElementById('caz-team').href =
+        prefix + 'team/index.html';
+
+})();
+</script>
+
+<!-- END CAZ UNIVERSAL NAVIGATION -->
+
+  <main class="business-card">
+    <header class="brand">
+      <img src="../assets/logosolo.png" alt="Logotipo CAZ">
+      <div class="brand-caption">Consultores de la A a la Z</div>
+    </header>
+
+    <div class="rule"></div>
+
+    <section aria-label="Datos de contacto">
+      <h1 class="person">Ashley Janet Flores Cervantez</h1>
+      <p class="role">Asistente Ejecutiva · CAZ Consultores</p>
+      <div class="contact-list">
+      <div class="contact-row">
+        <span class="contact-label">Correo</span>
+        <a href="mailto:cazconsultores2.afc@gmail.com">cazconsultores2.afc@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Teléfono</span>
+        <a href="tel:1111111111">111-111-1111</a>
+      </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>CAZ Consultores</span>
+      <strong>Atención ejecutiva</strong>
+    </footer>
+  </main>
+</body>
+</html>

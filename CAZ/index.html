@@ -1,0 +1,1014 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101923">
+
+<title>CAZ | Consultores de la A a la Z</title>
+
+<meta name="description" content="CAZ Consultores. Ingeniería, construcción y consultoría multidisciplinaria.">
+
+<style>
+:root {
+    --bg: #101923;
+    --bg2: #172432;
+    --panel: rgba(27, 42, 57, .82);
+    --silver: #c3ced8;
+    --steel: #8299ad;
+    --blue: #397ba5;
+    --gold: #c5a96b;
+    --text: #e6edf3;
+    --muted: #a7b5c2;
+    --line: rgba(151, 180, 203, .25);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--text);
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:
+        radial-gradient(ellipse at 50% 0%, #263c50 0%, transparent 55%),
+        linear-gradient(145deg, #0c141e, #172534 55%, #101923);
+    overflow-x: hidden;
+}
+
+/* CAPA TECNOLÓGICA: circuitos y conexiones */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .18;
+    background-image:
+        radial-gradient(circle, #80a9c8 1px, transparent 1.8px),
+        linear-gradient(90deg, transparent 49.8%, #52718b 50%, transparent 50.2%),
+        linear-gradient(0deg, transparent 49.8%, #52718b 50%, transparent 50.2%);
+    background-size: 72px 72px, 110px 110px, 110px 110px;
+    mask-image: linear-gradient(to bottom, black, transparent 85%);
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: .12;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            transparent 0,
+            transparent 85px,
+            rgba(105, 155, 190, .22) 86px,
+            transparent 87px
+        );
+}
+
+/* ENCABEZADO */
+
+header {
+    width: 100%;
+    padding: 20px 5% 12px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+    background: rgba(9, 17, 26, .68);
+    backdrop-filter: blur(10px);
+}
+
+.brand-banner {
+    max-width: 760px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.brand-banner img {
+    display: block;
+    width: 100%;
+    max-height: 230px;
+    object-fit: contain;
+    margin: auto;
+    filter: drop-shadow(0 5px 18px rgba(0, 0, 0, .45));
+}
+
+/* NAVEGACIÓN */
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    padding: 17px 12px;
+    background: rgba(10, 19, 29, .72);
+    border-bottom: 1px solid var(--line);
+    position: relative;
+    z-index: 10;
+}
+
+nav a,
+.dropdown summary {
+    display: inline-block;
+    padding: 9px 19px;
+    color: var(--silver);
+    text-decoration: none;
+    font-size: .76rem;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    border: 1px solid rgba(143, 168, 190, .34);
+    border-radius: 3px;
+    background: linear-gradient(135deg,
+        rgba(65, 91, 115, .23),
+        rgba(20, 34, 48, .65));
+    transition: .25s ease;
+    cursor: pointer;
+}
+
+nav a:hover,
+.dropdown summary:hover {
+    color: white;
+    border-color: var(--gold);
+    background: rgba(70, 112, 146, .35);
+    box-shadow: 0 0 12px rgba(91, 153, 196, .18);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown summary {
+    list-style: none;
+}
+
+.dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown summary::after {
+    content: " ▾";
+    color: var(--gold);
+}
+
+.dropdown[open] .submenu {
+    display: flex;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 7px);
+    left: 0;
+    min-width: 230px;
+    padding: 8px;
+    flex-direction: column;
+    gap: 6px;
+    background: #172636;
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .45);
+}
+
+.submenu a {
+    text-align: left;
+    text-transform: none;
+    letter-spacing: .5px;
+}
+
+/* IDIOMAS */
+
+.language-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 12px 6%;
+}
+
+.language-bar button {
+    background: transparent;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 5px 11px;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: .75rem;
+}
+
+.language-bar button.active,
+.language-bar button:hover {
+    color: white;
+    border-color: var(--gold);
+}
+
+/* CONTENIDO PRINCIPAL */
+
+main {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 25px 60px;
+}
+
+.hero {
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 55px 15px 65px;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 12% 8%;
+    background:
+        radial-gradient(ellipse,
+        rgba(48, 100, 140, .16),
+        transparent 70%);
+    pointer-events: none;
+}
+
+.hero h1 {
+    position: relative;
+    font-size: clamp(1.8rem, 4vw, 3.4rem);
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.35;
+    text-shadow: 0 3px 18px rgba(0, 0, 0, .5);
+}
+
+.hero h1 span {
+    display: block;
+    color: var(--gold);
+    font-weight: 600;
+}
+
+.hero .subtitle {
+    margin-top: 22px;
+    max-width: 650px;
+    color: var(--muted);
+    font-size: .92rem;
+    line-height: 1.8;
+    letter-spacing: .7px;
+}
+
+/* SECCIONES */
+
+section.content-section {
+    padding: 65px 0;
+    scroll-margin-top: 30px;
+    border-top: 1px solid var(--line);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    color: var(--silver);
+    font-size: clamp(1.5rem, 3vw, 2.1rem);
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.section-heading .accent {
+    width: 65px;
+    height: 2px;
+    margin: 15px auto;
+    background: var(--gold);
+}
+
+.section-heading p {
+    color: var(--muted);
+    max-width: 720px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.about-image {
+    width: 100%;
+    max-height: 390px;
+    object-fit: contain;
+    display: block;
+    margin: 25px auto;
+    border-radius: 5px;
+    filter: drop-shadow(0 8px 22px rgba(0,0,0,.3));
+}
+
+.section-text {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.9;
+    color: var(--muted);
+}
+
+/* FILOSOFÍA */
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+    margin-top: 30px;
+}
+
+.info-card {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    padding: 26px 22px;
+    border-radius: 4px;
+    text-align: center;
+    transition: .25s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--steel);
+    background: rgba(43, 65, 85, .85);
+}
+
+.info-card h3 {
+    color: var(--gold);
+    font-size: 1rem;
+    margin-bottom: 13px;
+    letter-spacing: 1px;
+}
+
+.info-card p {
+    color: var(--muted);
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+/* SERVICIOS */
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.service-card {
+    overflow: hidden;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    transition: .25s;
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+}
+
+.service-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    filter: saturate(.75) contrast(1.05);
+}
+
+.service-card img.pericial-image {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    display: block;
+} 
+
+.service-card .card-content {
+    padding: 20px;
+}
+
+.service-card h3 {
+    color: var(--silver);
+    font-size: 1.05rem;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: var(--muted);
+    font-size: .88rem;
+    line-height: 1.7;
+}
+
+/* ASSET PROTECTION */
+
+.asset-section {
+    background:
+        linear-gradient(110deg,
+        rgba(56, 20, 27, .45),
+        rgba(18, 25, 36, .85));
+    border: 1px solid rgba(160, 76, 82, .3);
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+
+.asset-section h3 {
+    color: #d5a0a0;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+}
+
+/* CONTACTO */
+
+.contact-panel {
+    max-width: 720px;
+    margin: auto;
+    padding: 35px;
+    text-align: center;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 5px;
+}
+
+.contact-panel p {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.contact-email {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 24px;
+    border: 1px solid var(--gold);
+    color: var(--silver);
+    text-decoration: none;
+    transition: .2s;
+}
+
+.contact-email:hover {
+    background: rgba(197, 169, 107, .15);
+    color: white;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    text-align: center;
+    padding: 28px 15px;
+    border-top: 1px solid var(--line);
+    background: rgba(8, 15, 23, .75);
+    color: #8294a5;
+    font-size: .78rem;
+    line-height: 1.8;
+    letter-spacing: .5px;
+}
+
+@media (max-width: 650px) {
+    header {
+        padding: 15px 3%;
+    }
+
+    .brand-banner img {
+        max-height: 155px;
+    }
+
+    nav {
+        gap: 6px;
+    }
+
+    nav a,
+    .dropdown summary {
+        padding: 8px 10px;
+        font-size: .67rem;
+    }
+
+    .hero {
+        min-height: 290px;
+        padding: 45px 8px;
+    }
+
+    main {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .asset-section {
+        padding: 20px;
+    }
+
+    .contact-panel {
+        padding: 25px 16px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- BANNER PRINCIPAL -->
+<header>
+    <div class="brand-banner">
+        <img src="assets/logobasico.jpeg"
+             alt="CAZ Consultores de la A a la Z">
+    </div>
+</header>
+
+<!-- SELECTOR DE IDIOMA -->
+<div class="language-bar">
+    <button class="active" onclick="setLanguage('es')">ES</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('zh')">中文</button>
+</div>
+
+<!-- NAVEGACIÓN -->
+<nav>
+    <a href="#filosofia" data-i18n="nav_philosophy">Filosofía</a>
+    <a href="#about" data-i18n="nav_about">About Us</a>
+    <a href="#construccion" data-i18n="nav_construction">Servicios de Construcción</a>
+
+    <details class="dropdown">
+        <summary data-i18n="nav_consulting">Servicios de Consultoría</summary>
+        <div class="submenu">
+            <a href="#consultoria" data-i18n="nav_technical">Consultoría Técnica</a>
+            <a href="#peritajes" data-i18n="nav_expert">Servicios Periciales</a>
+            <a href="#asset" data-i18n="nav_asset">Asset Protection</a>
+        </div>
+    </details>
+
+    <a href="#contacto" data-i18n="nav_contact">Contacto</a>
+</nav>
+
+<main>
+
+<!-- MENSAJE CENTRAL -->
+<div class="hero">
+    <h1>
+        <span data-i18n="hero_first">Tú pones el problema,</span>
+        <span data-i18n="hero_second">CAZ pone la solución.</span>
+    </h1>
+
+    <p class="subtitle" data-i18n="hero_subtitle">
+        Integración técnica. Visión multidisciplinaria.
+        Soluciones inteligentes.
+    </p>
+</div>
+
+<!-- FILOSOFÍA -->
+<section class="content-section" id="filosofia">
+
+    <div class="section-heading">
+        <h2 data-i18n="philosophy_title">Nuestra Filosofía</h2>
+        <div class="accent"></div>
+        <p data-i18n="philosophy_intro">
+            Principios que orientan nuestra manera de entender
+            los problemas y desarrollar soluciones.
+        </p>
+    </div>
+
+    <div class="philosophy-grid">
+
+        <article class="info-card">
+            <h3 data-i18n="mission_title">Misión</h3>
+            <p data-i18n="mission_text">
+                Integrar conocimiento técnico y visión multidisciplinaria
+                para desarrollar soluciones responsables y eficientes.
+            </p>
+        </article>
+
+        <article class="info-card">
+            <h3 data-i18n="vision_title">Visión</h3>
+            <p data-i18n="vision_text">
+                Ser un referente de consultoría por la calidad,
+                innovación y solidez de nuestras soluciones.
+            </p>
+        </article>
+
+        <article class="info-card">
+            <h3 data-i18n="principles_title">Principios</h3>
+            <p data-i18n="principles_text">
+                Rigor técnico, integridad profesional,
+                innovación y compromiso con cada proyecto.
+            </p>
+        </article>
+
+        <article class="info-card">
+            <h3 data-i18n="method_title">Método</h3>
+            <p data-i18n="method_text">
+                Comprender, analizar, integrar disciplinas
+                y proponer soluciones fundamentadas.
+            </p>
+        </article>
+
+    </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="content-section" id="about">
+
+    <div class="section-heading">
+        <h2 data-i18n="about_title">About Us</h2>
+        <div class="accent"></div>
+    </div>
+
+    <img class="about-image"
+         src="assets/landing%20page.png"
+         alt="Identidad técnica y visión de CAZ">
+
+    <div class="section-text">
+        <p data-i18n="about_text">
+            CAZ, Consultores de la A a la Z, integra conocimientos
+            de ingeniería, construcción, análisis técnico y consultoría.
+            Nuestra perspectiva parte de comprender cada problema
+            como un sistema y abordar sus componentes de manera integral.
+        </p>
+    </div>
+</section>
+
+<!-- CONSTRUCCIÓN -->
+<section class="content-section" id="construccion">
+
+    <div class="section-heading">
+        <h2 data-i18n="construction_title">Servicios de Construcción</h2>
+        <div class="accent"></div>
+        <p data-i18n="construction_intro">
+            Soluciones profesionales para el análisis,
+            desarrollo y seguimiento de proyectos constructivos.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <article class="service-card">
+            <img src="assets/servicios%20construccion.png"
+                 alt="Servicios de construcción">
+            <div class="card-content">
+                <h3 data-i18n="construction_service">
+                    Construcción e Ingeniería
+                </h3>
+                <p data-i18n="construction_description">
+                    Apoyo técnico y profesional en proyectos
+                    de construcción e ingeniería.
+                </p>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <img src="assets/supervicion%20externa.png"
+                 alt="Supervisión externa">
+            <div class="card-content">
+                <h3 data-i18n="supervision_title">
+                    Supervisión Externa
+                </h3>
+                <p data-i18n="supervision_description">
+                    Seguimiento técnico y revisión de procesos
+                    durante la ejecución de proyectos.
+                </p>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <img src="assets/topo.png"
+                 alt="Topografía y geomática">
+            <div class="card-content">
+                <h3 data-i18n="survey_title">
+                    Topografía y Geomática
+                </h3>
+                <p data-i18n="survey_description">
+                    Información espacial y herramientas
+                    técnicas para el conocimiento del territorio.
+                </p>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- CONSULTORÍA -->
+<section class="content-section" id="consultoria">
+
+    <div class="section-heading">
+        <h2 data-i18n="consulting_title">Servicios de Consultoría</h2>
+        <div class="accent"></div>
+        <p data-i18n="consulting_intro">
+            Análisis especializado, asesoría y acompañamiento
+            para la toma de decisiones.
+        </p>
+    </div>
+
+    <div class="services-grid">
+
+        <article class="service-card">
+            <img class="pericial-image"
+                 src="assets/serviciospericiales.jpeg"
+                 alt="Servicios periciales">
+            <div class="card-content">
+                <h3 data-i18n="expert_title">Servicios Periciales</h3>
+                <p data-i18n="expert_description">
+                    Análisis técnico especializado y evaluación
+                    profesional de situaciones y proyectos.
+                </p>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <img src="assets/asset%20protection.png"
+                 alt="Asset Protection">
+            <div class="card-content">
+                <h3 data-i18n="asset_title">Protección de Activos</h3>
+                <p data-i18n="asset_description">
+                    Consultoría especializada en protección,
+                    evaluación y gestión de activos.
+                </p>
+            </div>
+        </article>
+
+        <article class="service-card" onclick="window.location.href='../index.html'" style="cursor:pointer;">
+            
+            <img src="assets/serviciosacademicos.png"
+                 alt="Servicios Académicos">
+            <div class="card-content">
+                <h3 data-i18n="academic_title">Servicios Académicos</h3>
+                <p data-i18n="academic_description">
+                    Formación técnica e innovación educativa mediante
+                    aprendizaje basado en proyectos, experimentación,
+                    análisis estructural, sistemas de información geográfica
+                    e inteligencia artificial aplicada.
+                </p>      
+            </div>
+        </article>
+
+
+    </div>
+    <div id="peritajes" style="scroll-margin-top:30px;"></div>
+
+</section>
+
+<!-- CONTACTO -->
+<section class="content-section" id="contacto">
+
+    <div class="section-heading">
+        <h2 data-i18n="contact_title">Contacto</h2>
+        <div class="accent"></div>
+        <p data-i18n="contact_intro">
+            Cuéntanos qué necesitas. Estamos listos para
+            analizar el problema y explorar soluciones.
+        </p>
+    </div>
+
+    <div class="contact-panel">
+        <p data-i18n="contact_text">
+            Para información sobre nuestros servicios y
+            posibilidades de colaboración, escríbenos.
+        </p>
+
+        <a class="contact-email"
+           href="mailto:cazconsultores2@gmail.com">
+           cazconsultores2@gmail.com
+        </a>
+ <!-- TEAM DIRECTORY -->
+        <div class="team-access">
+            <a href="team/index.html"
+               class="contact-email"
+               data-i18n="contact_team">
+               Conoce a nuestro equipo
+            </a>
+        </div>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <p>CAZ · CONSULTORES DE LA A A LA Z</p>
+    <p data-i18n="footer_text">
+        Ingeniería · Construcción · Consultoría
+    </p>
+    <p>© <span id="year"></span> CAZ. <span data-i18n="rights">Todos los derechos reservados.</span></p>
+</footer>
+
+<script>
+const translations = {
+
+es: {
+    nav_philosophy: "Filosofía",
+    nav_about: "About Us",
+    nav_construction: "Servicios de Construcción",
+    nav_consulting: "Servicios de Consultoría",
+    nav_technical: "Consultoría Técnica",
+    nav_expert: "Servicios Periciales",
+    nav_asset: "Asset Protection",
+    nav_contact: "Contacto",
+
+    hero_first: "Tú pones el problema,",
+    hero_second: "CAZ pone la solución.",
+    hero_subtitle: "Integración técnica. Visión multidisciplinaria. Soluciones inteligentes.",
+
+    philosophy_title: "Nuestra Filosofía",
+    philosophy_intro: "Principios que orientan nuestra manera de entender los problemas y desarrollar soluciones.",
+
+    mission_title: "Misión",
+    mission_text: "Integrar conocimiento técnico y visión multidisciplinaria para desarrollar soluciones responsables y eficientes.",
+    vision_title: "Visión",
+    vision_text: "Ser un referente de consultoría por la calidad, innovación y solidez de nuestras soluciones.",
+    principles_title: "Principios",
+    principles_text: "Rigor técnico, integridad profesional, innovación y compromiso con cada proyecto.",
+    method_title: "Método",
+    method_text: "Comprender, analizar, integrar disciplinas y proponer soluciones fundamentadas.",
+
+    about_title: "About Us",
+    about_text: "CAZ, Consultores de la A a la Z, integra conocimientos de ingeniería, construcción, análisis técnico y consultoría. Nuestra perspectiva parte de comprender cada problema como un sistema y abordar sus componentes de manera integral.",
+
+    construction_title: "Servicios de Construcción",
+    construction_intro: "Soluciones profesionales para el análisis, desarrollo y seguimiento de proyectos constructivos.",
+    construction_service: "Construcción e Ingeniería",
+    construction_description: "Apoyo técnico y profesional en proyectos de construcción e ingeniería.",
+    supervision_title: "Supervisión Externa",
+    supervision_description: "Seguimiento técnico y revisión de procesos durante la ejecución de proyectos.",
+    survey_title: "Topografía y Geomática",
+    survey_description: "Información espacial y herramientas técnicas para el conocimiento del territorio.",
+
+    consulting_title: "Servicios de Consultoría",
+    consulting_intro: "Análisis especializado, asesoría y acompañamiento para la toma de decisiones.",
+    expert_title: "Servicios Periciales",
+    expert_description: "Análisis técnico especializado y evaluación profesional de situaciones y proyectos.",
+    asset_title: "Protección de Activos",
+    asset_description: "Consultoría especializada en protección, evaluación y gestión de activos.",
+    academic_title: "Servicios Académicos",
+    academic_description: "Formación técnica e innovación educativa mediante aprendizaje basado en proyectos, experimentación, análisis estructural, sistemas de información geográfica e inteligencia artificial aplicada.",
+
+    contact_title: "Contacto",
+    contact_intro: "Cuéntanos qué necesitas. Estamos listos para analizar el problema y explorar soluciones.",
+    contact_text: "Para información sobre nuestros servicios y posibilidades de colaboración, escríbenos.",
+
+    footer_text: "Ingeniería · Construcción · Consultoría",
+    rights: "Todos los derechos reservados."
+},
+
+en: {
+    nav_philosophy: "Philosophy",
+    nav_about: "About Us",
+    nav_construction: "Construction Services",
+    nav_consulting: "Consulting Services",
+    nav_technical: "Technical Consulting",
+    nav_expert: "Expert Services",
+    nav_asset: "Asset Protection",
+    nav_contact: "Contact",
+
+    hero_first: "You bring the problem,",
+    hero_second: "CAZ brings the solution.",
+    hero_subtitle: "Technical integration. Multidisciplinary vision. Intelligent solutions.",
+
+    philosophy_title: "Our Philosophy",
+    philosophy_intro: "The principles that guide how we understand challenges and develop solutions.",
+
+    mission_title: "Mission",
+    mission_text: "Integrate technical knowledge and multidisciplinary perspectives to develop responsible and efficient solutions.",
+    vision_title: "Vision",
+    vision_text: "Become a trusted consulting reference through the quality, innovation and strength of our solutions.",
+    principles_title: "Principles",
+    principles_text: "Technical rigor, professional integrity, innovation and commitment to every project.",
+    method_title: "Method",
+    method_text: "Understand, analyze, integrate disciplines and develop well-founded solutions.",
+
+    about_title: "About Us",
+    about_text: "CAZ, Consultants from A to Z, brings together expertise in engineering, construction, technical analysis and consulting. We approach every challenge as a system and address its components through an integrated perspective.",
+
+    construction_title: "Construction Services",
+    construction_intro: "Professional solutions for the analysis, development and oversight of construction projects.",
+    construction_service: "Construction & Engineering",
+    construction_description: "Technical and professional support for construction and engineering projects.",
+    supervision_title: "External Supervision",
+    supervision_description: "Technical monitoring and process review throughout project execution.",
+    survey_title: "Surveying & Geomatics",
+    survey_description: "Spatial information and technical tools for understanding the territory.",
+
+    consulting_title: "Consulting Services",
+    consulting_intro: "Specialized analysis, professional advice and support for informed decision-making.",
+    expert_title: "Expert Services",
+    expert_description: "Specialized technical analysis and professional assessment of situations and projects.",
+    asset_title: "Asset Protection",
+    asset_description: "Specialized consulting in asset protection, assessment and management.",
+    academic_title: "Academic Services",
+    academic_description: "Technical education and educational innovation through project-based learning, experimentation, structural analysis, geographic information systems, and applied artificial intelligence.",
+    
+    contact_title: "Contact",
+    contact_intro: "Tell us what you need. We are ready to analyze the challenge and explore solutions.",
+    contact_text: "For information about our services and potential collaborations, contact us.",
+
+    footer_text: "Engineering · Construction · Consulting",
+    rights: "All rights reserved."
+},
+
+zh: {
+    nav_philosophy: "理念",
+    nav_about: "关于我们",
+    nav_construction: "建筑施工服务",
+    nav_consulting: "咨询服务",
+    nav_technical: "技术咨询",
+    nav_expert: "专业鉴定服务",
+    nav_asset: "资产保护",
+    nav_academic: "学术服务",
+    nav_contact: "联系方式",
+
+    hero_first: "您提出问题，",
+    hero_second: "CAZ 提供解决方案。",
+    hero_subtitle: "技术整合 · 多学科视野 · 智能解决方案",
+
+    philosophy_title: "我们的理念",
+    philosophy_intro: "指导我们理解问题并制定解决方案的基本原则。",
+
+    mission_title: "使命",
+    mission_text: "整合专业技术知识与多学科视角，提供负责任且高效的解决方案。",
+    vision_title: "愿景",
+    vision_text: "以解决方案的质量、创新能力和专业实力，成为值得信赖的咨询机构。",
+    principles_title: "原则",
+    principles_text: "技术严谨、职业诚信、持续创新以及对每个项目的责任担当。",
+    method_title: "方法",
+    method_text: "理解问题、开展分析、整合专业知识并提出有依据的解决方案。",
+
+    about_title: "关于我们",
+    about_text: "CAZ，A至Z综合顾问，汇集工程、建筑施工、技术分析与咨询领域的专业知识。我们将每个问题视为一个系统，并通过综合视角分析和解决其各个组成部分。",
+
+    construction_title: "建筑施工服务",
+    construction_intro: "为建筑项目的分析、开发和实施监督提供专业支持。",
+    construction_service: "建筑与工程",
+    construction_description: "为建筑和工程项目提供技术及专业支持。",
+    supervision_title: "外部监督",
+    supervision_description: "在项目实施过程中进行技术跟踪与流程审查。",
+    survey_title: "测量与地理信息",
+    survey_description: "利用空间信息和技术工具深入了解地域环境。",
+
+    consulting_title: "咨询服务",
+    consulting_intro: "提供专业分析、咨询建议和决策支持。",
+    expert_title: "专业鉴定服务",
+    expert_description: "针对具体情况和项目开展专业技术分析与评估。",
+    asset_title: "资产保护",
+    asset_description: "提供资产保护、评估和管理方面的专业咨询。",
+    academic_title: "学术服务",
+    academic_description: "通过项目式学习、实验、结构分析、地理信息系统及人工智能应用，开展技术培训与教育创新。",
+
+    contact_title: "联系方式",
+    contact_intro: "请告诉我们您的需求。我们愿意分析问题并探索解决方案。",
+    contact_text: "如需了解我们的服务或探讨合作机会，欢迎与我们联系。",
+    contact_team: "认识我们的团队",
+
+    footer_text: "工程 · 建筑施工 · 咨询",
+    rights: "版权所有。"
+}
+
+};
+
+function setLanguage(language) {
+    const dictionary = translations[language];
+    if (!dictionary) return;
+
+    document.documentElement.lang = language;
+
+    document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.getAttribute("data-i18n");
+        if (dictionary[key] !== undefined) {
+            element.textContent = dictionary[key];
+        }
+    });
+
+    document.querySelectorAll(".language-bar button").forEach(button => {
+        button.classList.remove("active");
+    });
+
+    const selected = document.querySelector(
+        `.language-bar button[onclick="setLanguage('${language}')"]`
+    );
+
+    if (selected) selected.classList.add("active");
+
+    localStorage.setItem("caz-language", language);
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const savedLanguage = localStorage.getItem("caz-language") || "es";
+setLanguage(savedLanguage);
+
+// Cerrar el submenú al elegir una opción
+document.querySelectorAll(".submenu a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelector(".dropdown").removeAttribute("open");
+    });
+});
+</script>
+
+</body>
+</html>
+

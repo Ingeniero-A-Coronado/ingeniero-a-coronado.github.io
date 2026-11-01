@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CAZ | Our Team</title>
+
+<style>
+:root {
+    --blue-dark: #173c59;
+    --blue-main: #28658a;
+    --blue-light: #dcecf5;
+    --blue-line: rgba(40, 101, 138, 0.13);
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--blue-dark);
+
+    background-color: var(--blue-light);
+
+    /* Blueprint paper */
+    background-image:
+        linear-gradient(var(--blue-line) 1px, transparent 1px),
+        linear-gradient(90deg, var(--blue-line) 1px, transparent 1px),
+        linear-gradient(rgba(40,101,138,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(40,101,138,0.06) 1px, transparent 1px);
+
+    background-size:
+        40px 40px,
+        40px 40px,
+        8px 8px,
+        8px 8px;
+}
+
+/* Language selector */
+
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 20px 25px 0;
+}
+
+.language-selector button {
+    border: 1px solid var(--blue-main);
+    background: rgba(255,255,255,0.65);
+    color: var(--blue-dark);
+    padding: 7px 13px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: 0.25s;
+}
+
+.language-selector button:hover,
+.language-selector button.active {
+    background: var(--blue-main);
+    color: white;
+}
+
+/* Main container */
+
+.container {
+    width: min(100% - 35px, 1000px);
+    margin: 15px auto 0;
+    text-align: center;
+    padding-bottom: 45px;
+}
+
+/* CAZ Logo */
+
+.logo {
+    width: min(260px, 65%);
+    height: auto;
+    object-fit: contain;
+    margin: 5px auto 15px;
+    display: block;
+    mix-blend-mode: multiply;
+}
+
+h1 {
+    font-size: clamp(23px, 4vw, 32px);
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: var(--blue-dark);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--blue-main);
+    margin-bottom: 35px;
+}
+
+/* Team cards */
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 0 auto;
+}
+
+.member-card {
+    width: min(100%, 290px);
+    padding: 25px 22px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--blue-dark);
+
+    background: rgba(255,255,255,0.78);
+    border: 1px solid rgba(40,101,138,0.35);
+    border-radius: 5px;
+
+    box-shadow: 0 5px 18px rgba(23,60,89,0.10);
+
+    transition: transform 0.25s, box-shadow 0.25s,
+                background 0.25s;
+}
+
+.member-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.96);
+    box-shadow: 0 12px 25px rgba(23,60,89,0.18);
+}
+
+.member-card img {
+    width: 175px;
+    max-width: 100%;
+    height: 175px;
+    object-fit: contain;
+    margin: 5px auto 20px;
+}
+
+.member-card h2 {
+    font-size: 19px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.member-card p {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: var(--blue-main);
+    margin-bottom: 17px;
+}
+
+.access {
+    display: inline-block;
+    padding: 10px 22px;
+    background: var(--blue-main);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    border-radius: 3px;
+}
+
+.member-card:hover .access {
+    background: var(--blue-dark);
+}
+
+/* Footer */
+
+footer {
+    margin-top: 55px;
+    padding: 18px;
+    border-top: 1px solid rgba(40,101,138,0.25);
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--blue-main);
+}
+
+footer p + p {
+    margin-top: 7px;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .language-selector {
+        padding-top: 14px;
+    }
+
+    .container {
+        margin-top: 12px;
+    }
+
+    .team {
+        gap: 20px;
+    }
+
+    .member-card {
+        width: min(100%, 320px);
+    }
+
+    footer {
+        margin-top: 35px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- CAZ UNIVERSAL NAVIGATION -->
+
+<style>
+.caz-mini-nav {
+    position: fixed;
+    top: 18px;
+    left: 18px;
+    z-index: 9999;
+    display: flex;
+    gap: 7px;
+    padding: 6px;
+    background: rgba(255,255,255,0.88);
+    border: 1px solid rgba(40,101,138,0.35);
+    border-radius: 5px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    backdrop-filter: blur(8px);
+}
+
+.caz-mini-nav a {
+    text-decoration: none;
+    color: #173c59;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 9px 13px;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.caz-mini-nav a:hover {
+    background: #28658a;
+    color: white;
+}
+
+@media(max-width:600px) {
+    .caz-mini-nav {
+        top: 10px;
+        left: 10px;
+    }
+}
+</style>
+
+<nav class="caz-mini-nav">
+
+    <a id="caz-home" href="../index.html">
+        ⌂ HOME
+    </a>
+
+    <a id="caz-team" href="../team/index.html">
+        TEAM
+    </a>
+
+</nav>
+
+<script>
+(function() {
+
+    const inTeam = window.location.pathname
+        .split('/')
+        .includes('team');
+
+    const prefix = inTeam ? '../' : './';
+
+    document.getElementById('caz-home').href =
+        prefix + 'index.html';
+
+    document.getElementById('caz-team').href =
+        prefix + 'team/index.html';
+
+})();
+</script>
+
+<!-- END CAZ UNIVERSAL NAVIGATION -->
+
+
+<!-- LANGUAGE SELECTOR -->
+
+<nav class="language-selector" aria-label="Language">
+    <button class="active" onclick="setLanguage('es')">ES</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('zh')">中文</button>
+</nav>
+
+<main class="container">
+
+    <!-- CAZ BLUEPRINT LOGO -->
+
+    <img
+        src="../assets/cazbn.png"
+        alt="CAZ Architectural Blueprint Logo"
+        class="logo"
+    >
+
+    <h1 data-es="NUESTRO EQUIPO"
+        data-en="OUR TEAM"
+        data-zh="我们的团队">
+        NUESTRO EQUIPO
+    </h1>
+
+    <p class="subtitle"
+       data-es="CONOCIMIENTO · INGENIERÍA · COMPROMISO"
+       data-en="KNOWLEDGE · ENGINEERING · COMMITMENT"
+       data-zh="知识 · 工程 · 承诺">
+       CONOCIMIENTO · INGENIERÍA · COMPROMISO
+    </p>
+
+    <!-- TEAM MEMBERS -->
+
+    <section class="team">
+
+        <!-- CEO -->
+
+        <a href="ceo.html" class="member-card">
+
+            <img
+                src="../assets/ceo.png"
+                alt="CEO Arnoldo Coronado QR Code"
+            >
+
+            <h2 data-es="CEO"
+                data-en="CEO"
+                data-zh="首席执行官">
+                CEO
+            </h2>
+
+            <p data-es="DIRECCIÓN GENERAL"
+               data-en="CHIEF EXECUTIVE OFFICER"
+               data-zh="首席执行官">
+               DIRECCIÓN GENERAL
+            </p>
+
+            <span class="access"
+                  data-es="VER TARJETA"
+                  data-en="VIEW CARD"
+                  data-zh="查看名片">
+                VER TARJETA
+            </span>
+
+        </a>
+
+        <!-- EXECUTIVE ASSISTANT -->
+
+        <a href="exeasist.html" class="member-card">
+
+            <img
+                src="../assets/exeasist.png"
+                alt="Executive Assistant Ashley QR Code"
+            >
+
+            <h2 data-es="EXECUTIVE ASSISTANT"
+                data-en="EXECUTIVE ASSISTANT"
+                data-zh="行政助理">
+                EXECUTIVE ASSISTANT
+            </h2>
+
+            <p data-es="ASHLEY"
+               data-en="ASHLEY"
+               data-zh="ASHLEY">
+               ASHLEY
+            </p>
+
+            <span class="access"
+                  data-es="VER TARJETA"
+                  data-en="VIEW CARD"
+                  data-zh="查看名片">
+                VER TARJETA
+            </span>
+
+        </a>
+
+    </section>
+
+    <footer>
+        <p>CAZ | CONSTRUCTORA Y SERVICIOS</p>
+
+        <p data-es="INGENIERÍA · DISEÑO · SOLUCIONES"
+           data-en="ENGINEERING · DESIGN · SOLUTIONS"
+           data-zh="工程 · 设计 · 解决方案">
+           INGENIERÍA · DISEÑO · SOLUCIONES
+        </p>
+
+        <p>© CAZ</p>
+    </footer>
+
+</main>
+
+<script>
+
+function setLanguage(lang) {
+
+    document.documentElement.lang =
+        lang === 'zh' ? 'zh-CN' : lang;
+
+    document.querySelectorAll('[data-' + lang + ']')
+        .forEach(element => {
+            element.textContent =
+                element.getAttribute('data-' + lang);
+        });
+
+    document.querySelectorAll('.language-selector button')
+        .forEach(button => {
+            button.classList.remove('active');
+        });
+
+    const buttons = document.querySelectorAll(
+        '.language-selector button'
+    );
+
+    const index = { es: 0, en: 1, zh: 2 }[lang];
+
+    buttons[index].classList.add('active');
+
+    localStorage.setItem('caz-language', lang);
+}
+
+// Initial language
+
+const savedLanguage =
+    localStorage.getItem('caz-language') || 'es';
+
+setLanguage(savedLanguage);
+
+</script>
+
+</body>
+</html>
+
