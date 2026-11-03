@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Coronado Torres;Arnoldo;;Ing.;
+FN:Ing. Arnoldo Coronado Torres
+ORG:Tecnológico Nacional de México, Tijuana
+NOTE:CAZ Consultores
+TITLE:Structural Engineer
+TEL;TYPE=CELL:+526635214996
+TEL;TYPE=WORK,VOICE:+528123392399
+EMAIL;TYPE=WORK:academico.3053@tectijuana.edu.mx
+EMAIL;TYPE=INTERNET:cazconsultores2@gmail.com
+URL:https://www.linkedin.com/in/ing-arnoldo-coronado/
+URL;TYPE=PERSONAL:https://ingeniero-a-coronado.github.io/index.html
+URL;TYPE=WORK:https://ingeniero-a-coronado.github.io/CAZ/index.html
+END:VCARD

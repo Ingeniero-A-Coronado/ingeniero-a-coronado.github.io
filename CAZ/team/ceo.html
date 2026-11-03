@@ -1,310 +1,624 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#071522">
-  <meta name="description" content="Tarjeta virtual de Ing. Arnoldo Coronado Torres — CAZ Consultores de la A a la Z.">
+  <meta name="description" content="Tarjeta profesional de Ing. Arnoldo Coronado Torres — CAZ Consultores.">
   <title>Ing. Arnoldo Coronado Torres | CAZ Consultores</title>
+
   <style>
-:root {
-  --navy: #071522;
-  --silver: #d9e1e8;
-  --gold: #c6a76a;
-  --white: #f7f9fb;
-}
-* { box-sizing: border-box; }
-html, body { min-height: 100%; }
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 28px 16px;
-  color: var(--white);
-  background:
-    radial-gradient(circle at 15% 15%, rgba(48, 87, 116, .34), transparent 36%),
-    linear-gradient(135deg, #030a11, #10283a 58%, #050d16);
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-.business-card {
-  position: relative;
-  isolation: isolate;
-  overflow: hidden;
-  width: min(100%, 760px);
-  min-height: 430px;
-  padding: 34px 42px 30px;
-  border: 1px solid rgba(220, 230, 239, .42);
-  border-radius: 22px;
-  background:
-    linear-gradient(105deg, rgba(4, 16, 28, .88), rgba(5, 20, 34, .63)),
-    url("../assets/tarjeta.png") center / cover no-repeat;
-  box-shadow: 0 28px 80px rgba(0, 0, 0, .48);
-}
-.business-card::after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  inset: 0;
-  background: linear-gradient(120deg, transparent 35%, rgba(191, 211, 226, .08), transparent 72%);
-  pointer-events: none;
-}
-.brand {
-  display: flex;
-  align-items: center;
-  min-height: 72px;
-}
-.brand img {
-  display: block;
-  width: 264px;
-  height: 216px;
-  object-fit: contain;
-  object-position: left center;
-  filter: drop-shadow(0 3px 9px rgba(0,0,0,.55));
-}
-.brand-caption {
-  margin-left: 15px;
-  color: rgba(233, 240, 246, .76);
-  font-size: 11px;
-  letter-spacing: .22em;
-  text-transform: uppercase;
-}
-.rule {
-  width: 100%;
-  height: 1px;
-  margin: 20px 0 30px;
-  background: linear-gradient(90deg, var(--gold), rgba(217,225,232,.55), transparent);
-}
-.person { margin: 0; font-size: clamp(27px, 5vw, 43px); line-height: 1.08; font-weight: 650; letter-spacing: -.035em; }
-.role {
-  margin: 11px 0 25px;
-  color: var(--gold);
-  font-size: 13px;
-  letter-spacing: .16em;
-  text-transform: uppercase;
-}
-.contact-list { display: grid; gap: 12px; margin-top: 8px; }
-.contact-row { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
-.contact-label {
-  width: 105px;
-  flex: 0 0 105px;
-  color: rgba(217,225,232,.64);
-  font-size: 10px;
-  letter-spacing: .15em;
-  text-transform: uppercase;
-}
-.contact-row a, .contact-row span.value {
-  color: var(--white);
-  font-size: 14px;
-  text-decoration: none;
-  overflow-wrap: anywhere;
-}
-.contact-row a:hover { color: var(--gold); text-decoration: underline; }
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 16px;
-  margin-top: 32px;
-  padding-top: 15px;
-  border-top: 1px solid rgba(217,225,232,.2);
-  color: rgba(217,225,232,.65);
-  font-size: 10px;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-}
-.footer strong { color: var(--gold); font-weight: 600; }
-@media (max-width: 560px) {
-  body { padding: 14px 10px; }
-  .business-card { min-height: 0; padding: 25px 22px 22px; border-radius: 17px; }
-  .brand img { width: 70px; height: 60px; }
-  .brand-caption { font-size: 9px; letter-spacing: .15em; }
-  .rule { margin: 16px 0 25px; }
-  .contact-label { width: 82px; flex-basis: 82px; }
-  .contact-row a, .contact-row span.value { font-size: 13px; }
-  .footer { margin-top: 25px; font-size: 9px; }
-}
+    :root {
+      --navy: #071522;
+      --silver: #d9e1e8;
+      --gold: #c6a76a;
+      --white: #f7f9fb;
+    }
 
-/* PROFESSIONAL ECOSYSTEM LINKS */
+    * { box-sizing: border-box; }
 
-.professional-links {
-  width: min(100%, 760px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 15px;
-  margin-top: 18px;
-}
+    html, body { min-height: 100%; }
 
-.professional-links a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 145px;
-  padding: 12px 20px;
-  border: 1px solid rgba(198,167,106,.65);
-  border-radius: 8px;
-  color: var(--silver);
-  background: rgba(7,21,34,.78);
-  text-decoration: none;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: .16em;
-  transition: .25s ease;
-}
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 75px 16px 28px;
+      color: var(--white);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(48,87,116,.34), transparent 36%),
+        linear-gradient(135deg, #030a11, #10283a 58%, #050d16);
+      font-family: "Segoe UI", Arial, sans-serif;
+    }
 
-.professional-links a:hover {
-  color: var(--navy);
-  background: var(--gold);
-  border-color: var(--gold);
-  transform: translateY(-3px);
-  box-shadow: 0 7px 20px rgba(0,0,0,.25);
-}
+    /* MAIN BUSINESS CARD */
 
-@media(max-width:560px) {
-  .professional-links {
-    justify-content: center;
-    gap: 10px;
-  }
+    .business-card {
+      position: relative;
+      isolation: isolate;
+      overflow: hidden;
+      width: min(100%, 760px);
+      min-height: 430px;
+      padding: 34px 42px 30px;
+      border: 1px solid rgba(220,230,239,.42);
+      border-radius: 22px;
+      background:
+        linear-gradient(105deg, rgba(4,16,28,.88), rgba(5,20,34,.63)),
+        url("../assets/tarjeta.png") center / cover no-repeat;
+      box-shadow: 0 28px 80px rgba(0,0,0,.48);
+    }
 
-  .professional-links a {
-    min-width: 0;
-    flex: 1;
-    padding: 12px 8px;
-    font-size: 10px;
-  }
-}
+    .business-card::after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 0;
+      background: linear-gradient(
+        120deg,
+        transparent 35%,
+        rgba(191,211,226,.08),
+        transparent 72%
+      );
+      pointer-events: none;
+    }
 
+    .brand {
+      display: flex;
+      align-items: center;
+      min-height: 72px;
+    }
+
+    .brand img {
+      display: block;
+      width: 264px;
+      height: 216px;
+      object-fit: contain;
+      object-position: left center;
+      filter: drop-shadow(0 3px 9px rgba(0,0,0,.55));
+    }
+
+    .brand-caption {
+      margin-left: 15px;
+      color: rgba(233,240,246,.76);
+      font-size: 11px;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    .rule {
+      width: 100%;
+      height: 1px;
+      margin: 20px 0 30px;
+      background: linear-gradient(
+        90deg,
+        var(--gold),
+        rgba(217,225,232,.55),
+        transparent
+      );
+    }
+
+    .person {
+      margin: 0;
+      font-size: clamp(27px,5vw,43px);
+      line-height: 1.08;
+      font-weight: 650;
+      letter-spacing: -.035em;
+    }
+
+    .role {
+      margin: 11px 0 25px;
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .contact-label {
+      width: 105px;
+      flex: 0 0 105px;
+      color: rgba(217,225,232,.64);
+      font-size: 10px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+
+    .contact-row a,
+    .contact-row span.value {
+      color: var(--white);
+      font-size: 14px;
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+
+    .contact-row a:hover {
+      color: var(--gold);
+      text-decoration: underline;
+    }
+
+    /* SAVE CONTACT */
+
+    .save-contact {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 25px;
+      padding: 13px 22px;
+      border: 1px solid var(--gold);
+      border-radius: 8px;
+      color: var(--gold);
+      background: rgba(198,167,106,.08);
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .12em;
+      transition: .25s ease;
+    }
+
+    .save-contact:hover {
+      color: var(--navy);
+      background: var(--gold);
+      transform: translateY(-2px);
+    }
+
+    /* FOOTER */
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 16px;
+      margin-top: 32px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(217,225,232,.2);
+      color: rgba(217,225,232,.65);
+      font-size: 10px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .footer strong {
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* LANGUAGE SELECTOR */
+
+    .language-nav {
+      position: fixed;
+      top: 18px;
+      right: 18px;
+      z-index: 10000;
+      display: flex;
+      gap: 4px;
+      padding: 5px;
+      background: rgba(7,21,34,.9);
+      border: 1px solid rgba(198,167,106,.5);
+      border-radius: 7px;
+      backdrop-filter: blur(8px);
+    }
+
+    .language-nav button {
+      padding: 8px 11px;
+      border: none;
+      border-radius: 4px;
+      color: var(--silver);
+      background: transparent;
+      cursor: pointer;
+      font-size: 11px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .language-nav button:hover,
+    .language-nav button.active {
+      color: var(--navy);
+      background: var(--gold);
+    }
+
+    /* CAZ UNIVERSAL NAVIGATION */
+
+    .caz-mini-nav {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      z-index: 9999;
+      display: flex;
+      gap: 7px;
+      padding: 6px;
+      background: rgba(255,255,255,.88);
+      border: 1px solid rgba(40,101,138,.35);
+      border-radius: 5px;
+      box-shadow: 0 3px 12px rgba(0,0,0,.10);
+      backdrop-filter: blur(8px);
+    }
+
+    .caz-mini-nav a {
+      text-decoration: none;
+      color: #173c59;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1px;
+      padding: 9px 13px;
+      border-radius: 3px;
+      transition: .2s;
+    }
+
+    .caz-mini-nav a:hover {
+      background: #28658a;
+      color: white;
+    }
+
+    /* PROFESSIONAL ECOSYSTEM LINKS */
+
+    .professional-links {
+      width: min(100%,760px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      margin-top: 18px;
+    }
+
+    .professional-links a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 145px;
+      padding: 12px 20px;
+      border: 1px solid rgba(198,167,106,.65);
+      border-radius: 8px;
+      color: var(--silver);
+      background: rgba(7,21,34,.78);
+      text-decoration: none;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: .16em;
+      transition: .25s ease;
+    }
+
+    .professional-links a:hover {
+      color: var(--navy);
+      background: var(--gold);
+      border-color: var(--gold);
+      transform: translateY(-3px);
+      box-shadow: 0 7px 20px rgba(0,0,0,.25);
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:560px) {
+      body { padding: 85px 10px 20px; }
+
+      .business-card {
+        min-height: 0;
+        padding: 25px 22px 22px;
+        border-radius: 17px;
+      }
+
+      .brand img {
+        width: 70px;
+        height: 60px;
+      }
+
+      .brand-caption {
+        font-size: 9px;
+        letter-spacing: .15em;
+      }
+
+      .rule { margin: 16px 0 25px; }
+
+      .contact-label {
+        width: 82px;
+        flex-basis: 82px;
+      }
+
+      .contact-row a,
+      .contact-row span.value {
+        font-size: 13px;
+      }
+
+      .footer {
+        margin-top: 25px;
+        font-size: 9px;
+      }
+
+      .professional-links {
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .professional-links a {
+        min-width: 0;
+        flex: 1;
+        padding: 12px 8px;
+        font-size: 10px;
+      }
+
+      .caz-mini-nav {
+        top: 10px;
+        left: 8px;
+        gap: 2px;
+        padding: 4px;
+      }
+
+      .caz-mini-nav a {
+        padding: 8px 9px;
+        font-size: 10px;
+      }
+
+      .language-nav {
+        top: 10px;
+        right: 8px;
+        gap: 1px;
+        padding: 4px;
+      }
+
+      .language-nav button {
+        padding: 8px 7px;
+        font-size: 10px;
+      }
+    }
   </style>
 </head>
 
-<!-- PROFESSIONAL ECOSYSTEM -->
-
-<nav class="professional-links">
-
-    <a href="../../sameri.html">
-        CURRICULUM
-    </a>
-
-    <a href="../../index.html">
-        ACADEMIA
-    </a>
-
-</nav>
-
-<!-- END PROFESSIONAL ECOSYSTEM -->
-
 <body>
 
-<!-- CAZ UNIVERSAL NAVIGATION -->
+  <!-- LANGUAGE SELECTOR -->
 
-<style>
-.caz-mini-nav {
-    position: fixed;
-    top: 18px;
-    left: 18px;
-    z-index: 9999;
-    display: flex;
-    gap: 7px;
-    padding: 6px;
-    background: rgba(255,255,255,0.88);
-    border: 1px solid rgba(40,101,138,0.35);
-    border-radius: 5px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
-    backdrop-filter: blur(8px);
-}
+  <nav class="language-nav" aria-label="Language selector">
+    <button type="button" class="active" data-lang="es">ES</button>
+    <button type="button" data-lang="en">EN</button>
+    <button type="button" data-lang="de">DE</button>
+  </nav>
 
-.caz-mini-nav a {
-    text-decoration: none;
-    color: #173c59;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    padding: 9px 13px;
-    border-radius: 3px;
-    transition: 0.2s;
-}
+  <!-- CAZ UNIVERSAL NAVIGATION -->
 
-.caz-mini-nav a:hover {
-    background: #28658a;
-    color: white;
-}
-
-@media(max-width:600px) {
-    .caz-mini-nav {
-        top: 10px;
-        left: 10px;
-    }
-}
-</style>
-
-<nav class="caz-mini-nav">
-
-    <a id="caz-home" href="../index.html">
-        ⌂ HOME
-    </a>
-
-    <a id="caz-team" href="../team/index.html">
-        TEAM
-    </a>
-
-</nav>
-
-<script>
-(function() {
-
-    const inTeam = window.location.pathname
-        .split('/')
-        .includes('team');
-
-    const prefix = inTeam ? '../' : './';
-
-    document.getElementById('caz-home').href =
-        prefix + 'index.html';
-
-    document.getElementById('caz-team').href =
-        prefix + 'team/index.html';
-
-})();
-</script>
-
-<!-- END CAZ UNIVERSAL NAVIGATION -->
+  <nav class="caz-mini-nav">
+    <a id="caz-home" href="../index.html">⌂ HOME</a>
+    <a id="caz-team" href="../team/index.html">TEAM</a>
+  </nav>
 
   <main class="business-card">
+
     <header class="brand">
-      <img src="../assets/logosolo.png" alt="Logotipo CAZ">
-      <div class="brand-caption">Consultores de la A a la Z</div>
+      <img src="../assets/logosolo.png" alt="CAZ Consultores Logo">
+      <div class="brand-caption" data-i18n="brand">
+        Consultores de la A a la Z
+      </div>
     </header>
 
     <div class="rule"></div>
 
-    <section aria-label="Datos de contacto">
+    <section aria-label="Datos de contacto" data-i18n-aria="contactTitle">
+
       <h1 class="person">Ing. Arnoldo Coronado Torres</h1>
-      <p class="role">Ingeniero · CAZ Consultores</p>
+
+      <p class="role" data-i18n="role">
+        Ingeniero · CAZ Consultores
+      </p>
+
       <div class="contact-list">
-      <div class="contact-row">
-        <span class="contact-label">Correo</span>
-        <a href="mailto:cazconsultores2@gmail.com">cazconsultores2@gmail.com</a>
+
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="emailCaz">Correo CAZ</span>
+          <a href="mailto:cazconsultores2@gmail.com">
+            cazconsultores2@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="emailCaz">Correo CAZ</span>
+          <a href="mailto:cazconsultants2@gmail.com">
+            cazconsultants2@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="emailAcademic">Académico</span>
+          <a href="mailto:academico.3053@tectijuana.edu.mx">
+            academico.3053@tectijuana.edu.mx
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label" data-i18n="phone">Llamadas</span>
+          <a href="tel:+526635214996">
+            +52 663 521 4996
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">WhatsApp</span>
+          <a href="https://wa.me/528123392399"
+             target="_blank" rel="noopener">
+            +52 812 339 2399
+          </a>
+        </div>
+
+        <div class="contact-row">
+          <span class="contact-label">LinkedIn</span>
+          <a href="https://www.linkedin.com/in/ing-arnoldo-coronado/"
+             target="_blank" rel="noopener"
+             data-i18n="linkedin">
+            Perfil profesional
+          </a>
+        </div>
+
       </div>
-      <div class="contact-row">
-        <span class="contact-label">Correo</span>
-        <a href="mailto:cazconsultants2@gmail.com">cazconsultants2@gmail.com</a>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Llamadas</span>
-        <a href="tel:+526635214996">663 521 4996</a>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">WhatsApp</span>
-        <a href="https://wa.me/528123392399" target="_blank" rel="noopener">812 339 2399</a>
-      </div>
-      </div>
+
+      <!-- DIGITAL CONTACT CARD -->
+
+      <a class="save-contact"
+         href="../assets/arnoldo-coronado.vcf"
+         download="Arnoldo-Coronado.vcf">
+
+        <span>＋</span>
+        <span data-i18n="saveContact">GUARDAR EN CONTACTOS</span>
+
+      </a>
+
     </section>
 
     <footer class="footer">
       <span>CAZ Consultores</span>
-      <strong>Ingeniería y consultoría</strong>
+      <strong data-i18n="footer">Ingeniería y consultoría</strong>
     </footer>
+
   </main>
+
+  <!-- PROFESSIONAL ECOSYSTEM -->
+
+  <nav class="professional-links">
+
+    <a href="../../sameri.html" data-i18n="curriculum">
+      CURRICULUM
+    </a>
+
+    <a href="../../index.html" data-i18n="academia">
+      ACADEMIA
+    </a>
+
+  </nav>
+
+  <!-- LANGUAGE ENGINE -->
+
+  <script>
+    const translations = {
+
+      es: {
+        brand: "Consultores de la A a la Z",
+        role: "CEO · CAZ Consultores",
+        contactTitle: "Datos de contacto",
+        emailCaz: "Correo CAZ",
+        emailAcademic: "Académico",
+        phone: "Llamadas",
+        linkedin: "Perfil profesional",
+        saveContact: "GUARDAR EN CONTACTOS",
+        footer: "Ingeniería y consultoría",
+        curriculum: "CURRÍCULUM",
+        academia: "ACADEMIA",
+        home: "⌂ INICIO",
+        team: "EQUIPO",
+        description: "Tarjeta profesional de Ing. Arnoldo Coronado Torres — CAZ Consultores."
+      },
+
+      en: {
+        brand: "Consultants from A to Z",
+        role: "CEO · CAZ Consultants",
+        contactTitle: "Contact Information",
+        emailCaz: "CAZ Email",
+        emailAcademic: "Academic",
+        phone: "Phone",
+        linkedin: "Professional Profile",
+        saveContact: "SAVE TO CONTACTS",
+        footer: "Engineering & Consulting",
+        curriculum: "RESUME",
+        academia: "ACADEMIA",
+        home: "⌂ HOME",
+        team: "TEAM",
+        description: "Professional contact card of Eng. Arnoldo Coronado Torres — CAZ Consultants."
+      },
+
+      de: {
+        brand: "Beratung von A bis Z",
+        role: "CEO · CAZ Consultants",
+        contactTitle: "Kontaktdaten",
+        emailCaz: "CAZ E-Mail",
+        emailAcademic: "Akademisch",
+        phone: "Telefon",
+        linkedin: "Berufsprofil",
+        saveContact: "KONTAKT SPEICHERN",
+        footer: "Ingenieurwesen & Beratung",
+        curriculum: "LEBENSLAUF",
+        academia: "AKADEMIE",
+        home: "⌂ STARTSEITE",
+        team: "TEAM",
+        description: "Digitale Visitenkarte von Ing. Arnoldo Coronado Torres — CAZ Consultants."
+      }
+
+    };
+
+    function setLanguage(lang) {
+
+      if (!translations[lang]) return;
+
+      const t = translations[lang];
+
+      document.documentElement.lang = lang;
+
+      document.querySelectorAll("[data-i18n]").forEach(element => {
+        const key = element.dataset.i18n;
+        if (t[key]) element.textContent = t[key];
+      });
+
+      document.querySelectorAll("[data-i18n-aria]").forEach(element => {
+        const key = element.dataset.i18nAria;
+        if (t[key]) element.setAttribute("aria-label", t[key]);
+      });
+
+      document.getElementById("caz-home").textContent = t.home;
+      document.getElementById("caz-team").textContent = t.team;
+
+      document.title = lang === "es"
+        ? "Ing. Arnoldo Coronado Torres | CAZ Consultores"
+        : lang === "en"
+          ? "Eng. Arnoldo Coronado Torres | CAZ Consultants"
+          : "Ing. Arnoldo Coronado Torres | CAZ Consultants";
+
+      document.querySelector('meta[name="description"]')
+        .setAttribute("content", t.description);
+
+      document.querySelectorAll(".language-nav button").forEach(button => {
+        button.classList.toggle(
+          "active",
+          button.dataset.lang === lang
+        );
+      });
+
+    }
+
+    document.querySelectorAll(".language-nav button").forEach(button => {
+      button.addEventListener("click", () => {
+        setLanguage(button.dataset.lang);
+      });
+    });
+
+    // Default language
+    setLanguage("es");
+
+    // CAZ navigation paths
+    (function() {
+      const inTeam = window.location.pathname
+        .split("/")
+        .includes("team");
+
+      const prefix = inTeam ? "../" : "./";
+
+      document.getElementById("caz-home").href =
+        prefix + "index.html";
+
+      document.getElementById("caz-team").href =
+        prefix + "team/index.html";
+    })();
+
+  </script>
+
 </body>
 </html>
+
